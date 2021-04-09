@@ -6,6 +6,7 @@
     "build": "packemon build --addEngines",
     "pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
     "format": "prettier --write .",
+    "type": "tsc --noEmit",
     "prerelease": "yarn run pack && yarn test",
     "release": "lerna publish"
   },
@@ -13,7 +14,9 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@types/babel__core": "^7.1.14",
     "lerna": "^4.0.0",
-    "packemon": "^0.15.0"
+    "packemon": "^0.15.0",
+    "typescript": "^4.2.4"
   }
 }
