@@ -18,9 +18,7 @@ Extend the config from your root `tsconfig.json`.
 ```json
 {
   "extends": "tsconfig-beemo/tsconfig.json",
-  "compilerOptions": {
-    "declaration": true
-  }
+  "include": ["src/**/*"]
 }
 ```
 
