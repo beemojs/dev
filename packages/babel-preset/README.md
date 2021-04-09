@@ -11,6 +11,8 @@ packages for distribution and should instead be used for unit testing, linting, 
 yarn install --dev @babel/core babel-preset-beemo
 ```
 
+## Setup
+
 Add the preset to your root `babel.config.js`.
 
 ```js

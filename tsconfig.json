@@ -4,6 +4,9 @@
   "references": [
     {
       "path": "packages/babel-preset"
+    },
+    {
+      "path": "packages/config-babel"
     }
   ]
 }
