@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/beemojs/dev/workflows/Build/badge.svg)](https://github.com/beemojs/dev/actions?query=branch%3Amaster)
 [![npm version](https://badge.fury.io/js/%40beemo%config-babel.svg)](https://www.npmjs.com/package/@beemo/config-babel)
-[![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/config-babel)](https://www.npmjs.com/package/config-babel)
+[![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/config-babel)](https://www.npmjs.com/package/@beemo/config-babel)
 
 An official Babel config for Beemo managed projects. Configures
 [babel-preset-beemo](https://www.npmjs.com/package/babel-preset-beemo) based on environment and
@@ -17,7 +17,7 @@ yarn install --dev @babel/core @beemo/core @beemo/driver-babel @beemo/config-bab
 Create a `configs/babel.ts` file in your configuration module that re-exports this config.
 
 ```ts
-export default require('@beemo/config-babel');
+export { default } from '@beemo/config-babel';
 ```
 
 ## Settings

@@ -1005,6 +1005,14 @@
   dependencies:
     rimraf "^3.0.2"
 
+"@beemo/driver-typescript@^2.0.0-rc.0":
+  version "2.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-typescript/-/driver-typescript-2.0.0-rc.0.tgz#1805898fdd86d0560497fd849a82181c147057fe"
+  integrity sha512-hmi13FNm+cuCCWAzuCvlSHEENDhyOnazXSaGqN9lNxyXM8WHEDEMT2Lt9a2aS7/GJQLGgO4UcR0161dvLc96zA==
+  dependencies:
+    "@boost/event" "^2.3.1"
+    rimraf "^3.0.2"
+
 "@boost/args@^2.3.1", "@boost/args@^2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@boost/args/-/args-2.3.2.tgz#53cfa15f3396459f97811ef57855c6cd5ab9ed88"

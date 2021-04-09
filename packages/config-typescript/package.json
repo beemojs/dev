@@ -1,0 +1,49 @@
+{
+  "name": "@beemo/config-typescript",
+  "version": "0.0.0",
+  "description": "TypeScript config for Beemo projects.",
+  "keywords": [
+    "beemo-config",
+    "beemo",
+    "typescript"
+  ],
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:beemojs/dev.git",
+    "directory": "packages/config-typescript"
+  },
+  "author": "Miles Johnson",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.3.0",
+    "npm": ">=6.1.0"
+  },
+  "peerDependencies": {
+    "@beemo/core": "^2.0.0-rc.0",
+    "@beemo/driver-typescript": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "tsconfig-beemo": "^0.0.0"
+  },
+  "devDependencies": {
+    "@beemo/core": "^2.0.0-rc.0",
+    "@beemo/driver-typescript": "^2.0.0-rc.0"
+  },
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/milesjohnson"
+  },
+  "packemon": {
+    "platform": "node"
+  }
+}
