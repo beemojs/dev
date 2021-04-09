@@ -6,7 +6,7 @@
     "build": "packemon build --addEngines",
     "pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
     "format": "prettier --write .",
-    "type": "tsc --noEmit",
+    "type": "tsc --build",
     "prerelease": "yarn run pack && yarn test",
     "release": "lerna publish"
   },

@@ -1,0 +1,29 @@
+{
+  "name": "tsconfig-beemo",
+  "version": "0.0.0",
+  "description": "Pre-packaged tsconfig.json's for Beemo configured projects.",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "beemo"
+  ],
+  "files": [
+    "tsconfig.json",
+    "tsconfig.react",
+    "tsconfig.workspaces.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:beemojs/dev.git",
+    "directory": "packages/tsconfig"
+  },
+  "author": "Miles Johnson",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/milesjohnson"
+  }
+}
