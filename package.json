@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "beemo-dev",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "packemon build --addEngines",
+    "pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
+    "format": "prettier --write .",
+    "prerelease": "yarn run pack && yarn test",
+    "release": "lerna publish"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "packemon": "^0.15.0"
+  }
+}
