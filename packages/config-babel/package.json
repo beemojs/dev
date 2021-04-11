@@ -28,7 +28,6 @@
     "npm": ">=6.1.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.0.0",
     "@beemo/core": "^2.0.0-rc.0",
     "@beemo/driver-babel": "^2.0.0-rc.0"
   },
@@ -36,7 +35,6 @@
     "babel-preset-beemo": "^0.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
     "@beemo/core": "^2.0.0-rc.0",
     "@beemo/driver-babel": "^2.0.0-rc.0"
   },
