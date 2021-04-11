@@ -3,6 +3,7 @@
   "name": "beemo-dev",
   "version": "0.0.0",
   "scripts": {
+    "postinstall": "yarn run build",
     "build": "packemon build --addEngines",
     "pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
     "format": "prettier --write .",
