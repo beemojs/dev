@@ -14,8 +14,8 @@ const config = {
     },
   },
   globals: {
-    __DEV__: true,
-    __PROD__: true,
+    [`__DEV__`]: true,
+    [`__PROD__`]: true,
   },
   moduleNameMapper: {
     '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$': path.join(
@@ -23,7 +23,6 @@ const config = {
       './fileMock.js',
     ),
   },
-  setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
   testEnvironment: 'node',
   testMatch: ['**/(tests|__tests__)/**/*.test.[jt]s?(x)'],
   testRunner: 'jest-circus/runner',

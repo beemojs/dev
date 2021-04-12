@@ -9,10 +9,19 @@
       "path": "packages/config-babel"
     },
     {
+      "path": "packages/config-jest"
+    },
+    {
       "path": "packages/config-prettier"
     },
     {
       "path": "packages/config-typescript"
+    },
+    {
+      "path": "packages/eslint-config"
+    },
+    {
+      "path": "packages/jest-preset"
     }
   ]
 }

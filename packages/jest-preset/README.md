@@ -28,4 +28,5 @@ module.exports = {
 - Configured for Node.js environments.
 - Defines an empty file mock for non-JS/TS files (like CSS).
 - Requires 90% code coverage of all source files.
+- Improved performance through the Jest Circus runner.
 - Supports `__DEV__` and `__PROD__` globals.

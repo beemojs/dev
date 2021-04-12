@@ -43,7 +43,7 @@ export default function babelPresetBeemo(
         ],
         loose: looseMode,
         modules: modules ? false : 'auto',
-        useBuiltIns: true,
+        useBuiltIns: false,
         bugfixes: true,
         shippedProposals: true,
         // Only target node since this is for development
