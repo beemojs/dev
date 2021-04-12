@@ -1,0 +1,47 @@
+{
+  "name": "jest-preset-beemo",
+  "version": "0.0.0",
+  "description": "Jest preset for Beemo configured projects.",
+  "keywords": [
+    "jest-preset",
+    "beemo"
+  ],
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:beemojs/dev.git",
+    "directory": "packages/jest-preset"
+  },
+  "author": "Miles Johnson",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.3.0",
+    "npm": ">=6.1.0"
+  },
+  "peerDependencies": {
+    "jest-circus": "^26.0.0"
+  },
+  "devDependencies": {
+    "jest-circus": "^26.6.3"
+  },
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/milesjohnson"
+  },
+  "packemon": {
+    "inputs": {
+      "index": "src/index.ts",
+      "fileMock": "src/fileMock.ts"
+    },
+    "platform": "node"
+  }
+}
