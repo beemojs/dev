@@ -27,13 +27,8 @@
     "node": ">=10.3.0",
     "npm": ">=6.1.0"
   },
-  "peerDependencies": {
-    "jest-circus": "^26.0.0"
-  },
   "dependencies": {
-    "@types/jest": "^26.0.20"
-  },
-  "devDependencies": {
+    "@types/jest": "^26.0.20",
     "jest-circus": "^26.6.3"
   },
   "funding": {

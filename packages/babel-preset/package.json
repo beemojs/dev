@@ -31,9 +31,6 @@
     "node": ">=10.3.0",
     "npm": ">=6.1.0"
   },
-  "peerDependencies": {
-    "@babel/core": "^7.0.0"
-  },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-decorators": "^7.13.15",
@@ -44,9 +41,6 @@
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
     "babel-plugin-transform-dev": "^2.0.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.8"
   },
   "funding": {
     "type": "ko-fi",

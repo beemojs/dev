@@ -1,4 +1,4 @@
-import type { ConfigAPI, PluginItem } from '@babel/core';
+export type PluginItem = string | [string, object];
 
 export interface BabelPresetBeemoOptions {
   decorators?: boolean;
@@ -8,7 +8,7 @@ export interface BabelPresetBeemoOptions {
 }
 
 export default function babelPresetBeemo(
-  api: ConfigAPI,
+  api: unknown,
   { decorators, loose, modules, react }: BabelPresetBeemoOptions = {},
 ) {
   let looseMode = loose ?? false;

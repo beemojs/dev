@@ -8,10 +8,8 @@ A reusable Jest preset for Beemo configured projects. Provides code coverage and
 the box.
 
 ```bash
-yarn install --dev jest-preset-beemo jest-circus
+yarn install --dev jest-preset-beemo
 ```
-
-> This preset requires `jest-circus` to also be installed.
 
 ## Setup
 

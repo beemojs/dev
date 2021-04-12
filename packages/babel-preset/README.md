@@ -8,7 +8,7 @@ A development only Babel preset for Beemo configured projects. Should not be use
 packages for distribution and should instead be used for unit testing, linting, etc.
 
 ```bash
-yarn install --dev @babel/core babel-preset-beemo
+yarn install --dev babel-preset-beemo
 ```
 
 ## Setup
