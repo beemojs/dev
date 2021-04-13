@@ -22,7 +22,6 @@
     "@beemo/driver-jest": "^2.0.0-rc.0",
     "@beemo/driver-prettier": "^2.0.0-rc.0",
     "@beemo/driver-typescript": "^2.0.0-rc.0",
-    "@types/babel__core": "^7.1.14",
     "eslint": "^7.24.0",
     "jest": "^26.6.3",
     "jest-circus": "^26.6.3",

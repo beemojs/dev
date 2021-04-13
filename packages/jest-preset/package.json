@@ -28,8 +28,11 @@
     "npm": ">=6.1.0"
   },
   "dependencies": {
-    "@types/jest": "^26.0.20",
+    "@types/jest": "*",
     "jest-circus": "^26.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20"
   },
   "funding": {
     "type": "ko-fi",
