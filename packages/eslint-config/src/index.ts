@@ -6,24 +6,17 @@ const config: eslint.Linter.Config = {
   extends: [
     'airbnb-base',
     require.resolve('./async.js'),
+    require.resolve('./module.js'),
     require.resolve('./unicorn.js'),
     // Add prettier last so it properly turns off rules
     'prettier',
   ],
+  env: {
+    es2021: true,
+  },
   globals: {
     [`__DEV__`]: 'readonly',
     [`__PROD__`]: 'readonly',
-  },
-  settings: {
-    'import/extensions': ['.ts', '.tsx', '.js', '.mjs'],
-    'import/resolver': {
-      node: {
-        extensions: ['.ts', '.tsx', '.js', '.mjs'],
-      },
-    },
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
   },
   parserOptions: {
     sourceType: 'module',

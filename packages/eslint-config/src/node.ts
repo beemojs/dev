@@ -1,14 +1,11 @@
 import type eslint from 'eslint';
 
 const config: eslint.Linter.Config = {
-  plugins: ['compat'],
+  plugins: [],
   globals: {
-    browser: true,
+    node: true,
   },
-  rules: {
-    // Warn about invalid API usage but do not fail the build
-    'compat/compat': 'warn',
-  },
+  rules: {},
 };
 
 export default config;

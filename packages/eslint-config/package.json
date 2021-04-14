@@ -64,6 +64,7 @@
       "index": "src/index.ts",
       "async": "src/async.ts",
       "browser": "src/browser.ts",
+      "module": "src/module.ts",
       "node": "src/node.ts",
       "react": "src/react.ts",
       "unicorn": "src/unicorn.ts"

@@ -225,7 +225,7 @@ const config: eslint.Linter.Config = {
     'react/jsx-props-no-spreading': 'off',
 
     // Always sort props for better readability
-    'react/jsx-sort-default-props': 'error',
+    'react/jsx-sort-default-props': 'off', // Handled by sort-keys
     'react/jsx-sort-props': [
       'error',
       {
@@ -235,6 +235,15 @@ const config: eslint.Linter.Config = {
         ignoreCase: false,
         noSortAlphabetically: false,
         reservedFirst: true,
+      },
+    ],
+
+    // Encourage on & handle event naming
+    'react/jsx-handler-names': [
+      'error',
+      {
+        eventHandlerPrefix: 'handle',
+        eventHandlerPropPrefix: 'on',
       },
     ],
   },
