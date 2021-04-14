@@ -6,8 +6,10 @@
     "postinstall": "yarn run build",
     "build": "packemon build --addEngines",
     "pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
+    "check": "yarn run type && yarn run test && yarn run lint",
     "format": "prettier --write .",
-    "test": "jest --coverage",
+    "lint": "eslint packages/*/src/**/*.ts",
+    "test": "jest",
     "type": "tsc --build",
     "prerelease": "yarn run pack && yarn test",
     "release": "lerna publish"

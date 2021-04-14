@@ -1,13 +1,18 @@
 import type eslint from 'eslint';
 
 const config: eslint.Linter.Config = {
-  plugins: ['airbnb-base', 'compat', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['compat', '@typescript-eslint'],
   extends: [
     'airbnb-base',
     require.resolve('./unicorn.js'),
     // Add prettier last so it properly turns off rules
     'prettier',
   ],
+  globals: {
+    [`__DEV__`]: true,
+    [`__PROD__`]: true,
+  },
   rules: {
     // Warn about invalid API usage but do not fail the build
     'compat/compat': 'warn',

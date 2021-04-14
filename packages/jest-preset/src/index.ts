@@ -1,8 +1,9 @@
 const config = {
+  collectCoverage: false, // Enabled by consumers
   collectCoverageFrom: ['**/(src|tests|__tests__)/**/*.ts?(x)'],
   coverageDirectory: './coverage',
   coveragePathIgnorePatterns: ['node_modules/', 'build/', 'cjs/', 'dist/', 'esm/', 'lib/', 'mjs/'],
-  coverageReporters: ['lcov', 'text'],
+  coverageReporters: ['lcov', 'text-summary'],
   coverageThreshold: {
     global: {
       branches: 80,
