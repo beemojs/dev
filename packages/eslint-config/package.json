@@ -61,6 +61,7 @@
   "packemon": {
     "inputs": {
       "index": "src/index.ts",
+      "async": "src/async.ts",
       "react": "src/react.ts",
       "unicorn": "src/unicorn.ts"
     },

@@ -5,13 +5,14 @@ const config: eslint.Linter.Config = {
   plugins: ['compat', '@typescript-eslint'],
   extends: [
     'airbnb-base',
+    require.resolve('./async.js'),
     require.resolve('./unicorn.js'),
     // Add prettier last so it properly turns off rules
     'prettier',
   ],
   globals: {
-    [`__DEV__`]: true,
-    [`__PROD__`]: true,
+    [`__DEV__`]: 'readonly',
+    [`__PROD__`]: 'readonly',
   },
   rules: {
     // Warn about invalid API usage but do not fail the build
