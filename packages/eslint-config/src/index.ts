@@ -2,7 +2,7 @@ import type eslint from 'eslint';
 
 const config: eslint.Linter.Config = {
   parser: '@typescript-eslint/parser',
-  plugins: ['compat', '@typescript-eslint'],
+  plugins: ['@typescript-eslint'],
   extends: [
     'airbnb-base',
     require.resolve('./async.js'),
@@ -14,10 +14,23 @@ const config: eslint.Linter.Config = {
     [`__DEV__`]: 'readonly',
     [`__PROD__`]: 'readonly',
   },
+  settings: {
+    'import/extensions': ['.ts', '.tsx', '.js', '.mjs'],
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx', '.js', '.mjs'],
+      },
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+  },
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2021,
+  },
+  reportUnusedDisableDirectives: true,
   rules: {
-    // Warn about invalid API usage but do not fail the build
-    'compat/compat': 'warn',
-
     // Always prefer object destructuring, but array is contextual
     'prefer-destructuring': [
       'error',

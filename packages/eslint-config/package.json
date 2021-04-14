@@ -12,9 +12,10 @@
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
   "files": [
+    "browser.js",
     "dts/**/*.d.ts",
     "lib/**/*.{js,map}",
-    "react.d.ts",
+    "node.js",
     "react.js",
     "src/**/*.{ts,tsx,json}"
   ],
@@ -62,6 +63,8 @@
     "inputs": {
       "index": "src/index.ts",
       "async": "src/async.ts",
+      "browser": "src/browser.ts",
+      "node": "src/node.ts",
       "react": "src/react.ts",
       "unicorn": "src/unicorn.ts"
     },

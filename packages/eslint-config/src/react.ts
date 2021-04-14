@@ -4,7 +4,7 @@ const isJsxRuntime = process.env.BEEMO_REACT === 'automatic';
 
 const config: eslint.Linter.Config = {
   plugins: ['jsx-a11y', 'react', 'react-hooks'],
-  extends: ['plugin:jsx-a11y/recommended'],
+  extends: [require.resolve('./browser.js'), 'plugin:jsx-a11y/recommended'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
