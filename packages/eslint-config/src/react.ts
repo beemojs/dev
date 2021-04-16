@@ -1,4 +1,5 @@
 import type eslint from 'eslint';
+import { CASE_SENSITIVE } from './constants';
 
 const isJsxRuntime = process.env.BEEMO_REACT === 'automatic';
 
@@ -207,7 +208,7 @@ const reactConfig: eslint.Linter.ConfigOverride = {
         callbacksLast: true,
         shorthandFirst: true,
         shorthandLast: false,
-        ignoreCase: false,
+        ignoreCase: !CASE_SENSITIVE,
         noSortAlphabetically: false,
         reservedFirst: true,
       },

@@ -1,4 +1,5 @@
 import type eslint from 'eslint';
+import { CASE_SENSITIVE } from './constants';
 
 const config: eslint.Linter.Config = {
   parser: '@typescript-eslint/parser',
@@ -13,7 +14,7 @@ const config: eslint.Linter.Config = {
     'prettier',
   ],
   env: {
-    es2021: true,
+    es2020: true,
   },
   globals: {
     [`__DEV__`]: 'readonly',
@@ -21,7 +22,7 @@ const config: eslint.Linter.Config = {
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2021,
+    ecmaVersion: 2020,
   },
   reportUnusedDisableDirectives: true,
 
@@ -51,7 +52,7 @@ const config: eslint.Linter.Config = {
       'error',
       'asc',
       {
-        caseSensitive: false,
+        caseSensitive: CASE_SENSITIVE,
         natural: true,
       },
     ],
