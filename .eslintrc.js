@@ -5,6 +5,12 @@ module.exports = {
     BeemoSettings: 'readonly',
   },
   rules: {
+    // Rules are ordered in random groups, not alphabetical
+    'sort-keys': 'off',
+
+    // Used mainly for version numbers within configs
+    'no-magic-numbers': 'off',
+
     // Config packages are typically a default export
     'import/no-default-export': 'off',
   },
