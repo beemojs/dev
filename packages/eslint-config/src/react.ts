@@ -2,7 +2,8 @@ import type eslint from 'eslint';
 
 const isJsxRuntime = process.env.BEEMO_REACT === 'automatic';
 
-const config: eslint.Linter.Config = {
+const reactConfig: eslint.Linter.ConfigOverride = {
+  files: ['*.tsx'],
   plugins: ['jsx-a11y', 'react', 'react-hooks'],
   extends: [require.resolve('./browser.js'), 'plugin:jsx-a11y/recommended'],
   parserOptions: {
@@ -246,52 +247,45 @@ const config: eslint.Linter.Config = {
         eventHandlerPropPrefix: 'on',
       },
     ],
-  },
-  overrides: [
-    {
-      files: ['*.tsx'],
-      rules: {
-        // Sort component using React instead of TypeScript
-        'react/sort-comp': [
-          'error',
-          {
-            order: [
-              'statics',
-              'properties',
-              'lifecycle',
-              'everything-else',
-              'handlers',
-              'renderers',
-            ],
-            groups: {
-              statics: ['propTypes', 'defaultProps'],
-              properties: [
-                '/^(?!on).+$/',
-                '/^(?!handle).+$/',
-                '/^(?!render).+$/',
-                '/^.+Ref$/',
-                'state',
-              ],
-              lifecycle: [
-                'constructor',
-                'getDerivedStateFromProps',
-                'componentDidMount',
-                'shouldComponentUpdate',
-                'getSnapshotBeforeUpdate',
-                'componentDidUpdate',
-                'componentDidCatch',
-                'componentWillUnmount',
-              ],
-              handlers: ['/^on.+$/', '/^handle.+$/'],
-              renderers: ['/^render.+$/', 'render'],
-            },
-          },
-        ],
-        'react/static-property-placement': 'error',
-        '@typescript-eslint/member-ordering': 'off',
+
+    // Sort component using React instead of TypeScript
+    '@typescript-eslint/member-ordering': 'off',
+    'react/static-property-placement': 'error',
+    'react/sort-comp': [
+      'error',
+      {
+        order: ['statics', 'properties', 'lifecycle', 'everything-else', 'handlers', 'renderers'],
+        groups: {
+          statics: ['propTypes', 'defaultProps'],
+          properties: [
+            '/^(?!on).+$/',
+            '/^(?!handle).+$/',
+            '/^(?!render).+$/',
+            '/^.+Ref$/',
+            'state',
+          ],
+          lifecycle: [
+            'constructor',
+            'getDerivedStateFromProps',
+            'componentDidMount',
+            'shouldComponentUpdate',
+            'getSnapshotBeforeUpdate',
+            'componentDidUpdate',
+            'componentDidCatch',
+            'componentWillUnmount',
+          ],
+          handlers: ['/^on.+$/', '/^handle.+$/'],
+          renderers: ['/^render.+$/', 'render'],
+        },
       },
-    },
-  ],
+    ],
+  },
+};
+
+// We only want to apply the React plugin and rules
+// to TSX files. Not the entire codebase.
+const config: eslint.Linter.Config = {
+  overrides: [reactConfig],
 };
 
 export default config;
