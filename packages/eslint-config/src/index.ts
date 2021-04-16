@@ -3,12 +3,12 @@ import { CASE_SENSITIVE } from './constants';
 
 const config: eslint.Linter.Config = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
   extends: [
     'airbnb-base',
     require.resolve('./async.js'),
     require.resolve('./module.js'),
     require.resolve('./tests.js'),
+    require.resolve('./typescript.js'),
     require.resolve('./unicorn.js'),
     // Add prettier last so it properly turns off rules
     'prettier',
@@ -58,7 +58,6 @@ const config: eslint.Linter.Config = {
     ],
 
     // Avoid bad or problematic syntax/patterns
-    'default-param-last': 'error',
     'no-constant-condition': 'error',
     'no-constructor-return': 'error',
     'no-div-regex': 'error',

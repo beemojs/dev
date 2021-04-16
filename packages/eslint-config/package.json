@@ -69,6 +69,7 @@
       "node": "src/node.ts",
       "react": "src/react.ts",
       "tests": "src/tests.ts",
+      "typescript": "src/typescript.ts",
       "unicorn": "src/unicorn.ts"
     },
     "platform": "node"
