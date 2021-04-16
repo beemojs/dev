@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['beemo'],
+  extends: ['beemo/node', 'beemo'],
   globals: {
     BeemoSettings: 'readonly',
   },
