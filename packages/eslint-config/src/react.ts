@@ -18,6 +18,24 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     linkComponents: ['Link', { name: 'Link', linkAttribute: 'to' }],
   },
   rules: {
+    // Disabled by Prettier: https://github.com/prettier/eslint-config-prettier/blob/main/index.js#L122
+    // We need to do this since React is an override and these might be re-enabled.
+    'react/jsx-child-element-spacing': 'off',
+    'react/jsx-closing-bracket-location': 'off',
+    'react/jsx-closing-tag-location': 'off',
+    'react/jsx-curly-newline': 'off',
+    'react/jsx-curly-spacing': 'off',
+    'react/jsx-equals-spacing': 'off',
+    'react/jsx-first-prop-new-line': 'off',
+    'react/jsx-indent': 'off',
+    'react/jsx-indent-props': 'off',
+    'react/jsx-max-props-per-line': 'off',
+    'react/jsx-newline': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/jsx-props-no-multi-spaces': 'off',
+    'react/jsx-tag-spacing': 'off',
+    'react/jsx-wrap-multilines': 'off',
+
     // Support the new JSX runtime when available
     'react/react-in-jsx-scope': isJsxRuntime ? 'off' : 'error',
     'react/jsx-uses-react': isJsxRuntime ? 'off' : 'error',
@@ -128,54 +146,13 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     'react/state-in-constructor': 'off',
 
     // Enforce consistent JSX spacing and syntax
-    'react/jsx-child-element-spacing': 'error',
-    'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
-    'react/jsx-closing-tag-location': 'error',
-    'react/jsx-curly-newline': [
-      'error',
-      {
-        multiline: 'consistent',
-        singleline: 'consistent',
-      },
-    ],
-    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
-    'react/jsx-indent': ['error', 2], // TODO tabs?
-    'react/jsx-indent-props': ['error', 2],
-    'react/jsx-newline': 'off',
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
-    'react/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
-    'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-space-before-closing': 'off',
-    'react/jsx-tag-spacing': [
-      'error',
-      {
-        closingSlash: 'never',
-        beforeSelfClosing: 'always',
-        afterOpening: 'never',
-        beforeClosing: 'never',
-      },
-    ],
-    'react/jsx-wrap-multilines': [
-      'error',
-      {
-        declaration: 'parens-new-line',
-        assignment: 'parens-new-line',
-        return: 'parens-new-line',
-        arrow: 'parens-new-line',
-        condition: 'parens-new-line',
-        logical: 'parens-new-line',
-        prop: 'parens-new-line',
-      },
-    ],
 
     // Avoid interpolation as much as possible
     'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
-
-    // Avoid spaces within or around props
-    'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
-    'react/jsx-equals-spacing': ['error', 'never'],
 
     // Only use tsx extension for JSX code
     'react/jsx-filename-extension': ['error', { allow: 'as-needed', extensions: ['.tsx'] }],
@@ -195,9 +172,6 @@ const reactConfig: eslint.Linter.ConfigOverride = {
 
     // Allow any level of nesting
     'react/jsx-max-depth': 'off',
-
-    // Limit 1 prop per line when multiline
-    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
 
     // Avoid inline function props
     'react/jsx-no-bind': [

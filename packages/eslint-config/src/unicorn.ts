@@ -3,6 +3,12 @@ import type eslint from 'eslint';
 const config: eslint.Linter.Config = {
   plugins: ['unicorn'],
   rules: {
+    // Disabled by Prettier: https://github.com/prettier/eslint-config-prettier/blob/main/index.js#L140
+    // We need to do this as they may be re-enabled based on config extending order.
+    'unicorn/empty-brace-spaces': 'off',
+    'unicorn/no-nested-ternary': 'off',
+    'unicorn/number-literal-case': 'off',
+
     // Improve readability
     'unicorn/better-regex': 'error',
     'unicorn/escape-case': 'error',
@@ -27,7 +33,6 @@ const config: eslint.Linter.Config = {
     'unicorn/prevent-abbreviations': 'off',
 
     // Ensure consistent and correct syntax
-    'unicorn/empty-brace-spaces': 'error',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-instanceof-array': 'error',
     'unicorn/no-new-array': 'error',
