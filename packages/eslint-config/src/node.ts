@@ -4,7 +4,7 @@ const nodeVersion = Number.parseFloat(process.version.slice(1));
 
 const config: eslint.Linter.Config = {
   plugins: ['node'],
-  globals: {
+  env: {
     node: true,
   },
   rules: {

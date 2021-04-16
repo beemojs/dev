@@ -68,6 +68,7 @@
       "module": "src/module.ts",
       "node": "src/node.ts",
       "react": "src/react.ts",
+      "tests": "src/tests.ts",
       "unicorn": "src/unicorn.ts"
     },
     "platform": "node"

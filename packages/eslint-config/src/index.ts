@@ -7,6 +7,7 @@ const config: eslint.Linter.Config = {
     'airbnb-base',
     require.resolve('./async.js'),
     require.resolve('./module.js'),
+    require.resolve('./tests.js'),
     require.resolve('./unicorn.js'),
     // Add prettier last so it properly turns off rules
     'prettier',

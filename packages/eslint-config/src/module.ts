@@ -42,8 +42,11 @@ const config: eslint.Linter.Config = {
       'ignorePackages',
       {
         cjs: 'always',
+        js: 'never',
         json: 'always',
         mjs: 'always',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
 

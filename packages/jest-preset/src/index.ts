@@ -1,6 +1,6 @@
 const config = {
   collectCoverage: false, // Enabled by consumers
-  collectCoverageFrom: ['**/(src|tests|__tests__)/**/*.ts?(x)'],
+  collectCoverageFrom: ['**/{src,tests,__tests__}/**/*.{ts,tsx}'],
   coverageDirectory: './coverage',
   coveragePathIgnorePatterns: ['node_modules/', 'build/', 'cjs/', 'dist/', 'esm/', 'lib/', 'mjs/'],
   coverageReporters: ['lcov', 'text-summary'],
@@ -22,7 +22,7 @@ const config = {
     ),
   },
   testEnvironment: 'node',
-  testMatch: ['**/(tests|__tests__)/**/*.test.ts?(x)'],
+  testMatch: ['**/{tests,__tests__}/**/*.test.{ts,tsx}'],
   testRunner: 'jest-circus/runner',
 };
 
