@@ -1,0 +1,48 @@
+{
+  "name": "@beemo/config-eslint",
+  "version": "0.0.0",
+  "description": "ESLint config for Beemo projects.",
+  "keywords": [
+    "eslint-config",
+    "beemo"
+  ],
+  "main": "./lib/index.js",
+  "types": "./dts/index.d.ts",
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:beemojs/dev.git",
+    "directory": "packages/config-eslint"
+  },
+  "author": "Miles Johnson",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.3.0",
+    "npm": ">=6.1.0"
+  },
+  "peerDependencies": {
+    "@beemo/core": "^2.0.0-rc.0",
+    "@beemo/driver-eslint": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "eslint-config-beemo": "^0.0.0"
+  },
+  "devDependencies": {
+    "@beemo/core": "^2.0.0-rc.0",
+    "@beemo/driver-eslint": "^2.0.0-rc.0"
+  },
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/milesjohnson"
+  },
+  "packemon": {
+    "platform": "node"
+  }
+}

@@ -12,6 +12,9 @@
       "path": "packages/constants"
     },
     {
+      "path": "packages/config-eslint"
+    },
+    {
       "path": "packages/config-jest"
     },
     {

@@ -1048,6 +1048,14 @@
   dependencies:
     rimraf "^3.0.2"
 
+"@beemo/driver-eslint@^2.0.0-rc.0":
+  version "2.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-eslint/-/driver-eslint-2.0.0-rc.1.tgz#3f2b508aa3dcb3cc73dde11d2338e3ceb2794479"
+  integrity sha512-OWf+V8OSBJ+GEUc+l/MhSjtR31R1bduxkf0zZOpYg4i0uJJyKigNpEPWFxllKpcnMNsk+iUn+lD64r78LGF5BA==
+  dependencies:
+    "@boost/event" "^2.3.2"
+    "@types/eslint" "*"
+
 "@beemo/driver-jest@^2.0.0-rc.0":
   version "2.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@beemo/driver-jest/-/driver-jest-2.0.0-rc.0.tgz#44f9ab9f0694976b1981398dc33d16c20f5b5290"
@@ -2472,7 +2480,7 @@
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.5.tgz#b14efa8852b7768d898906613c23f688713e02cd"
   integrity sha512-Q1y515GcOdTHgagaVFhHnIFQ38ygs/kmxdNpvpou+raI9UO3YZcHDngBSYKQklcKlvA7iuQlmIKbzvmxcOE9CQ==
 
-"@types/eslint@^7.2.10":
+"@types/eslint@*", "@types/eslint@^7.2.10":
   version "7.2.10"
   resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.10.tgz#4b7a9368d46c0f8cd5408c23288a59aa2394d917"
   integrity sha512-kUEPnMKrqbtpCq/KTaGFFKAcz6Ethm2EjCoKIDaCmfRBWLbFuTcOJfTlorwbnboXBzahqWLgUp1BQeKHiJzPUQ==
