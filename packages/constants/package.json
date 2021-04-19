@@ -1,11 +1,10 @@
 {
-  "name": "@beemo/config-prettier",
+  "name": "@beemo/config-constants",
   "version": "0.0.0",
-  "description": "Prettier config for Beemo projects.",
+  "description": "Reusable constants for Beemo configurations.",
   "keywords": [
-    "beemo-config",
     "beemo",
-    "prettier"
+    "constants"
   ],
   "main": "./lib/index.js",
   "types": "./dts/index.d.ts",
@@ -17,7 +16,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:beemojs/dev.git",
-    "directory": "packages/config-prettier"
+    "directory": "packages/constants"
   },
   "author": "Miles Johnson",
   "license": "MIT",
@@ -27,18 +26,6 @@
   "engines": {
     "node": ">=10.3.0",
     "npm": ">=6.1.0"
-  },
-  "peerDependencies": {
-    "@beemo/core": "^2.0.0-rc.0",
-    "@beemo/driver-prettier": "^2.0.0-rc.0"
-  },
-  "dependencies": {
-    "@beemo/config-constants": "^0.0.0",
-    "prettier-config-beemo": "^0.0.0"
-  },
-  "devDependencies": {
-    "@beemo/core": "^2.0.0-rc.0",
-    "@beemo/driver-prettier": "^2.0.0-rc.0"
   },
   "funding": {
     "type": "ko-fi",

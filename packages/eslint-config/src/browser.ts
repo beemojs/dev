@@ -1,5 +1,5 @@
 import type eslint from 'eslint';
-import { TESTS_GLOB } from './constants';
+import { TESTS_LIST } from '@beemo/config-constants';
 
 const config: eslint.Linter.Config = {
   plugins: ['compat'],
@@ -12,7 +12,7 @@ const config: eslint.Linter.Config = {
   },
   overrides: [
     {
-      files: [TESTS_GLOB],
+      files: TESTS_LIST,
       env: {
         browser: false,
       },

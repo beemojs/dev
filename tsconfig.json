@@ -9,6 +9,9 @@
       "path": "packages/config-babel"
     },
     {
+      "path": "packages/constants"
+    },
+    {
       "path": "packages/config-jest"
     },
     {

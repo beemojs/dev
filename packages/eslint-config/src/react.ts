@@ -1,5 +1,5 @@
 import type eslint from 'eslint';
-import { CASE_SENSITIVE } from './constants';
+import { CASE_SENSITIVE } from '@beemo/config-constants';
 
 const isJsxRuntime = process.env.BEEMO_REACT === 'automatic';
 

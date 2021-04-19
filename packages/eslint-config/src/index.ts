@@ -1,5 +1,5 @@
 import type eslint from 'eslint';
-import { CASE_SENSITIVE } from './constants';
+import { CASE_SENSITIVE, ECMA_VERSION } from '@beemo/config-constants';
 
 const config: eslint.Linter.Config = {
   parser: '@typescript-eslint/parser',
@@ -14,7 +14,7 @@ const config: eslint.Linter.Config = {
     'prettier',
   ],
   env: {
-    es2020: true,
+    [`es${ECMA_VERSION}`]: true,
   },
   globals: {
     [`__DEV__`]: 'readonly',
@@ -22,7 +22,7 @@ const config: eslint.Linter.Config = {
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2020,
+    ecmaVersion: ECMA_VERSION,
   },
   reportUnusedDisableDirectives: true,
 

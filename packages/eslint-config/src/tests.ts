@@ -1,8 +1,8 @@
 import type eslint from 'eslint';
-import { TESTS_GLOB } from './constants';
+import { TESTS_LIST } from '@beemo/config-constants';
 
 const jestConfig: eslint.Linter.ConfigOverride = {
-  files: [TESTS_GLOB],
+  files: TESTS_LIST,
   plugins: ['jest'],
   env: {
     jest: true,
@@ -76,7 +76,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 };
 
 const testsConfig: eslint.Linter.ConfigOverride = {
-  files: [TESTS_GLOB],
+  files: TESTS_LIST,
   env: {
     node: true,
   },
@@ -86,6 +86,8 @@ const testsConfig: eslint.Linter.ConfigOverride = {
     'no-console': 'off',
     'no-magic-numbers': 'off',
     'sort-keys': 'off',
+
+    // Allow `any` in tests for convenience
     '@typescript-eslint/no-unsafe-assignment': 'off',
   },
 };

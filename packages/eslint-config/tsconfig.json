@@ -12,5 +12,10 @@
   "include": [
     "src/**/*",
     "../../types/**/*"
+  ],
+  "references": [
+    {
+      "path": "../constants"
+    }
   ]
 }

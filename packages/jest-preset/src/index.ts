@@ -1,8 +1,10 @@
+import { ALL_FILES_GLOB, IGNORE_LIST, NON_TS_GLOB, TEST_FILES_GLOB } from '@beemo/config-constants';
+
 const config = {
   collectCoverage: false, // Enabled by consumers
-  collectCoverageFrom: ['**/{src,tests,__tests__}/**/*.{ts,tsx}'],
+  collectCoverageFrom: [ALL_FILES_GLOB],
   coverageDirectory: './coverage',
-  coveragePathIgnorePatterns: ['node_modules/', 'build/', 'cjs/', 'dist/', 'esm/', 'lib/', 'mjs/'],
+  coveragePathIgnorePatterns: [...IGNORE_LIST],
   coverageReporters: ['lcov', 'text-summary'],
   coverageThreshold: {
     global: {
@@ -17,12 +19,10 @@ const config = {
     [`__PROD__`]: true,
   },
   moduleNameMapper: {
-    '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$': require.resolve(
-      './fileMock.js',
-    ),
+    [NON_TS_GLOB]: require.resolve('./fileMock.js'),
   },
   testEnvironment: 'node',
-  testMatch: ['**/{tests,__tests__}/**/*.test.{ts,tsx}'],
+  testMatch: [TEST_FILES_GLOB],
   testRunner: 'jest-circus/runner',
 };
 
