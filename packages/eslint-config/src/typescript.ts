@@ -2,21 +2,19 @@ import path from 'path';
 import type eslint from 'eslint';
 import type { ProjectReference } from 'typescript';
 
-let project: string | string[] = path.join(process.cwd(), 'tsconfig.json');
+let project: string[] | string = path.join(process.cwd(), 'tsconfig.json');
 
-// If the project is using project references, we need to include a path
+// If the consumer is using project references, we need to include a path
 // to every tsconfig.json in the graph.
 // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject
-try {
-  // eslint-disable-next-line
-  const rootTsconfig: { references?: ProjectReference[] } = require(project);
+// eslint-disable-next-line import/no-dynamic-require
+const rootTsconfig = require(project) as { references?: ProjectReference[] };
 
-  if (rootTsconfig?.references) {
-    project = rootTsconfig.references.map((ref) =>
-      path.join(process.cwd(), ref.path, 'tsconfig.json'),
-    );
-  }
-} catch {}
+if (rootTsconfig?.references) {
+  project = rootTsconfig.references.map((ref) =>
+    path.join(process.cwd(), ref.path, 'tsconfig.json'),
+  );
+}
 
 const config: eslint.Linter.Config = {
   plugins: ['@typescript-eslint'],
@@ -25,18 +23,68 @@ const config: eslint.Linter.Config = {
   },
   rules: {
     // Disabled by Prettier: https://github.com/prettier/eslint-config-prettier/blob/main/index.js#L95
-    // We need to do this as they may be re-enabled based on config extending order.
+    // We duplicate and keep track of this here so that we dont configure them
     '@typescript-eslint/brace-style': 'off',
     '@typescript-eslint/comma-dangle': 'off',
     '@typescript-eslint/comma-spacing': 'off',
     '@typescript-eslint/func-call-spacing': 'off',
     '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/keyword-spacing': 'off',
+    '@typescript-eslint/member-delimiter-style': 'off',
+    '@typescript-eslint/no-extra-parens': 'off',
+    '@typescript-eslint/no-extra-semi': 'off',
+    '@typescript-eslint/object-curly-spacing': 'off',
+    '@typescript-eslint/semi': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/space-infix-ops': 'off',
+    '@typescript-eslint/type-annotation-spacing': 'off',
 
-    // Expands upon base config
+    // Expands upon base config to handle type annotations
     'default-param-last': 'off',
-    '@typescript-eslint/default-param-last': 'error',
     'dot-notation': 'off',
+    'lines-between-class-members': 'off',
+    'no-array-constructor': 'off',
+    'no-dupe-class-members': 'off',
+    'no-duplicate-imports': 'off',
+    'no-empty-function': 'off',
+    'no-implied-eval': 'off',
+    'no-invalid-this': 'off',
+    'no-loop-func': 'off',
+    'no-loss-of-precision': 'off',
+    'no-redeclare': 'off',
+    'no-shadow': 'off',
+    'no-throw-literal': 'off',
+    'no-unused-expressions': 'off',
+    'no-unused-vars': 'off',
+    'no-use-before-define': 'off',
+    'no-useless-constructor': 'off',
+    quotes: 'off',
+    'require-await': 'off',
+    'no-return-await': 'off',
+    '@typescript-eslint/default-param-last': 'error',
     '@typescript-eslint/dot-notation': 'error',
+    '@typescript-eslint/lines-between-class-members': ['error', { exceptAfterOverload: true }],
+    '@typescript-eslint/no-array-constructor': 'error',
+    '@typescript-eslint/no-dupe-class-members': 'error',
+    '@typescript-eslint/no-duplicate-imports': 'error',
+    '@typescript-eslint/no-empty-function': 'error',
+    '@typescript-eslint/no-implied-eval': 'error',
+    '@typescript-eslint/no-invalid-this': 'error',
+    '@typescript-eslint/no-loop-func': 'error',
+    '@typescript-eslint/no-loss-of-precision': 'error',
+    '@typescript-eslint/no-redeclare': ['error', { ignoreDeclarationMerge: true }],
+    '@typescript-eslint/no-shadow': ['error', { ignoreTypeValueShadow: true }],
+    '@typescript-eslint/no-throw-literal': 'error',
+    '@typescript-eslint/no-unused-expressions': 'error',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      { classes: true, enums: true, functions: true, typedefs: true, variables: true },
+    ],
+    '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
+    '@typescript-eslint/require-await': 'error',
+    '@typescript-eslint/return-await': ['error', 'in-try-catch'],
 
     // Overloads should be stacked on top of the original signature
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -44,14 +92,32 @@ const config: eslint.Linter.Config = {
     // Prefer shorthand and utility types as much as possible
     '@typescript-eslint/array-type': ['error', { default: 'array' }],
     '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
+    '@typescript-eslint/method-signature-style': 'error',
+    '@typescript-eslint/no-inferrable-types': ['error', { ignoreParameters: true }],
+    '@typescript-eslint/prefer-function-type': 'error',
+
+    // Prefer compact and readable code
+    '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
+    '@typescript-eslint/sort-type-union-intersection-members': 'error',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
 
     // Prefer interfaces as extending and composition syntax is much nicer
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+    '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
 
-    // Allow any types as they each serve a specific purpose
+    // Allow all types (except `any`) as they each serve a specific purpose
     '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
 
-    // Await is designed to auto wrap with promises, so avoid this
+    // Avoid `any` type as much as possible
+    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
+    '@typescript-eslint/no-unsafe-argument': 'error',
+    '@typescript-eslint/no-unsafe-assignment': 'error',
+    '@typescript-eslint/no-unsafe-call': 'error',
+    '@typescript-eslint/no-unsafe-member-access': 'error',
+    '@typescript-eslint/no-unsafe-return': 'error',
+
+    // Await is designed to auto wrap with promises for convenience, so avoid this
     '@typescript-eslint/await-thenable': 'off',
 
     // Require comments when using ts directives
@@ -66,12 +132,31 @@ const config: eslint.Linter.Config = {
       },
     ],
     '@typescript-eslint/ban-tslint-comment': 'error',
+    '@typescript-eslint/prefer-ts-expect-error': 'error',
+    '@typescript-eslint/triple-slash-reference': [
+      'error',
+      { path: 'never', types: 'never', lib: 'never' },
+    ],
 
     // Too abrasive or controversial
     '@typescript-eslint/class-literal-property-style': 'off',
     '@typescript-eslint/consistent-type-imports': 'off',
+    '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/no-dynamic-delete': 'off',
+    '@typescript-eslint/no-implicit-any-catch': 'warn',
+    '@typescript-eslint/no-magic-numbers': 'off',
+    '@typescript-eslint/no-require-imports': 'off',
+    '@typescript-eslint/no-type-alias': 'off',
+    '@typescript-eslint/no-unnecessary-condition': 'off', // Fails on index checks
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/prefer-enum-initializers': 'off',
+    '@typescript-eslint/prefer-readonly-parameter-types': 'off',
+    '@typescript-eslint/prefer-readonly': 'off',
+    '@typescript-eslint/require-array-sort-compare': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/typedef': 'off',
 
-    // Enforce a single assertion pattern
+    // Enforce readable assertion patterns
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       {
@@ -79,6 +164,12 @@ const config: eslint.Linter.Config = {
         objectLiteralTypeAssertions: 'allow-as-parameter',
       },
     ],
+    '@typescript-eslint/no-confusing-non-null-assertion': 'error',
+    '@typescript-eslint/no-extra-non-null-assertion': 'error',
+    '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/non-nullable-type-assertion-style': 'error',
+    '@typescript-eslint/prefer-as-const': 'error',
 
     // Inference is powerful so allow it
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -86,6 +177,67 @@ const config: eslint.Linter.Config = {
 
     // Require modifiers when not public
     '@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
+
+    // Enforce explicit members for readability
+    '@typescript-eslint/member-ordering': 'error',
+    '@typescript-eslint/no-parameter-properties': 'error',
+
+    // Prefer basic type casting like String()
+    '@typescript-eslint/no-base-to-string': 'error',
+
+    // Ensure promises are handled every time, even with void
+    'no-void': 'off',
+    '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreVoidOperator: true }],
+    '@typescript-eslint/no-floating-promises': [
+      'error',
+      {
+        ignoreIIFE: true,
+        ignoreVoid: true,
+      },
+    ],
+    '@typescript-eslint/no-misused-promises': ['error', { checksConditionals: true }],
+    '@typescript-eslint/promise-function-async': [
+      'error',
+      { allowedPromiseNames: ['Awaitable', 'PromiseLike', 'Thenable'], allowAny: false },
+    ],
+
+    // Encourage encapsulation and modular exports
+    '@typescript-eslint/no-extraneous-class': 'error',
+    '@typescript-eslint/no-namespace': [
+      'error',
+      {
+        allowDeclarations: true,
+        allowDefinitionFiles: true,
+      },
+    ],
+
+    // Avoid problematic or unnecessary patterns
+    '@typescript-eslint/no-for-in-array': 'error',
+    '@typescript-eslint/no-misused-new': 'error',
+    '@typescript-eslint/no-this-alias': ['error', { allowDestructuring: true }],
+    '@typescript-eslint/no-unnecessary-qualifier': 'error',
+    '@typescript-eslint/no-unnecessary-type-arguments': 'error',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+    '@typescript-eslint/no-unused-vars-experimental': [
+      'error',
+      { ignoreArgsIfArgsAfterAreUsed: true },
+    ],
+    '@typescript-eslint/prefer-for-of': 'error',
+    '@typescript-eslint/prefer-literal-enum-member': 'error',
+    '@typescript-eslint/prefer-reduce-type-parameter': 'error',
+    '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
+    '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
+    '@typescript-eslint/unified-signatures': 'error',
+
+    // Prefer modern syntax
+    '@typescript-eslint/prefer-includes': 'error',
+    '@typescript-eslint/prefer-namespace-keyword': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'error',
+    '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/prefer-regexp-exec': 'error',
+    '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+    '@typescript-eslint/switch-exhaustiveness-check': 'error',
   },
 };
 

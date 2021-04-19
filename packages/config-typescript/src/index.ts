@@ -3,9 +3,9 @@ import type { TypeScriptConfig } from '@beemo/driver-typescript';
 const { context, tool } = process.beemo;
 const { decorators, react } = tool.config.settings as BeemoSettings;
 
-const config: TypeScriptConfig = context.getRiskyOption('build')
+const config = (context.getRiskyOption('build')
   ? require('tsconfig-beemo/tsconfig.workspaces.json')
-  : require('tsconfig-beemo/tsconfig.json');
+  : require('tsconfig-beemo/tsconfig.json')) as TypeScriptConfig;
 
 const options = config.compilerOptions!;
 

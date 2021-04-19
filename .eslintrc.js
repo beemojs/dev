@@ -5,6 +5,9 @@ module.exports = {
     BeemoSettings: 'readonly',
   },
   rules: {
+    // We import packages from each other
+    'global-require': 'off',
+
     // Rules are ordered in random groups, not alphabetical
     'sort-keys': 'off',
 

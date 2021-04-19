@@ -48,6 +48,9 @@ const config: eslint.Linter.Config = {
     'node/no-extraneous-require': 'off',
     'node/no-missing-import': 'off',
     'node/no-missing-require': 'off',
+
+    // This is a common occurrence in node scripts
+    'import/no-dynamic-require': 'off',
   },
 };
 

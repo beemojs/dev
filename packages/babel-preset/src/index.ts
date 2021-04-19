@@ -4,7 +4,7 @@ export interface BabelPresetBeemoOptions {
   decorators?: boolean;
   loose?: boolean;
   modules?: boolean;
-  react?: boolean | 'classic' | 'automatic';
+  react?: boolean | 'automatic' | 'classic';
 }
 
 export default function babelPresetBeemo(
