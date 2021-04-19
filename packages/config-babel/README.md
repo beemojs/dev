@@ -4,9 +4,8 @@
 [![npm version](https://badge.fury.io/js/%40beemo%config-babel.svg)](https://www.npmjs.com/package/@beemo/config-babel)
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/config-babel)](https://www.npmjs.com/package/@beemo/config-babel)
 
-An official Babel config for Beemo managed projects. Configures
-[babel-preset-beemo](https://www.npmjs.com/package/babel-preset-beemo) based on environment and
-settings.
+An official Beemo Babel config based on
+[babel-preset-beemo](https://www.npmjs.com/package/babel-preset-beemo).
 
 ```bash
 yarn install --dev @babel/core @beemo/core @beemo/driver-babel @beemo/config-babel
@@ -14,7 +13,7 @@ yarn install --dev @babel/core @beemo/core @beemo/driver-babel @beemo/config-bab
 
 ## Setup
 
-Create a `configs/babel.ts` file in your configuration module that re-exports this config.
+Create a `configs/babel.ts` file in your Beemo configuration module that re-exports this config.
 
 ```ts
 export { default } from '@beemo/config-babel';
@@ -22,7 +21,7 @@ export { default } from '@beemo/config-babel';
 
 ## Settings
 
-The following `beemo.settings` can be defined and will be passed to the preset.
+The following Beemo `settings` can be defined and will be passed to the preset.
 
 - `decorators` (`boolean`) - Enable TypeScript decorators. If true, will toggle Babel into loose
   mode. Defaults to `false`.

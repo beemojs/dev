@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/prettier-config-beemo.svg)](https://www.npmjs.com/package/prettier-config-beemo)
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/prettier-config)](https://www.npmjs.com/package/prettier-config-beemo)
 
-Reusable Prettier config for Beemo configured projects that aligns with community standards.
+A modern Prettier config that aligns with the community.
 
 ```bash
 yarn install --dev prettier-config-beemo
@@ -17,3 +17,9 @@ Extend the config from your root `prettier.config.js`.
 ```js
 module.exports = 'prettier-config-beemo';
 ```
+
+## Features
+
+- Displays arrow parenthesis and trailing commas.
+- Includes semi colons and avoids ASI.
+- Prefers single quoted strongs and spaces for indentation.

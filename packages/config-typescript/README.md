@@ -4,8 +4,8 @@
 [![npm version](https://badge.fury.io/js/%40beemo%config-typescript.svg)](https://www.npmjs.com/package/@beemo/config-typescript)
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/config-typescript)](https://www.npmjs.com/package/@beemo/config-typescript)
 
-An official TypeScript config for Beemo managed projects. Configures
-[tsconfig-beemo](https://www.npmjs.com/package/tsconfig-beemo) based on environment and settings.
+An official Beemo TypeScript config based on
+[tsconfig-beemo](https://www.npmjs.com/package/tsconfig-beemo).
 
 ```bash
 yarn install --dev typescript @beemo/core @beemo/driver-typescript @beemo/config-typescript
@@ -13,7 +13,8 @@ yarn install --dev typescript @beemo/core @beemo/driver-typescript @beemo/config
 
 ## Setup
 
-Create a `configs/typescript.ts` file in your configuration module that imports this config.
+Create a `configs/typescript.ts` file in your Beemo configuration module that re-exports this
+config. Be sure to define `include`, `exclude`, and other file matching settings.
 
 ```ts
 import config from '@beemo/config-typescript';
@@ -26,12 +27,12 @@ export default {
 
 ## Settings
 
-The following `beemo.settings` can be defined and will be enable compiler options.
+The following Beemo `settings` can be defined and will be enable compiler options.
 
 - `decorators` (`boolean`) - Enable TypeScript decorators. If true, will toggle Babel into loose
   mode. Defaults to `false`.
-- `react` (`boolean | classic | automatic`) - Enable the React plugin and the defined JSX runtime.
-  Defaults to `false`.
+- `react` (`boolean | classic | automatic`) - Enable React (or React Native) syntax with the defined
+  JSX runtime. Defaults to `false`.
 
 ```ts
 export default {

@@ -4,8 +4,9 @@
 [![npm version](https://badge.fury.io/js/babel-preset-beemo.svg)](https://www.npmjs.com/package/babel-preset-beemo)
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/babel-preset)](https://www.npmjs.com/package/babel-preset-beemo)
 
-A development only Babel preset for Beemo configured projects. Should not be used for building
-packages for distribution and should instead be used for unit testing, linting, etc.
+A modern Babel preset with built-in TypeScript support. Is designed for unit testing, linting, and
+local development only -- it _should not_ be used for package building, use
+[Packemon](https://packemon.dev) instead.
 
 ```bash
 yarn install --dev babel-preset-beemo
@@ -27,7 +28,7 @@ module.exports = {
 - Enables the `typescript` preset by default. TypeScript everywhere!
 - Enables native `async`/`await` and avoids Regenerator.
 - Enables `export` default and namespace from syntax.
-- Supports the `react` preset and both its JSX runtimes.
+- Supports the `react` preset and both JSX runtimes.
 - Converts `__DEV__` conditionals to `process.env` checks.
 
 ## Options

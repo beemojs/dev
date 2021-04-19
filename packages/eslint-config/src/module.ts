@@ -1,6 +1,6 @@
 import { builtinModules } from 'module';
 import type eslint from 'eslint';
-import { NON_TS_GLOB } from '@beemo/config-constants';
+import { IGNORE_LIST, NON_TS_GLOB } from '@beemo/config-constants';
 
 const extensions = ['.ts', '.tsx', '.js', '.mjs'];
 
@@ -8,7 +8,7 @@ const config: eslint.Linter.Config = {
   plugins: ['import', 'simple-import-sort'],
   settings: {
     'import/extensions': extensions,
-    'import/ignore': ['node_modules', NON_TS_GLOB],
+    'import/ignore': [...IGNORE_LIST, NON_TS_GLOB],
     'import/resolver': {
       node: {
         extensions: [...extensions, '.cjs', '.json'],

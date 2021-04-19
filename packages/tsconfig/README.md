@@ -4,8 +4,8 @@
 [![npm version](https://badge.fury.io/js/tsconfig-beemo.svg)](https://www.npmjs.com/package/tsconfig-beemo)
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/tsconfig)](https://www.npmjs.com/package/tsconfig-beemo)
 
-Pre-packaged TypeScript `tsconfig.json`'s for Beemo configured projects. Each config assumes that
-TypeScript will _only_ be used as a type checker, not a compiler.
+Pre-packaged and modern TypeScript `tsconfig.json`'s. Each config assumes that TypeScript will
+_only_ be used as a type checker and not a compiler.
 
 ```bash
 yarn install --dev tsconfig-beemo
