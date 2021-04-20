@@ -15,7 +15,19 @@
   ],
   "references": [
     {
-      "path": "../babel-preset"
-    }
+      "path": "../config-babel"
+    },
+    {
+      "path": "../config-eslint"
+    },
+    {
+      "path": "../config-jest"
+    },
+    {
+      "path": "../config-prettier"
+    },
+    {
+      "path": "../config-typescript"
+    },
   ]
 }

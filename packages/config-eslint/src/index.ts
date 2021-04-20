@@ -1,10 +1,13 @@
 import type { ESLintConfig } from '@beemo/driver-eslint';
+import { IGNORE_LIST } from '@beemo/config-constants';
 
 const { tool } = process.beemo;
 const { node, react } = tool.config.settings as BeemoSettings;
 
 const config = {
+  root: true,
   extends: ['beemo'],
+  ignore: [...IGNORE_LIST, '*.min.js', '*.map'],
 };
 
 if (node) {

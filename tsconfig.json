@@ -24,6 +24,9 @@
       "path": "packages/config-typescript"
     },
     {
+      "path": "packages/dev"
+    },
+    {
       "path": "packages/eslint-config"
     },
     {
