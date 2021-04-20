@@ -50,6 +50,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-perf": "^3.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^29.0.0"
   },
@@ -65,6 +66,7 @@
     "inputs": {
       "index": "src/index.ts",
       "async": "src/async.ts",
+      "base": "src/base.ts",
       "browser": "src/browser.ts",
       "module": "src/module.ts",
       "node": "src/node.ts",

@@ -5,7 +5,7 @@ const isJsxRuntime = process.env.BEEMO_REACT === 'automatic';
 
 const reactConfig: eslint.Linter.ConfigOverride = {
   files: ['*.tsx'],
-  plugins: ['jsx-a11y', 'react', 'react-hooks'],
+  plugins: ['jsx-a11y', 'react', 'react-hooks', 'react-perf'],
   extends: [require.resolve('./browser.js'), 'plugin:jsx-a11y/recommended'],
   parserOptions: {
     ecmaFeatures: {
@@ -139,6 +139,10 @@ const reactConfig: eslint.Linter.ConfigOverride = {
 
     // Performance requirements
     'react/jsx-no-constructed-context-values': 'error',
+    'react-perf/jsx-no-jsx-as-prop': 'off',
+    'react-perf/jsx-no-new-array-as-prop': 'error',
+    'react-perf/jsx-no-new-function-as-prop': 'error',
+    'react-perf/jsx-no-new-object-as-prop': 'error',
 
     // Ensure JSX is returned
     'react/require-render-return': 'error',
