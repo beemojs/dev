@@ -80,3 +80,53 @@ common command line options when being ran.
   - Provides a default ignore list of common files.
 
 > Please refer to their documentation for more information on how each one is configured.
+
+## Scaffolds
+
+Once your project has been configured to use Beemo, you can scaffold specific files using our
+built-in templates.
+
+### project/dotfiles
+
+Will scaffold common dotfiles like `.gitignore`.
+
+```
+beemo scaffold project dotfiles
+```
+
+### project/github
+
+Will scaffold GitHub repository workflow files to `.github`. Supports the following workflows:
+
+- `build` - Builds, tests, lints, and type checks the project on each pull request and master merge.
+  Also verifies [Packemon](https://packemon.dev) packing and [Docusaurus](https://docusaurus.io)
+  building passes.
+- `deploy` - Deploys a
+  [Docusaurus website](https://docusaurus.io/docs/deployment#deploying-to-github-pages) on each
+  master commit. Requires `GH_USER` and `GH_PAGES_DEPLOY` secrets.
+- `pr` - Validates a pull request title using the
+  [conventional-changelog-beemo](https://github.com/beemojs/conventional-changelog-beemo) preset.
+
+```
+beemo scaffold project github
+```
+
+### project/package
+
+Will append fields to the root `package.json`.
+
+- Adds `scripts` for common actions like [building](https://packemon.dev), linting, testing, etc.
+- When passed `--workspaces`, sets `private` and `workspaces` to `packages/*`.
+
+```
+beemo scaffold project package
+```
+
+### workspace/package
+
+Will scaffold a new package into a `packages` workspace. Creates `CHANGELOG.md`, `README.md`,
+`LICENSE`, and `package.json` files.
+
+```
+beemo scaffold workspace package --owner milesj --repo aesthetic framework
+```

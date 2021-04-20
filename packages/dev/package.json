@@ -20,7 +20,8 @@
   "files": [
     "dts/**/*.d.ts",
     "lib/**/*.{js,map}",
-    "src/**/*.{ts,tsx,json}"
+    "src/**/*.{ts,tsx,json}",
+    "templates/**/*.ejs"
   ],
   "repository": {
     "type": "git",

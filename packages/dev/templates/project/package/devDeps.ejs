@@ -1,0 +1,9 @@
+---
+to: package.json
+inject: true
+after: devDependencies
+---
+"conventional-changelog-beemo": "^2.1.0",
+<% if (workspaces) { %>
+"lerna": "^4.0.0",
+<% } %>

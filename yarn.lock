@@ -3690,6 +3690,11 @@ conventional-changelog-angular@^5.0.12:
     compare-func "^2.0.0"
     q "^1.5.1"
 
+conventional-changelog-beemo@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-beemo/-/conventional-changelog-beemo-2.1.0.tgz#f2037ec275fb29829e43a20094edd2ae7b626157"
+  integrity sha512-WtuKLxBMbR0qzWOfR6JPLproK9VT1M+Tg86zxxtzhG/Z4h0LQ6y4SHVuIbiK8VRWwUziC93+zFBHYNhcKr483Q==
+
 conventional-changelog-core@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-4.2.2.tgz#f0897df6d53b5d63dec36b9442bd45354f8b3ce5"
