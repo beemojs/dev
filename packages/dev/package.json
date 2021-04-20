@@ -1,6 +1,6 @@
 {
   "name": "@beemo/dev",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Official Beemo configuration module for modern local development.",
   "keywords": [
     "beemo",
@@ -41,7 +41,7 @@
     "@babel/core": "^7.13.8",
     "@beemo/cli": "^2.0.0-rc.1",
     "@beemo/config-babel": "^0.0.1-alpha.0",
-    "@beemo/config-eslint": "^0.0.1-alpha.0",
+    "@beemo/config-eslint": "^0.0.1-alpha.1",
     "@beemo/config-jest": "^0.0.1-alpha.0",
     "@beemo/config-prettier": "^0.0.1-alpha.0",
     "@beemo/config-typescript": "^0.0.1-alpha.0",
