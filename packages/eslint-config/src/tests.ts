@@ -39,7 +39,6 @@ const jestConfig: eslint.Linter.ConfigOverride = {
     'jest/no-restricted-matchers': 'off',
     'jest/no-test-prefixes': 'error',
     'jest/prefer-hooks-on-top': 'error',
-    'jest/prefer-strict-equal': 'error',
     'jest/prefer-to-be-null': 'error',
     'jest/prefer-to-be-undefined': 'error',
     'jest/prefer-to-contain': 'error',
@@ -56,7 +55,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
     'jest/valid-expect-in-promise': 'off',
 
     // Avoid invalid or skipped tests from being on master
-    'jest/no-commented-out-tests': 'error',
+    'jest/no-commented-out-tests': 'off',
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
 
@@ -66,6 +65,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 
     // Too abrasive and annoying
     'jest/prefer-expect-assertions': 'off',
+    'jest/prefer-strict-equal': 'off',
 
     // Hooks are nice / is shared state an issue? Revisit?
     'jest/no-hooks': 'off',
@@ -86,9 +86,24 @@ const testsConfig: eslint.Linter.ConfigOverride = {
     'no-console': 'off',
     'no-magic-numbers': 'off',
     'sort-keys': 'off',
+    'promise/prefer-await-to-callbacks': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-extraneous-class': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars-experimental': 'off',
+    '@typescript-eslint/no-useless-constructor': 'off',
+    '@typescript-eslint/promise-function-async': 'off',
+
+    // Some imports are dev dependencies
+    'import/no-extraneous-dependencies': 'off',
 
     // Allow `any` in tests for convenience
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
   },
 };
 

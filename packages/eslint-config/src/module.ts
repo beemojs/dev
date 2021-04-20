@@ -66,7 +66,7 @@ const config: eslint.Linter.Config = {
 
     // Prefer named exports (over default) as they are a better developer experience
     'import/no-anonymous-default-export': 'off',
-    'import/no-default-export': 'error',
+    'import/no-default-export': 'warn',
     'import/no-named-export': 'off',
     'import/prefer-default-export': 'off',
 

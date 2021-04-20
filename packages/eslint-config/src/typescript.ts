@@ -54,6 +54,7 @@ const config: eslint.Linter.Config = {
     'no-redeclare': 'off',
     'no-shadow': 'off',
     'no-throw-literal': 'off',
+    'no-undef': 'off', // Doesnt find namespaces
     'no-unused-expressions': 'off',
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
@@ -93,7 +94,10 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/array-type': ['error', { default: 'array' }],
     '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
     '@typescript-eslint/method-signature-style': 'error',
-    '@typescript-eslint/no-inferrable-types': ['error', { ignoreParameters: true }],
+    '@typescript-eslint/no-inferrable-types': [
+      'error',
+      { ignoreParameters: true, ignoreProperties: true }, // Vars only
+    ],
     '@typescript-eslint/prefer-function-type': 'error',
 
     // Prefer compact and readable code
@@ -198,7 +202,11 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/no-misused-promises': ['error', { checksConditionals: true }],
     '@typescript-eslint/promise-function-async': [
       'error',
-      { allowedPromiseNames: ['Awaitable', 'PromiseLike', 'Thenable'], allowAny: false },
+      {
+        allowedPromiseNames: ['Awaitable', 'PromiseLike', 'Thenable'],
+        allowAny: true, // Because of unknown
+        checkArrowFunctions: false,
+      },
     ],
 
     // Encourage encapsulation and modular exports
