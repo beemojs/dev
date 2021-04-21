@@ -3,22 +3,18 @@ to: package.json
 inject: true
 after: scripts
 ---
-"check": "yarn run type && yarn run test && yarn run lint",
-
-"clean": "packemon clean",
-"build": "packemon build --addEngines",
-"pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
-
-"test": "beemo jest",
-"coverage": "yarn run test --coverage",
-
-"format": "beemo prettier",
-"lint": "beemo eslint",
-"type": "beemo typescript <%= workspaces ? '--build' : '' %>",
-
-"prerelease": "yarn run pack && yarn run check",
-<% if (workspaces) { %>
-"release": "lerna version --conventional-commits --changelog-preset conventional-changelog-beemo --create-release github --push && lerna publish from-git",
-<% } else { %>
-"release": "npx np --yolo",
-<% } %>
+    "check": "yarn run type && yarn run test && yarn run lint",
+    "clean": "packemon clean",
+    "build": "packemon build --addEngines",
+    "pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
+    "test": "beemo jest",
+    "coverage": "yarn run test --coverage",
+    "format": "beemo prettier",
+    "lint": "beemo eslint",
+    "type": "beemo typescript <%= typeof workspaces !== 'undefined' ? '--build' : '' %>",
+    "prerelease": "yarn run pack && yarn run check",
+    <% if (typeof workspaces !== 'undefined') { %>
+    "release": "lerna version --conventional-commits --changelog-preset conventional-changelog-beemo --create-release github --push && lerna publish from-git",
+    <% } else { %>
+    "release": "npx np --yolo",
+    <% } %>
