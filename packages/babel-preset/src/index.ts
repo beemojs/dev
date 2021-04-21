@@ -47,6 +47,7 @@ export default function babelPresetBeemo(
         bugfixes: true,
         shippedProposals: true,
         // Only target node since this is for development
+        // Revisit in Babel v8: https://babeljs.io/docs/en/options#no-targets
         targets: { node: 'current' },
       },
     ],

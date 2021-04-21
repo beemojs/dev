@@ -43,6 +43,7 @@ The following additional configs can also be extended, but are not enabled by de
 
 - Extends the [airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) config and
   enables additional rules.
+- Prefers named exports over default exports.
 - Enforces async/await/promise best practices with the
   [promise](https://www.npmjs.com/package/eslint-plugin-promise) plugin.
 - Sorts imports/exports in a logical way using the

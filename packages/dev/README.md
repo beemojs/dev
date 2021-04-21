@@ -4,9 +4,9 @@
 [![npm version](https://badge.fury.io/js/%40beemo%config-babel.svg)](https://www.npmjs.com/package/@beemo/config-babel)
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/config-babel)](https://www.npmjs.com/package/@beemo/config-babel)
 
-An official "batteries included" Beemo [configuration module](https://beemo.dev/docs/provider) that
-provides pre-packaged configs for the Babel, ESLint, Jest, Prettier, and TypeScript drivers and
-developer tools.
+An official TypeScript-only "batteries included" Beemo
+[configuration module](https://beemo.dev/docs/provider) that provides pre-packaged configs for the
+Babel, ESLint, Jest, Prettier, and TypeScript drivers and developer tools.
 
 ```bash
 yarn install --dev @beemo/dev
@@ -17,6 +17,7 @@ yarn install --dev @beemo/dev
 - Source files are in a folder called `src`.
 - Tests files are in a folder called `tests` relative to source, or `__tests__` within source.
 - Declaration/types files are in a folder called `types` relative to source.
+- Files are either `.ts` or `.tsx` (duh).
 
 ## Setup
 
