@@ -22,6 +22,8 @@ Extend the config from your root `tsconfig.json`.
 }
 ```
 
+> Configs only define `compilerOptions` and not `include`, `exclude`, `references`, etc.
+
 ## Features
 
 - First-class support for ECMAScript modules and their syntax.

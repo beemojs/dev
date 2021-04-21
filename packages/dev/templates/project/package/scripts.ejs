@@ -14,7 +14,7 @@ after: scripts
 
 "format": "beemo prettier",
 "lint": "beemo eslint",
-"type": "beemo typescript <%= workspaces ? '--build' : '--noEmit' %>",
+"type": "beemo typescript <%= workspaces ? '--build' : '' %>",
 
 "prerelease": "yarn run pack && yarn run check",
 <% if (workspaces) { %>

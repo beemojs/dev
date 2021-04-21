@@ -11,6 +11,9 @@ An official Beemo TypeScript config based on
 yarn install --dev typescript @beemo/core @beemo/driver-typescript @beemo/config-typescript
 ```
 
+> Config will automatically assume project references are being used if a project is using
+> workspaces.
+
 ## Setup
 
 Create a `configs/typescript.ts` file in your Beemo configuration module that re-exports this

@@ -8,7 +8,7 @@ const options = config.compilerOptions!;
 
 // When using project references, we must merge the 2 configs instead of replacing,
 // otherwise the `tsconfig.options.json` separation that Beemo automates... breaks.
-if (context.getRiskyOption('build')) {
+if (tool.package.workspaces) {
   Object.assign(
     options,
     (require('tsconfig-beemo/tsconfig.workspaces.json') as TypeScriptConfig).compilerOptions,
