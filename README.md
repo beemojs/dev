@@ -29,17 +29,17 @@ stand-alone within their respective tools.
 The following packages are configurations meant for
 [Beemo drivers](https://beemo.dev/docs/provider), and are based on the packages above.
 
-- [config-babel](./packages/config-babel) - Config for the Babel driver.
-- [config-eslint](./packages/config-eslint) - Config for the ESLint driver.
-- [config-jest](./packages/config-jest) - Config for the Jest driver.
-- [config-prettier](./packages/config-prettier) - Config for the Prettier driver.
-- [config-typescript](./packages/config-typescript) - Config for the TypeScript driver.
+- [@beemo/config-babel](./packages/config-babel) - Config for the Babel driver.
+- [@beemo/config-eslint](./packages/config-eslint) - Config for the ESLint driver.
+- [@beemo/config-jest](./packages/config-jest) - Config for the Jest driver.
+- [@beemo/config-prettier](./packages/config-prettier) - Config for the Prettier driver.
+- [@beemo/config-typescript](./packages/config-typescript) - Config for the TypeScript driver.
 
 And last but not least, the `dev` package that pieces everything together to provide an official
 Beemo [configuration module](https://beemo.dev/docs/provider).
 
-- [dev](./packages/dev) - Pre-packaged configuration module for general use (if you don't want to
-  manage your own).
+- [@beemo/dev](./packages/dev) - Pre-packaged configuration module for general use (if you don't
+  want to manage your own).
 
 ## Contributing
 
