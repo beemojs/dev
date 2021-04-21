@@ -6,7 +6,16 @@ export const CASE_SENSITIVE = false;
 export const ECMA_VERSION = 2020;
 
 // Files and folders to always ignore
-export const IGNORE_LIST = ['node_modules/', 'build/', 'cjs/', 'dist/', 'esm/', 'lib/', 'mjs/'];
+export const IGNORE_LIST = [
+  'node_modules/',
+  'build/',
+  'cjs/',
+  'coverage/',
+  'dist/',
+  'esm/',
+  'lib/',
+  'mjs/',
+];
 
 // Globs for finding source files, test files, and test utility files
 export const ALL_FILES_GLOB = '**/{src,tests,__tests__}/**/*.{ts,tsx}';
