@@ -5,7 +5,7 @@
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/eslint-config)](https://www.npmjs.com/package/eslint-config-beemo)
 
 A modern TypeScript-only ESLint config with optional presets. Expands upon the amazing
-[Airbnb config](https://www.npmjs.com/package/eslint-config-airbnb-base) to provide latest the
+[Airbnb config](https://www.npmjs.com/package/eslint-config-airbnb-base) to provide the latest
 ECMAScript features, enforce popular patterns, and align with the wider community.
 
 ```bash
@@ -35,7 +35,8 @@ The following additional configs can also be extended, but are not enabled by de
   [node](https://www.npmjs.com/package/eslint-plugin-node) plugin. Should _not_ be used with the
   `browser` preset.
 - `beemo/react` - Enables the [react](https://www.npmjs.com/package/eslint-plugin-react),
-  [react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks), and
+  [react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks),
+  [react-perf](https://www.npmjs.com/package/eslint-plugin-react-perf), and
   [jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) plugins. Only applies to `*.tsx`
   files and also extends the `browser` preset.
 
@@ -53,6 +54,7 @@ The following additional configs can also be extended, but are not enabled by de
 - Enables additional awesome rules from the
   [unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) plugin.
 - Automatically sets `parserOptions.project` based on the root `tsconfig.json`.
+- Avoids `any` type and unsafe operations.
 
 ## Requirements
 
