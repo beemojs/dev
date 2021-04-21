@@ -12,6 +12,12 @@ developer tools.
 yarn install --dev @beemo/dev
 ```
 
+## Requirements
+
+- Source files are in a folder called `src`.
+- Tests files are in a folder called `tests` relative to source, or `__tests__` within source.
+- Declaration/types files are in a folder called `types` relative to source.
+
 ## Setup
 
 Create a `.config/beemo.ts` file in the root of your project that configures `@beemo/dev` as the

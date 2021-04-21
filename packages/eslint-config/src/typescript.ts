@@ -156,6 +156,7 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/prefer-enum-initializers': 'off',
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
     '@typescript-eslint/prefer-readonly': 'off',
+    '@typescript-eslint/prefer-regexp-exec': 'off',
     '@typescript-eslint/require-array-sort-compare': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/typedef': 'off',
@@ -224,7 +225,6 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-this-alias': ['error', { allowDestructuring: true }],
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
-    '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-unused-vars-experimental': [
@@ -238,12 +238,14 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
     '@typescript-eslint/unified-signatures': 'error',
 
+    // Sometimes we need to be explicit because the inference is wrong
+    '@typescript-eslint/no-unnecessary-type-arguments': 'off',
+
     // Prefer modern syntax
     '@typescript-eslint/prefer-includes': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
-    '@typescript-eslint/prefer-regexp-exec': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
   },

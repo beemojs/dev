@@ -51,6 +51,7 @@ The following additional configs can also be extended, but are not enabled by de
   plugin. Only applies to [test](#requirements) files.
 - Enables additional awesome rules from the
   [unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) plugin.
+- Automatically sets `parserOptions.project` based on the root `tsconfig.json`.
 
 ## Requirements
 

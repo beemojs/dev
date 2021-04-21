@@ -40,9 +40,6 @@ const config: eslint.Linter.Config = {
     'unicorn/no-this-assignment': 'error',
     'unicorn/throw-new-error': 'error',
 
-    // Avoid mutations and side-effects
-    'unicorn/no-array-callback-reference': 'error',
-
     // Ensure todo's are finished
     'unicorn/expiring-todo-comments': 'error',
 
@@ -104,13 +101,14 @@ const config: eslint.Linter.Config = {
     'unicorn/prefer-number-properties': 'error',
     'unicorn/prefer-query-selector': 'error',
     'unicorn/prefer-reflect-apply': 'error',
+    'unicorn/prefer-spread': 'error',
     'unicorn/prefer-string-replace-all': 'error',
     'unicorn/prefer-string-slice': 'error',
     'unicorn/prefer-string-starts-ends-with': 'error',
     'unicorn/prefer-string-trim-start-end': 'error',
 
-    // Doesnt play nice with TypeScript
-    'unicorn/prefer-spread': 'off',
+    // Is caught/handled by TypeScript instead
+    'unicorn/no-array-callback-reference': 'off',
   },
 };
 

@@ -3,18 +3,32 @@ import type { TypeScriptConfig } from '@beemo/driver-typescript';
 const { context, tool } = process.beemo;
 const { decorators, react } = tool.config.settings as BeemoSettings;
 
-const config = (context.getRiskyOption('build')
-  ? require('tsconfig-beemo/tsconfig.workspaces.json')
-  : require('tsconfig-beemo/tsconfig.json')) as TypeScriptConfig;
-
+const config = require('tsconfig-beemo/tsconfig.json') as TypeScriptConfig;
 const options = config.compilerOptions!;
+
+// When using project references, we must merge the 2 configs instead of replacing,
+// otherwise the `tsconfig.options.json` separation that Beemo automates... breaks.
+if (context.getRiskyOption('build')) {
+  Object.assign(
+    options,
+    (require('tsconfig-beemo/tsconfig.workspaces.json') as TypeScriptConfig).compilerOptions,
+  );
+
+  // When not using project references, assume and include all files
+} else {
+  config.include = ['src/**/*', 'tests/**/*', 'types/**/*'];
+}
 
 if (decorators) {
   options.experimentalDecorators = true;
 }
 
 if (react) {
-  options.lib!.push('dom');
+  if (options.lib) {
+    options.lib.push('dom');
+  } else {
+    options.lib = ['dom'];
+  }
 
   if (react === 'automatic') {
     options.jsx = __DEV__ ? 'react-jsx-dev' : 'react-jsx';
@@ -25,11 +39,6 @@ if (react) {
 
 if (context.getRiskyOption('sourceMaps')) {
   options.sourceMap = true;
-}
-
-// When not using project references, assume and include source files
-if (!context.getRiskyOption('build')) {
-  config.include = ['src/**/*', 'tests/**/*', 'types/**/*'];
 }
 
 export default config;

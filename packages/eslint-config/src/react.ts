@@ -261,10 +261,20 @@ const reactConfig: eslint.Linter.ConfigOverride = {
   },
 };
 
+const testsConfig: eslint.Linter.ConfigOverride = {
+  files: ['*.test.tsx'],
+  rules: {
+    'react/jsx-no-bind': 'off',
+    'react-perf/jsx-no-new-array-as-prop': 'off',
+    'react-perf/jsx-no-new-function-as-prop': 'off',
+    'react-perf/jsx-no-new-object-as-prop': 'off',
+  },
+};
+
 // We only want to apply the React plugin and rules
 // to TSX files. Not the entire codebase.
 const config: eslint.Linter.Config = {
-  overrides: [reactConfig],
+  overrides: [reactConfig, testsConfig],
 };
 
 export default config;
