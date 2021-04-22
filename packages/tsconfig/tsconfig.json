@@ -13,7 +13,6 @@
     "lib": ["esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "noEmit": true,
     "noEmitOnError": true,
     "noImplicitReturns": true,
     "pretty": true,
