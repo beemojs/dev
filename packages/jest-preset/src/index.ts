@@ -21,6 +21,7 @@ const config = {
   moduleNameMapper: {
     [NON_TS_GLOB]: require.resolve('./fileMock.js'),
   },
+  setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
   testEnvironment: 'node',
   testMatch: [TEST_FILES_GLOB],
   testRunner: 'jest-circus/runner',
