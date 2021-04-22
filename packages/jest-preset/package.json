@@ -10,6 +10,7 @@
   "types": "./dts/index.d.ts",
   "files": [
     "dts/**/*.d.ts",
+    "jest-preset.js",
     "lib/**/*.{js,map}",
     "src/**/*.{ts,tsx,json}"
   ],
