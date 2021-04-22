@@ -14,7 +14,6 @@ export default function babelPresetBeemo(
   let looseMode = loose ?? false;
 
   const plugins: PluginItem[] = [
-    ['@babel/plugin-proposal-class-properties', { loose: looseMode }],
     '@babel/plugin-proposal-export-default-from',
     '@babel/plugin-proposal-export-namespace-from',
     ['babel-plugin-transform-dev', { evaluate: false }],
@@ -25,11 +24,13 @@ export default function babelPresetBeemo(
   if (decorators) {
     looseMode = true;
 
-    plugins.push(
+    plugins.unshift(
       ['@babel/plugin-proposal-decorators', { legacy: true }],
       ['@babel/plugin-proposal-class-properties', { loose: true }],
       ['@babel/plugin-proposal-private-methods', { loose: true }],
     );
+  } else {
+    plugins.unshift(['@babel/plugin-proposal-class-properties', { loose: looseMode }]);
   }
 
   const presets: PluginItem[] = [
