@@ -6,9 +6,6 @@ const { decorators, react } = tool.config.settings as BeemoSettings;
 const config: BabelConfig = {
   babelrc: true,
   babelrcRoots: tool.project.getWorkspaceGlobs({ relative: true }),
-  caller: {
-    name: 'beemo',
-  },
   comments: false,
   presets: [
     [
