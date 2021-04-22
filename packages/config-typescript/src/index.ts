@@ -3,6 +3,9 @@ import type { TypeScriptConfig } from '@beemo/driver-typescript';
 const { context, tool } = process.beemo;
 const { decorators, react } = tool.config.settings as BeemoSettings;
 
+// Do NOT set include, exclude, etc, since they cannot be overridden
+// because of Beemo's array merging strategy. Requires consumers to set.
+
 const config = require('tsconfig-beemo/tsconfig.json') as TypeScriptConfig;
 const options = config.compilerOptions!;
 
@@ -13,10 +16,6 @@ if (tool.package.workspaces) {
     options,
     (require('tsconfig-beemo/tsconfig.workspaces.json') as TypeScriptConfig).compilerOptions,
   );
-
-  // When not using project references, assume and include all files
-} else {
-  config.include = ['src/**/*', 'tests/**/*', 'types/**/*'];
 }
 
 if (decorators) {

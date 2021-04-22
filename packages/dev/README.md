@@ -63,7 +63,7 @@ export default {
 
 ## Drivers
 
-The following drivers are directly supported in this configuration module, and automatically set
+The following drivers are directly supported in this configuration module, and automatically passed
 common command line options when being ran.
 
 - [Babel](https://www.npmjs.com/package/@beemo/config-babel)
@@ -85,6 +85,9 @@ common command line options when being ran.
 - [Prettier](https://www.npmjs.com/package/@beemo/config-prettier)
   - If no args provided, defaults to `--write .`.
   - Provides a default ignore list of common files.
+- [TypeScript](https://www.npmjs.com/package/@beemo/config-typescript)
+  - Modern/next ECMAScript support.
+  - Type-checking only.
 
 > Please refer to their documentation for more information on how each one is configured.
 

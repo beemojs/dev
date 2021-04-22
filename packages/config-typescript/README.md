@@ -16,11 +16,16 @@ yarn install --dev typescript @beemo/core @beemo/driver-typescript @beemo/config
 
 ## Setup
 
-Create a `configs/typescript.ts` file in your Beemo configuration module that re-exports this
-config.
+Create a `configs/typescript.ts` file in your Beemo configuration module that re-exports this config
+with your own `include`, `exclude`, etc.
 
 ```ts
-export { default } from '@beemo/config-typescript';
+import config from '@beemo/config-typescript';
+
+export default {
+  ...config,
+  include: ['src/**/*'],
+};
 ```
 
 ## Settings
