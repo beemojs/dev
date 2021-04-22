@@ -50,6 +50,7 @@ const config: eslint.Linter.Config = {
     'node/no-missing-require': 'off',
 
     // This is a common occurrence in node scripts
+    'global-require': 'off',
     'import/no-dynamic-require': 'off',
   },
 };

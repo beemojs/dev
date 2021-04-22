@@ -17,10 +17,8 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 
     // Ensure we are expecting/asserting correctly
     'jest/expect-expect': 'error',
-    'jest/no-conditional-expect': 'error',
     'jest/no-if': 'error',
     'jest/no-standalone-expect': 'error',
-    'jest/unbound-method': 'error',
 
     // Ensure our tests are deterministic
     'jest/no-interpolation-in-snapshots': 'error',
@@ -66,12 +64,16 @@ const jestConfig: eslint.Linter.ConfigOverride = {
     // Too abrasive and annoying
     'jest/prefer-expect-assertions': 'off',
     'jest/prefer-strict-equal': 'off',
+    'jest/unbound-method': 'off',
 
     // Hooks are nice / is shared state an issue? Revisit?
     'jest/no-hooks': 'off',
 
     // Sometimes we only want to check that its called... Revisit?
     'jest/prefer-called-with': 'off',
+
+    // This is nice for catching and testing errors... Revisit?
+    'jest/no-conditional-expect': 'off',
   },
 };
 
@@ -107,10 +109,24 @@ const testsConfig: eslint.Linter.ConfigOverride = {
   },
 };
 
+const miscConfig: eslint.Linter.ConfigOverride = {
+  files: [
+    '**/{__mocks__,__fixtures__}/**/*',
+    '**/{tests,__tests__}/**/{helpers,utils,setup}.{ts,tsx}',
+  ],
+  rules: {
+    // Allow exports from these files
+    'jest/no-export': 'off',
+
+    // Allow composable / factoried unit tests
+    'jest/require-top-level-describe': 'off',
+  },
+};
+
 // We only want to apply the Jest plugin and other testing rules
 // when inside of a test specific file. Not the entire codebase.
 const config: eslint.Linter.Config = {
-  overrides: [jestConfig, testsConfig],
+  overrides: [jestConfig, testsConfig, miscConfig],
 };
 
 export default config;

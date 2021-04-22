@@ -41,10 +41,6 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     'react/react-in-jsx-scope': isJsxRuntime ? 'off' : 'error',
     'react/jsx-uses-react': isJsxRuntime ? 'off' : 'error',
 
-    // Support hooks
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'error',
-
     // Align with the DOM instead, avoid "is" prefix
     'react/boolean-prop-naming': 'off',
     'react/jsx-boolean-value': ['error', 'never'],
@@ -261,6 +257,15 @@ const reactConfig: eslint.Linter.ConfigOverride = {
   },
 };
 
+const hooksConfig: eslint.Linter.ConfigOverride = {
+  files: ['*.ts', '*.tsx'],
+  plugins: ['react-hooks'],
+  rules: {
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
+  },
+};
+
 const testsConfig: eslint.Linter.ConfigOverride = {
   files: ['*.test.tsx'],
   rules: {
@@ -274,7 +279,7 @@ const testsConfig: eslint.Linter.ConfigOverride = {
 // We only want to apply the React plugin and rules
 // to TSX files. Not the entire codebase.
 const config: eslint.Linter.Config = {
-  overrides: [reactConfig, testsConfig],
+  overrides: [reactConfig, hooksConfig, testsConfig],
 };
 
 export default config;

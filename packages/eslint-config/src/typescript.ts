@@ -46,7 +46,6 @@ const config: eslint.Linter.Config = {
     'no-array-constructor': 'off',
     'no-dupe-class-members': 'off',
     'no-duplicate-imports': 'off',
-    'no-empty-function': 'off',
     'no-implied-eval': 'off',
     'no-invalid-this': 'off',
     'no-loop-func': 'off',
@@ -68,7 +67,6 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-dupe-class-members': 'error',
     '@typescript-eslint/no-duplicate-imports': 'error',
-    '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-invalid-this': 'error',
     '@typescript-eslint/no-loop-func': 'error',
@@ -160,6 +158,7 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/require-array-sort-compare': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/typedef': 'off',
+    '@typescript-eslint/unbound-method': ['off', { ignoreStatic: true }],
 
     // Enforce readable assertion patterns
     '@typescript-eslint/consistent-type-assertions': [
@@ -235,11 +234,14 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/prefer-literal-enum-member': 'error',
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
     '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
-    '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
     '@typescript-eslint/unified-signatures': 'error',
 
     // Sometimes we need to be explicit because the inference is wrong
     '@typescript-eslint/no-unnecessary-type-arguments': 'off',
+
+    // Sometimes we define empty functions in base/abstract classes
+    'no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
 
     // Prefer modern syntax
     '@typescript-eslint/prefer-includes': 'error',

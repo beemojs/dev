@@ -1,5 +1,5 @@
-import { CASE_SENSITIVE } from '@beemo/config-constants';
 import type eslint from 'eslint';
+import { CASE_SENSITIVE } from '@beemo/config-constants';
 
 // The following rules are either overriding Airbnb's defaults,
 // or they are enabling new rules that aren't in Airbnb yet.
@@ -69,6 +69,9 @@ const config: eslint.Linter.Config = {
 
     // Doesnt scope correctly with `this` in arrow functions
     'no-invalid-this': 'off',
+
+    // Allow modern APIs
+    'no-restricted-syntax': 'off',
   },
 };
 
