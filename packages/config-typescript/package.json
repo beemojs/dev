@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-typescript",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TypeScript config for Beemo projects.",
   "keywords": [
     "beemo-config",
