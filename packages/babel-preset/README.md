@@ -42,6 +42,8 @@ The following options can be passed to the preset.
   (`auto` modules).
 - `react` (`boolean | classic | automatic`) - Enable the React plugin and the defined JSX runtime.
   Defaults to `false`.
+- `targets` (`Record<string, string> | string[] | string`) - Override the target environment.
+  Defaults to Node.js `current`.
 
 ```js
 module.exports = {

@@ -5,11 +5,12 @@ export interface BabelPresetBeemoOptions {
   loose?: boolean;
   modules?: boolean;
   react?: boolean | 'automatic' | 'classic';
+  targets?: Record<string, string> | string[] | string;
 }
 
 export default function babelPresetBeemo(
   api: unknown,
-  { decorators, loose, modules, react }: BabelPresetBeemoOptions = {},
+  { decorators, loose, modules, react, targets }: BabelPresetBeemoOptions = {},
 ) {
   let looseMode = loose ?? false;
 
@@ -49,7 +50,7 @@ export default function babelPresetBeemo(
         shippedProposals: true,
         // Only target node since this is for development
         // Revisit in Babel v8: https://babeljs.io/docs/en/options#no-targets
-        targets: { node: 'current' },
+        targets: targets ?? { node: 'current' },
       },
     ],
     ['@babel/preset-typescript', { allowDeclareFields: true }],
