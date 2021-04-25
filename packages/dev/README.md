@@ -14,10 +14,12 @@ yarn install --dev @beemo/dev
 
 ## Requirements
 
+- Files are either `.ts` or `.tsx` (duh).
 - Source files are in a folder called `src`.
 - Tests files are in a folder called `tests` relative to source, or `__tests__` within source.
 - Declaration/types files are in a folder called `types` relative to source.
-- Files are either `.ts` or `.tsx` (duh).
+- Custom TypeScript paths should start with `:` instead of `@` to avoid
+  [NPM supply chain attacks](https://github.blog/2021-02-12-avoiding-npm-substitution-attacks/).
 
 ## Setup
 

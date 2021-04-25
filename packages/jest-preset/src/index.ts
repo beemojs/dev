@@ -1,4 +1,9 @@
-import { ALL_FILES_GLOB, IGNORE_LIST, NON_TS_GLOB, TEST_FILES_GLOB } from '@beemo/config-constants';
+import {
+  ALL_FILES_GLOB,
+  IGNORE_LIST,
+  NON_TS_REGEX,
+  TEST_FILES_GLOB,
+} from '@beemo/config-constants';
 
 const config = {
   collectCoverage: false, // Enabled by consumers
@@ -19,7 +24,7 @@ const config = {
     [`__PROD__`]: true,
   },
   moduleNameMapper: {
-    [NON_TS_GLOB]: require.resolve('./fileMock.js'),
+    [NON_TS_REGEX]: require.resolve('./fileMock.js'),
   },
   setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
   testEnvironment: 'node',

@@ -26,5 +26,8 @@ export const TEST_UTILS_GLOB = '**/{tests,__tests__}/**/*.{ts,tsx}';
 // List of globs to find all test related files
 export const TESTS_LIST = [TEST_UTILS_GLOB, 'test.{ts,tsx}'];
 
-// List of non-JS/TS file extensions
-export const NON_TS_GLOB = '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$';
+// Pattern of non-JS/TS file extensions
+export const NON_TS_REGEX = '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$';
+
+// Pattern to find all custom TypeScript paths
+export const TS_PATH_PREFIX_REGEX = '^:[a-z]';

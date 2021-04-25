@@ -1,6 +1,6 @@
 import { builtinModules } from 'module';
 import type eslint from 'eslint';
-import { IGNORE_LIST, NON_TS_GLOB } from '@beemo/config-constants';
+import { IGNORE_LIST, NON_TS_REGEX, TS_PATH_PREFIX_REGEX } from '@beemo/config-constants';
 
 const extensions = ['.ts', '.tsx', '.js', '.mjs'];
 
@@ -8,7 +8,7 @@ const config: eslint.Linter.Config = {
   plugins: ['import', 'simple-import-sort'],
   settings: {
     'import/extensions': extensions,
-    'import/ignore': [...IGNORE_LIST, NON_TS_GLOB],
+    'import/ignore': [...IGNORE_LIST, NON_TS_REGEX],
     'import/resolver': {
       node: {
         extensions: [...extensions, '.cjs', '.json'],
@@ -49,6 +49,12 @@ const config: eslint.Linter.Config = {
         ts: 'never',
         tsx: 'never',
       },
+    ],
+
+    // Dont resolve custom TS paths, but do others
+    'import/no-unresolved': [
+      'error',
+      { commonjs: true, caseSensitive: true, ignore: [TS_PATH_PREFIX_REGEX] },
     ],
 
     // Avoid using deprecated APIs
