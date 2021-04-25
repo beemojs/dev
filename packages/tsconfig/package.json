@@ -9,7 +9,7 @@
   ],
   "files": [
     "tsconfig.json",
-    "tsconfig.react",
+    "tsconfig.react.json",
     "tsconfig.workspaces.json"
   ],
   "repository": {
