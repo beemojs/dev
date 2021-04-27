@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-typescript",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TypeScript config for Beemo projects.",
   "keywords": [
     "beemo-config",
@@ -33,7 +33,7 @@
     "@beemo/driver-typescript": "^2.0.0-rc.0"
   },
   "dependencies": {
-    "tsconfig-beemo": "^0.1.1"
+    "tsconfig-beemo": "^0.1.2"
   },
   "devDependencies": {
     "@beemo/core": "^2.0.0-rc.1",
