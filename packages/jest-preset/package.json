@@ -33,11 +33,11 @@
   },
   "dependencies": {
     "@beemo/config-constants": "^0.1.1",
-    "@types/jest": "*",
+    "@types/jest": "^26.0.23",
     "jest-circus": "^26.6.3"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20"
+    "jest": "^26.6.3"
   },
   "funding": {
     "type": "ko-fi",

@@ -28,14 +28,15 @@
     "npm": ">=6.1.0"
   },
   "peerDependencies": {
+    "@babel/core": ">=7.0.0",
     "@beemo/core": "^2.0.0-rc.0",
-    "@beemo/driver-babel": "^2.0.0-rc.0",
-    "@babel/core": ">=7.0.0"
+    "@beemo/driver-babel": "^2.0.0-rc.0"
   },
   "dependencies": {
     "babel-preset-beemo": "^0.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.16",
     "@beemo/core": "^2.0.0-rc.1",
     "@beemo/driver-babel": "^2.0.0-rc.1"
   },
