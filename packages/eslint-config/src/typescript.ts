@@ -75,7 +75,10 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/no-shadow': ['error', { ignoreTypeValueShadow: true }],
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { vars: 'all', args: 'none', caughtErrors: 'all', ignoreRestSiblings: true },
+    ],
     '@typescript-eslint/no-use-before-define': [
       'error',
       { classes: true, enums: true, functions: true, typedefs: true, variables: true },
@@ -227,7 +230,7 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-unused-vars-experimental': [
-      'error',
+      'off', // Too restrictive
       { ignoreArgsIfArgsAfterAreUsed: true },
     ],
     '@typescript-eslint/prefer-for-of': 'error',
