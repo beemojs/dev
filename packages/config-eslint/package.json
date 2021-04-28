@@ -29,7 +29,8 @@
   },
   "peerDependencies": {
     "@beemo/core": "^2.0.0-rc.0",
-    "@beemo/driver-eslint": "^2.0.0-rc.0"
+    "@beemo/driver-eslint": "^2.0.0-rc.0",
+    "eslint": ">=7.0.0"
   },
   "dependencies": {
     "@beemo/config-constants": "^0.1.1",
