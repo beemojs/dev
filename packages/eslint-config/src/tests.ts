@@ -91,6 +91,7 @@ const testsConfig: eslint.Linter.ConfigOverride = {
     'promise/prefer-await-to-callbacks': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-extraneous-class': 'off',
+    '@typescript-eslint/no-implicit-any-catch': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars-experimental': 'off',
     '@typescript-eslint/no-useless-constructor': 'off',
@@ -115,11 +116,21 @@ const miscConfig: eslint.Linter.ConfigOverride = {
     '**/{tests,__tests__}/**/{helpers,utils,setup}.{ts,tsx}',
   ],
   rules: {
+    'import/no-commonjs': 'off',
+
     // Allow exports from these files
     'jest/no-export': 'off',
 
     // Allow composable / factoried unit tests
     'jest/require-top-level-describe': 'off',
+
+    // Allow `any` in tests for convenience
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
   },
 };
 
