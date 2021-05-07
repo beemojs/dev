@@ -38,8 +38,8 @@
   },
   "dependencies": {
     "@beemo/config-constants": "^0.1.1",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-compat": "^3.9.0",
@@ -52,7 +52,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-perf": "^3.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^29.0.0"
+    "eslint-plugin-unicorn": "^31.0.0"
   },
   "devDependencies": {
     "@types/eslint": "^7.2.10",

@@ -1,4 +1,7 @@
 import type eslint from 'eslint';
+import { getRootNodeVersion } from './helpers';
+
+const nodeVersion = getRootNodeVersion();
 
 const config: eslint.Linter.Config = {
   plugins: ['unicorn'],
@@ -16,6 +19,7 @@ const config: eslint.Linter.Config = {
     'unicorn/no-hex-escape': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-zero-fractions': 'error',
+    'unicorn/prefer-switch': 'error',
     'unicorn/string-content': 'error',
 
     // Better error handling and implementation
@@ -98,6 +102,8 @@ const config: eslint.Linter.Config = {
     'unicorn/prefer-keyboard-event-key': 'error',
     'unicorn/prefer-math-trunc': 'error',
     'unicorn/prefer-modern-dom-apis': 'error',
+    'unicorn/prefer-module': nodeVersion >= 14 ? 'error' : 'off',
+    'unicorn/prefer-node-protocol': nodeVersion >= 16 ? 'error' : 'off',
     'unicorn/prefer-number-properties': 'error',
     'unicorn/prefer-query-selector': 'error',
     'unicorn/prefer-reflect-apply': 'error',

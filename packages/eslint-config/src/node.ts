@@ -1,20 +1,7 @@
-import path from 'path';
 import type eslint from 'eslint';
+import { getRootNodeVersion } from './helpers';
 
-let nodeVersion = 0;
-
-// Attempt to extract the node engine from the root package.json
-try {
-  // eslint-disable-next-line import/no-dynamic-require
-  const pkg = require(path.join(process.cwd(), 'package.json')) as { engines?: { node?: string } };
-  const version = pkg.engines?.node;
-
-  if (version) {
-    nodeVersion = Number.parseFloat(version.replace(/[^\d.]+/g, ''));
-  }
-} catch {
-  // Ignore
-}
+const nodeVersion = getRootNodeVersion();
 
 const config: eslint.Linter.Config = {
   plugins: ['node'],

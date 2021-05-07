@@ -61,3 +61,4 @@ The following additional configs can also be extended, but are not enabled by de
 - Source files must be located in a `src` folder.
 - Tests files must end in `*.test.{ts,tsx}` and be located within a `tests` or `__tests__` folder.
 - Relies on TypeScript for parsing files.
+- Root `package.json` contains a Node.js `engine` for the target runtime.
