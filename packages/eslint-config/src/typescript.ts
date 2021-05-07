@@ -1,14 +1,25 @@
+import fs from 'fs';
 import path from 'path';
 import type eslint from 'eslint';
 import { getRootProjectReferences, ROOT, TSCONFIG_JSON_PATH } from '@beemo/config-constants';
 
-// If the consumer is using project references, we need to include a path
+let project: string | string[] = '';
+
+// Some very large projects will run out of memory when using project references,
+// so we support a custom tsconfig to work around this issue.
+const tsconfigEslintPath = path.join(ROOT, 'tsconfig.eslint.json');
+
+if (fs.existsSync(tsconfigEslintPath)) {
+  project = tsconfigEslintPath;
+}
+
+// Otherwise, if the consumer is using project references, we need to include a path
 // to every tsconfig.json in the graph.
-const references = getRootProjectReferences();
-const project =
-  references.length > 0
-    ? references.map((ref) => path.join(ROOT, ref.path, 'tsconfig.json'))
-    : TSCONFIG_JSON_PATH;
+if (!project) {
+  project =
+    getRootProjectReferences()?.map((ref) => path.join(ROOT, ref.path, 'tsconfig.json')) ??
+    TSCONFIG_JSON_PATH;
+}
 
 const config: eslint.Linter.Config = {
   plugins: ['@typescript-eslint'],

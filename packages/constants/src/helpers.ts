@@ -60,6 +60,6 @@ export function getRootTSConfig(): TSConfigJSON {
 
 // TYPESCRIPT
 
-export function getRootProjectReferences(): ProjectReference[] {
-  return getRootTSConfig().references ?? [];
+export function getRootProjectReferences(): ProjectReference[] | undefined {
+  return getRootTSConfig().references;
 }
