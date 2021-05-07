@@ -1,7 +1,7 @@
 import type eslint from 'eslint';
-import { getRootNodeVersion } from './helpers';
+import { getTargetNodeRuntime } from '@beemo/config-constants';
 
-const nodeVersion = getRootNodeVersion();
+const nodeVersion = getTargetNodeRuntime();
 
 const config: eslint.Linter.Config = {
   plugins: ['unicorn'],

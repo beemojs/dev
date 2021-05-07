@@ -1,20 +1,14 @@
 import path from 'path';
 import type eslint from 'eslint';
-import type { ProjectReference } from 'typescript';
-
-let project: string[] | string = path.join(process.cwd(), 'tsconfig.json');
+import { getRootProjectReferences, ROOT, TSCONFIG_JSON_PATH } from '@beemo/config-constants';
 
 // If the consumer is using project references, we need to include a path
 // to every tsconfig.json in the graph.
-// https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject
-// eslint-disable-next-line import/no-dynamic-require
-const rootTsconfig = require(project) as { references?: ProjectReference[] };
-
-if (rootTsconfig?.references) {
-  project = rootTsconfig.references.map((ref) =>
-    path.join(process.cwd(), ref.path, 'tsconfig.json'),
-  );
-}
+const references = getRootProjectReferences();
+const project =
+  references.length > 0
+    ? references.map((ref) => path.join(ROOT, ref.path, 'tsconfig.json'))
+    : TSCONFIG_JSON_PATH;
 
 const config: eslint.Linter.Config = {
   plugins: ['@typescript-eslint'],

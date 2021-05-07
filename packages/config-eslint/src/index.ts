@@ -1,5 +1,5 @@
-import type { ESLintConfig } from '@beemo/driver-eslint';
 import { IGNORE_LIST } from '@beemo/config-constants';
+import type { ESLintConfig } from '@beemo/driver-eslint';
 
 const { tool } = process.beemo;
 const { node, react } = tool.config.settings as BeemoSettings;
