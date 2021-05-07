@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-constants",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Reusable constants for Beemo configurations.",
   "keywords": [
     "beemo",
