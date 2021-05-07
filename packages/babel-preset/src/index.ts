@@ -30,8 +30,6 @@ export default function babelPresetBeemo(
       ['@babel/plugin-proposal-class-properties', { loose: true }],
       ['@babel/plugin-proposal-private-methods', { loose: true }],
     );
-  } else {
-    plugins.unshift(['@babel/plugin-proposal-class-properties', { loose: looseMode }]);
   }
 
   const presets: PluginItem[] = [
