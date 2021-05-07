@@ -73,7 +73,7 @@ common command line options when being ran.
   - Sets `--extensions` to `.ts,.tsx` if using TypeScript.
   - If no out provided, defaults to `src/ --out-dir lib/`.
 - [ESLint](https://www.npmjs.com/package/@beemo/config-eslint)
-  - Always passes `--color --fix`.
+  - Always passes `--cache --color --fix`.
   - Sets `--extensions` to `.ts,.tsx` if using TypeScript.
   - If no target provided, defaults to linting `src/ tests/`.
   - If using workspaces, will target the above in each package.

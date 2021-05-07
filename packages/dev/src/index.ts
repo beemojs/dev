@@ -29,7 +29,7 @@ export default function dev(tool: Tool) {
 
   // ESLint
   tool.onRunDriver.listen((context) => {
-    context.addOptions(['--color', '--fix']);
+    context.addOptions(['--cache', '--color', '--fix']);
 
     if (usingTypeScript && !context.getRiskyOption('ext')) {
       context.addOption('--ext', EXTS.join(','));
