@@ -19,6 +19,9 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     linkComponents: ['Link', { name: 'Link', linkAttribute: 'to' }],
   },
   rules: {
+    // Conflicts with CSS-in-JS solutions
+    'sort-keys': 'off',
+
     // Disabled by Prettier: https://github.com/prettier/eslint-config-prettier/blob/main/index.js#L122
     // We need to do this since React is an override and these might be re-enabled.
     'react/jsx-child-element-spacing': 'off',
