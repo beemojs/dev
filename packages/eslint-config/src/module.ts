@@ -110,6 +110,15 @@ const config: eslint.Linter.Config = {
       },
     ],
   },
+  overrides: [
+    // Allow default exports from package indexes
+    {
+      files: ['**/index.ts', '**/index.tsx'],
+      rules: {
+        'import/no-default-export': 'off',
+      },
+    },
+  ],
 };
 
 export default config;
