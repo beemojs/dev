@@ -18,7 +18,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@babel/core": "^7.14.0",
+    "@babel/core": "^7.14.3",
     "@beemo/core": "^2.0.0-rc.1",
     "@beemo/driver-babel": "^2.0.0-rc.1",
     "@beemo/driver-eslint": "^2.0.0-rc.1",
