@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 0.1.5 - 2021-05-21
+
+#### 📦 Dependencies
+
+- **[babel]** Update to v7.14 latest. ([e153a93](https://github.com/beemojs/dev/commit/e153a93))
+
+**Note:** Version bump only for package babel-preset-beemo
+
+
+
+
+
 ### 0.0.1-alpha.1 - 2021-04-21
 
 **Note:** Version bump only for package babel-preset-beemo
