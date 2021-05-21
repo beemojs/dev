@@ -42,6 +42,7 @@ const config: eslint.Linter.Config = {
     'unicorn/no-new-array': 'error',
     'unicorn/no-new-buffer': 'error',
     'unicorn/no-this-assignment': 'error',
+    'unicorn/numeric-separators-style': 'error',
     'unicorn/throw-new-error': 'error',
 
     // Ensure todo's are finished
@@ -87,6 +88,7 @@ const config: eslint.Linter.Config = {
     'unicorn/no-process-exit': 'error',
 
     // Prefer modern APIs
+    'unicorn/no-document-cookie': 'error',
     'unicorn/prefer-add-event-listener': 'error',
     'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-array-flat': 'error',
