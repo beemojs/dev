@@ -29,6 +29,7 @@ const config: eslint.Linter.Config = {
     'import/no-relative-parent-imports': 'off',
 
     // Ensure import paths are succinct as possible
+    'import/no-relative-packages': 'error',
     'import/no-useless-path-segments': [
       'error',
       {
@@ -69,6 +70,7 @@ const config: eslint.Linter.Config = {
         allowConditionalRequire: true,
       },
     ],
+    'import/no-import-module-exports': 'error',
 
     // Prefer named exports (over default) as they are a better developer experience
     'import/no-anonymous-default-export': 'off',
@@ -91,6 +93,7 @@ const config: eslint.Linter.Config = {
             `^(${builtinModules.join('|')})$`,
             // React NPM packages
             '^react',
+            '^@react',
             // NPM packages
             '^[a-z]',
             // Scoped NPM packages
