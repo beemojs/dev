@@ -37,8 +37,9 @@ The following additional configs can also be extended, but are not enabled by de
 - `beemo/react` - Enables the [react](https://www.npmjs.com/package/eslint-plugin-react),
   [react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks),
   [react-perf](https://www.npmjs.com/package/eslint-plugin-react-perf), and
-  [jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) plugins. Only applies to `*.tsx`
-  files and also extends the `browser` preset.
+  [jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) plugins.
+  - Only applies to `*.tsx` files and also extends the `browser` preset.
+  - Enables automatic JSX runtime if root `react` version is 17+.
 
 ## Features
 

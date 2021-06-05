@@ -3,8 +3,13 @@ import { PACKAGE_JSON_PATH, TSCONFIG_JSON_PATH } from './constants';
 
 // PACKAGE.JSON
 
+type PackageDeps = Record<string, string>;
+
 interface PackageJSON {
 	engines?: { node?: string };
+	dependencies?: PackageDeps;
+	devDependencies?: PackageDeps;
+	peerDependencies?: PackageDeps;
 }
 
 let packageJson: PackageJSON;
@@ -39,6 +44,30 @@ export function getTargetNodeRuntime(): number {
 	}
 
 	return nodeVersion;
+}
+
+// REACT
+
+let reactVersion: number;
+
+export function getTargetReactVersion(): number {
+	if (reactVersion !== undefined) {
+		return reactVersion;
+	}
+
+	try {
+		const pkg = getRootPackageJSON();
+		const version =
+			pkg.dependencies?.react ?? pkg.devDependencies?.react ?? pkg.peerDependencies?.react;
+
+		if (version) {
+			reactVersion = Number.parseFloat(version.replace(/[^\d.]+/g, ''));
+		}
+	} catch {
+		reactVersion = 0;
+	}
+
+	return reactVersion;
 }
 
 // TSCONFIG.JSON
