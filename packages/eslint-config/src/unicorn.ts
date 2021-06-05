@@ -54,6 +54,9 @@ const config: eslint.Linter.Config = {
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-useless-undefined': 'off',
     'unicorn/prefer-negative-index': 'error',
+    'unicorn/prefer-prototype-methods': 'error',
+    'unicorn/require-array-join-separator': 'error',
+    'unicorn/require-number-to-fixed-digits-argument': 'error',
 
     // Doesnt cover the naming requirements I want
     'unicorn/filename-case': 'off',
@@ -115,6 +118,7 @@ const config: eslint.Linter.Config = {
     'unicorn/prefer-string-trim-start-end': 'error',
 
     // Not available on enough platforms yet
+    'unicorn/prefer-object-has-own': 'off',
     'unicorn/prefer-string-replace-all': 'off',
 
     // Is caught/handled by TypeScript instead
