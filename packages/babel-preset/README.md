@@ -18,7 +18,7 @@ Add the preset to your root `babel.config.js`.
 
 ```js
 module.exports = {
-  presets: ['beemo'],
+	presets: ['beemo'],
 };
 ```
 
@@ -47,6 +47,6 @@ The following options can be passed to the preset.
 
 ```js
 module.exports = {
-  presets: [['beemo', { decorators: true, react: 'automatic' }]],
+	presets: [['beemo', { decorators: true, react: 'automatic' }]],
 };
 ```

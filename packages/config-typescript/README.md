@@ -23,8 +23,8 @@ with your own `include`, `exclude`, etc.
 import config from '@beemo/config-typescript';
 
 export default {
-  ...config,
-  include: ['src/**/*'],
+	...config,
+	include: ['src/**/*'],
 };
 ```
 
@@ -39,10 +39,10 @@ The following Beemo `settings` can be defined and will be enable compiler option
 
 ```ts
 export default {
-  module: '<config-module>',
-  drivers: ['typescript'],
-  settings: {
-    react: 'automatic',
-  },
+	module: '<config-module>',
+	drivers: ['typescript'],
+	settings: {
+		react: 'automatic',
+	},
 };
 ```

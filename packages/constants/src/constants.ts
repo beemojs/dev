@@ -14,14 +14,14 @@ export const ECMA_VERSION = 2020;
 
 // Files and folders to always ignore
 export const IGNORE_LIST = [
-  'node_modules/',
-  'build/',
-  'cjs/',
-  'coverage/',
-  'dist/',
-  'esm/',
-  'lib/',
-  'mjs/',
+	'node_modules/',
+	'build/',
+	'cjs/',
+	'coverage/',
+	'dist/',
+	'esm/',
+	'lib/',
+	'mjs/',
 ];
 
 // Globs for finding source files, test files, and test utility files

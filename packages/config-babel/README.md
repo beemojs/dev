@@ -30,10 +30,10 @@ The following Beemo `settings` can be defined and will be passed to the preset.
 
 ```ts
 export default {
-  module: '<config-module>',
-  drivers: ['babel'],
-  settings: {
-    react: 'automatic',
-  },
+	module: '<config-module>',
+	drivers: ['babel'],
+	settings: {
+		react: 'automatic',
+	},
 };
 ```

@@ -29,9 +29,9 @@ configuration module. Be sure to enable all drivers and any settings.
 ```ts
 // .config/beemo.ts
 export default {
-  module: '@beemo/dev',
-  drivers: ['babel', 'eslint', 'jest', 'prettier', 'typescript'],
-  settings: {},
+	module: '@beemo/dev',
+	drivers: ['babel', 'eslint', 'jest', 'prettier', 'typescript'],
+	settings: {},
 };
 ```
 
@@ -57,9 +57,9 @@ of the project.
 ```ts
 // .config/beemo/eslint.ts
 export default {
-  rules: {
-    'no-param-reassign': 'off',
-  },
+	rules: {
+		'no-param-reassign': 'off',
+	},
 };
 ```
 

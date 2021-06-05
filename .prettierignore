@@ -1,3 +1,5 @@
 coverage/
+dts/
+lib/
 CHANGELOG.md
-tsconfig.json
+*.json

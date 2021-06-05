@@ -17,8 +17,8 @@ Extend the config from your root `tsconfig.json`.
 
 ```json
 {
-  "extends": "tsconfig-beemo/tsconfig.json",
-  "include": ["src/**/*"]
+	"extends": "tsconfig-beemo/tsconfig.json",
+	"include": ["src/**/*"]
 }
 ```
 

@@ -19,8 +19,8 @@ for additional rules.
 
 ```js
 module.exports = {
-  root: true,
-  extends: ['beemo'],
+	root: true,
+	extends: ['beemo'],
 };
 ```
 

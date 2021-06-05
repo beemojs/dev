@@ -28,10 +28,10 @@ The following Beemo `settings` can be defined and will be passed to the config.
 
 ```ts
 export default {
-  module: '<config-module>',
-  drivers: ['eslint'],
-  settings: {
-    react: 'automatic',
-  },
+	module: '<config-module>',
+	drivers: ['eslint'],
+	settings: {
+		react: 'automatic',
+	},
 };
 ```

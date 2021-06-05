@@ -30,10 +30,10 @@ The following Beemo `settings` can be defined to customize Jest even further.
 
 ```ts
 export default {
-  module: '<config-module>',
-  drivers: ['jest'],
-  settings: {
-    react: true,
-  },
+	module: '<config-module>',
+	drivers: ['jest'],
+	settings: {
+		react: true,
+	},
 };
 ```

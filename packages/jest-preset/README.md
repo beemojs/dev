@@ -16,7 +16,7 @@ Add the preset to your root `jest.config.js`.
 
 ```js
 module.exports = {
-  preset: 'jest-preset-beemo',
+	preset: 'jest-preset-beemo',
 };
 ```
 

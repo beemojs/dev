@@ -1,3 +1,3 @@
 module.exports = {
-  preset: 'jest-preset-beemo',
+	preset: 'jest-preset-beemo',
 };
