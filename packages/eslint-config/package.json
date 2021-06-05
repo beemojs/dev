@@ -63,18 +63,6 @@
     "url": "https://ko-fi.com/milesjohnson"
   },
   "packemon": {
-    "inputs": {
-      "index": "src/index.ts",
-      "async": "src/async.ts",
-      "base": "src/base.ts",
-      "browser": "src/browser.ts",
-      "module": "src/module.ts",
-      "node": "src/node.ts",
-      "react": "src/react.ts",
-      "tests": "src/tests.ts",
-      "typescript": "src/typescript.ts",
-      "unicorn": "src/unicorn.ts"
-    },
     "platform": "node"
   }
 }
