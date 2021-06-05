@@ -60,10 +60,6 @@ export default function dev(tool: Tool) {
 	tool.onRunDriver.listen((context, driver) => {
 		context.addOptions(['--colors', '--logHeapUsage']);
 
-		if (context.argv.includes('--coverage')) {
-			context.addOption('--detectOpenHandles');
-		}
-
 		driver.configure({
 			env: {
 				NODE_ENV: 'test',
