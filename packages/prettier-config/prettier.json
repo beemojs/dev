@@ -11,5 +11,13 @@
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "all",
-  "useTabs": false
+  "useTabs": true,
+  "overrides": [
+    {
+      "files": ["*.json", "*.yaml"],
+      "options": {
+        "useTabs": false
+      }
+    }
+  ]
 }

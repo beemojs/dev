@@ -55,6 +55,7 @@ The following additional configs can also be extended, but are not enabled by de
   [unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) plugin.
 - Automatically sets `parserOptions.project` based on the root `tsconfig.json`.
 - Avoids `any` type and unsafe operations.
+- Uses tabs over spaces for accessibility compliance.
 
 ## Requirements
 

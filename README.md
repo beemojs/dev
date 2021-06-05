@@ -7,8 +7,8 @@
 This repository is a collection of Beemo owned and maintained configurations and presets for common
 developer tools -- primarily tools used by the Beemo project and its authors.
 
-It aims to provide a modern, evergreen, convention over configuration approach to TypeScript (and
-React) only projects!
+It aims to provide a modern, developer accessible, convention over configuration approach to
+TypeScript (and React) only projects!
 
 ## Packages
 
@@ -46,3 +46,9 @@ Beemo [configuration module](https://beemo.dev/docs/provider).
 So... all these configs are personal preference and won't change drastically. You're welcome to use
 them as-is, but changes are unlikely to land. Feel free to create an issue otherwise so that we can
 discuss the intended change.
+
+### Why tabs over spaces?
+
+The JavaScript ecosystem heavily prefers spaces over tabs. However, tabs are more accessible as they
+allow developers with vision impairments to control their indentation and improve its readability.
+Preferring accessibility compliance over a stylistic choice is always the better option.

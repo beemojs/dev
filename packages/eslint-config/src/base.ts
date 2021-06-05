@@ -5,6 +5,10 @@ import { CASE_SENSITIVE } from '@beemo/config-constants';
 // or they are enabling new rules that aren't in Airbnb yet.
 const config: eslint.Linter.Config = {
   rules: {
+    // Use tabs instead of spaces for accessibility
+    indent: ['error', 'tab'],
+    'no-tabs': 'off',
+
     // Annoying as some class methods are nice to not be static
     'class-methods-use-this': 'off',
 

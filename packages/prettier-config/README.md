@@ -20,6 +20,7 @@ module.exports = 'prettier-config-beemo';
 
 ## Features
 
+- Uses tabs over spaces for accessibility compliance.
 - Displays arrow parenthesis and trailing commas.
 - Includes semi colons and avoids ASI.
 - Prefers single quoted strongs and spaces for indentation.
