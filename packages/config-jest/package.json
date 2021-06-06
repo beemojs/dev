@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-jest",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Jest config for Beemo projects.",
   "keywords": [
     "beemo-config",
@@ -34,7 +34,7 @@
     "jest": ">=26.0.0"
   },
   "dependencies": {
-    "jest-preset-beemo": "^0.2.0"
+    "jest-preset-beemo": "^0.2.1"
   },
   "devDependencies": {
     "@beemo/core": "^2.0.0-rc.3",
