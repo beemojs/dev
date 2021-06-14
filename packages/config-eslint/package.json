@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-eslint",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "ESLint config for Beemo projects.",
   "keywords": [
     "eslint-config",
@@ -28,17 +28,17 @@
     "npm": ">=6.1.0"
   },
   "peerDependencies": {
-    "@beemo/core": "^2.0.0-rc.0",
-    "@beemo/driver-eslint": "^2.0.0-rc.0",
+    "@beemo/core": "^2.0.0-rc.2",
+    "@beemo/driver-eslint": "^2.0.0-rc.2",
     "eslint": ">=7.0.0"
   },
   "dependencies": {
     "@beemo/config-constants": "^0.2.0",
-    "eslint-config-beemo": "^0.3.0"
+    "eslint-config-beemo": "^0.3.1"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.0-rc.1",
-    "@beemo/driver-eslint": "^2.0.0-rc.1",
+    "@beemo/core": "^2.0.0-rc.3",
+    "@beemo/driver-eslint": "^2.0.0-rc.3",
     "eslint": "^7.28.0"
   },
   "funding": {

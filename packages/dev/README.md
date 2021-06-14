@@ -80,7 +80,6 @@ common command line options when being ran.
   - Generates Prettier and TypeScript configs when enabled.
 - [Jest](https://www.npmjs.com/package/@beemo/config-jest)
   - Always passes `--colors --logHeapUsage`.
-  - Passes `--detectOpenHandles` when running code coverage.
   - Sets `NODE_ENV=test` and `TZ=UTC`.
   - Generates a Babel config when enabled.
   - Supports projects through the `projects` setting.

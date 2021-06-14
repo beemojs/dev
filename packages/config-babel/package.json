@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-babel",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Babel config for Beemo projects.",
   "keywords": [
     "babel-preset",
@@ -29,16 +29,16 @@
   },
   "peerDependencies": {
     "@babel/core": ">=7.0.0",
-    "@beemo/core": "^2.0.0-rc.0",
-    "@beemo/driver-babel": "^2.0.0-rc.0"
+    "@beemo/core": "^2.0.0-rc.2",
+    "@beemo/driver-babel": "^2.0.0-rc.2"
   },
   "dependencies": {
     "babel-preset-beemo": "^0.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.16",
-    "@beemo/core": "^2.0.0-rc.1",
-    "@beemo/driver-babel": "^2.0.0-rc.1"
+    "@babel/core": "^7.14.6",
+    "@beemo/core": "^2.0.0-rc.3",
+    "@beemo/driver-babel": "^2.0.0-rc.3"
   },
   "funding": {
     "type": "ko-fi",

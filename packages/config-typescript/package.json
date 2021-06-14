@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-typescript",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TypeScript config for Beemo projects.",
   "keywords": [
     "beemo-config",
@@ -29,15 +29,15 @@
     "npm": ">=6.1.0"
   },
   "peerDependencies": {
-    "@beemo/core": "^2.0.0-rc.0",
-    "@beemo/driver-typescript": "^2.0.0-rc.0"
+    "@beemo/core": "^2.0.0-rc.2",
+    "@beemo/driver-typescript": "^2.0.0-rc.2"
   },
   "dependencies": {
     "tsconfig-beemo": "^0.1.2"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.0-rc.1",
-    "@beemo/driver-typescript": "^2.0.0-rc.1"
+    "@beemo/core": "^2.0.0-rc.3",
+    "@beemo/driver-typescript": "^2.0.0-rc.3"
   },
   "funding": {
     "type": "ko-fi",
