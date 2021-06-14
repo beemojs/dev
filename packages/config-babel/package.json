@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-babel",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Babel config for Beemo projects.",
   "keywords": [
     "babel-preset",
@@ -33,7 +33,7 @@
     "@beemo/driver-babel": "^2.0.0-rc.2"
   },
   "dependencies": {
-    "babel-preset-beemo": "^0.2.0"
+    "babel-preset-beemo": "^0.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
