@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-jest",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "release": "1624590167003",
   "description": "Jest config for Beemo projects.",
   "keywords": [
