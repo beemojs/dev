@@ -48,6 +48,7 @@
       "index": "src/index.ts",
       "fileMock": "src/fileMock.ts"
     },
+    "format": "lib",
     "platform": "node"
   }
 }

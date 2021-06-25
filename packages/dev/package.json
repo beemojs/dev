@@ -62,6 +62,7 @@
     "url": "https://ko-fi.com/milesjohnson"
   },
   "packemon": {
+    "format": "lib",
     "platform": "node"
   }
 }
