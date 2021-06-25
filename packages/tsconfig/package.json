@@ -1,6 +1,7 @@
 {
   "name": "tsconfig-beemo",
   "version": "0.1.3",
+  "release": "1624590167003",
   "description": "Pre-packaged tsconfig.json's for Beemo configured projects.",
   "keywords": [
     "typescript",

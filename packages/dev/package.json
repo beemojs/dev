@@ -1,6 +1,7 @@
 {
   "name": "@beemo/dev",
   "version": "0.2.3",
+  "release": "1624590167003",
   "description": "Official Beemo configuration module for modern local development.",
   "keywords": [
     "beemo",

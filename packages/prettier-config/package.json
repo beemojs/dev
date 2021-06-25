@@ -1,6 +1,7 @@
 {
   "name": "prettier-config-beemo",
   "version": "0.2.0",
+  "release": "1624590167003",
   "description": "Reusable Prettier config for Beemo configured projects.",
   "keywords": [
     "prettier",

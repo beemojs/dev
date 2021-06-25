@@ -1,6 +1,7 @@
 {
   "name": "jest-preset-beemo",
   "version": "0.2.1",
+  "release": "1624590167003",
   "description": "Jest preset for Beemo configured projects.",
   "keywords": [
     "jest-preset",
