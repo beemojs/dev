@@ -56,12 +56,25 @@ export function getTargetReactVersion(): number {
 	}
 
 	try {
+		// eslint-disable-next-line import/no-extraneous-dependencies
+		const pkg = require('react/package.json') as { version: string };
+
+		reactVersion = Number.parseFloat(pkg.version);
+
+		return reactVersion;
+	} catch {
+		reactVersion = 0;
+	}
+
+	try {
 		const pkg = getRootPackageJSON();
 		const version =
 			pkg.dependencies?.react ?? pkg.devDependencies?.react ?? pkg.peerDependencies?.react;
 
 		if (version) {
 			reactVersion = Number.parseFloat(version.replace(/[^\d.]+/g, ''));
+
+			return reactVersion;
 		}
 	} catch {
 		reactVersion = 0;
