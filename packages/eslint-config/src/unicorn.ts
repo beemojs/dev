@@ -6,7 +6,7 @@ const nodeVersion = getTargetNodeRuntime();
 const config: eslint.Linter.Config = {
 	plugins: ['unicorn'],
 	rules: {
-		// Disabled by Prettier: https://github.com/prettier/eslint-config-prettier/blob/main/index.js#L140
+		// Disabled by Prettier: https://github.com/prettier/eslint-config-prettier/blob/main/index.js#L142
 		// We need to do this as they may be re-enabled based on config extending order.
 		'unicorn/empty-brace-spaces': 'off',
 		'unicorn/no-nested-ternary': 'off',
@@ -42,7 +42,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/no-new-array': 'error',
 		'unicorn/no-new-buffer': 'error',
 		'unicorn/no-this-assignment': 'error',
-		// 'unicorn/numeric-separators-style': 'error',
+		'unicorn/numeric-separators-style': 'error',
 		'unicorn/throw-new-error': 'error',
 
 		// Ensure todo's are finished
@@ -54,9 +54,9 @@ const config: eslint.Linter.Config = {
 		'unicorn/no-abusive-eslint-disable': 'error',
 		'unicorn/no-useless-undefined': 'off',
 		'unicorn/prefer-negative-index': 'error',
-		// 'unicorn/prefer-prototype-methods': 'error',
-		// 'unicorn/require-array-join-separator': 'error',
-		// 'unicorn/require-number-to-fixed-digits-argument': 'error',
+		'unicorn/prefer-prototype-methods': 'error',
+		'unicorn/require-array-join-separator': 'error',
+		'unicorn/require-number-to-fixed-digits-argument': 'error',
 
 		// Doesnt cover the naming requirements I want
 		'unicorn/filename-case': 'off',
@@ -91,11 +91,11 @@ const config: eslint.Linter.Config = {
 		'unicorn/no-process-exit': 'error',
 
 		// Prefer modern APIs
-		// 'unicorn/no-document-cookie': 'error',
+		'unicorn/no-document-cookie': 'error',
 		'unicorn/prefer-add-event-listener': 'error',
 		'unicorn/prefer-array-find': 'error',
-		// 'unicorn/prefer-array-flat': 'error',
-		// 'unicorn/prefer-array-flat-map': 'error',
+		'unicorn/prefer-array-flat': 'error',
+		'unicorn/prefer-array-flat-map': 'error',
 		'unicorn/prefer-array-index-of': 'error',
 		'unicorn/prefer-array-some': 'error',
 		'unicorn/prefer-date-now': 'error',
@@ -118,7 +118,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/prefer-string-trim-start-end': 'error',
 
 		// Not available on enough platforms yet
-		// 'unicorn/prefer-object-has-own': 'off',
+		'unicorn/prefer-object-has-own': 'off',
 		'unicorn/prefer-string-replace-all': 'off',
 
 		// Is caught/handled by TypeScript instead
