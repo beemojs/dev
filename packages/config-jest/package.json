@@ -39,7 +39,7 @@
   "devDependencies": {
     "@beemo/core": "^2.0.0-rc.3",
     "@beemo/driver-jest": "^2.0.0-rc.2",
-    "jest": "^27.0.4"
+    "jest": "^27.0.5"
   },
   "funding": {
     "type": "ko-fi",
