@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-prettier",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "release": "1624590167003",
   "description": "Prettier config for Beemo projects.",
   "keywords": [
@@ -34,8 +34,8 @@
     "@beemo/driver-prettier": "^2.0.0-rc.2"
   },
   "dependencies": {
-    "@beemo/config-constants": "^0.3.0",
-    "prettier-config-beemo": "^0.3.0"
+    "@beemo/config-constants": "^1.0.0",
+    "prettier-config-beemo": "^1.0.0"
   },
   "devDependencies": {
     "@beemo/core": "^2.0.0-rc.3",
