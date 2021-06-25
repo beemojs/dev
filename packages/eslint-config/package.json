@@ -30,8 +30,8 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.3.0",
-    "npm": ">=6.1.0"
+    "node": ">=12.17.0",
+    "npm": ">=6.13.0"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
