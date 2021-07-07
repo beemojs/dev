@@ -52,11 +52,13 @@ const config: eslint.Linter.Config = {
 		'unicorn/explicit-length-check': 'error',
 		'unicorn/import-style': 'off',
 		'unicorn/no-abusive-eslint-disable': 'error',
+		'unicorn/no-array-method-this-argument': 'error',
 		'unicorn/no-useless-undefined': 'off',
 		'unicorn/prefer-negative-index': 'error',
 		'unicorn/prefer-prototype-methods': 'error',
 		'unicorn/require-array-join-separator': 'error',
 		'unicorn/require-number-to-fixed-digits-argument': 'error',
+		'unicorn/require-post-message-target-origin': 'error',
 
 		// Doesnt cover the naming requirements I want
 		'unicorn/filename-case': 'off',
@@ -116,8 +118,10 @@ const config: eslint.Linter.Config = {
 		'unicorn/prefer-string-slice': 'error',
 		'unicorn/prefer-string-starts-ends-with': 'error',
 		'unicorn/prefer-string-trim-start-end': 'error',
+		'unicorn/prefer-top-level-await': nodeVersion >= 14.8 ? 'error' : 'off',
 
 		// Not available on enough platforms yet
+		'unicorn/prefer-at': 'off',
 		'unicorn/prefer-object-has-own': 'off',
 		'unicorn/prefer-string-replace-all': 'off',
 
