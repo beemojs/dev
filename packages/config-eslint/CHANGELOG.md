@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.1 - 2021-07-08
+
+#### 📦 Dependencies
+
+- **[eslint]** Update to v7.30. ([48ac2ef](https://github.com/beemojs/dev/commit/48ac2ef))
+
+**Note:** Version bump only for package @beemo/config-eslint
+
+
+
+
+
 # 1.0.0 - 2021-06-25
 
 #### 🎉 Release

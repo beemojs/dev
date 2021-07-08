@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 - 2021-07-08
+
+#### 🚀 Updates
+
+- Add release check script. ([226e434](https://github.com/beemojs/dev/commit/226e434))
+
+#### 📦 Dependencies
+
+- **[eslint]** Update to v7.30. ([48ac2ef](https://github.com/beemojs/dev/commit/48ac2ef))
+- **[jest]** Update to v27 latest. ([8df59c1](https://github.com/beemojs/dev/commit/8df59c1))
+- **[prettier]** Update to v2.3 latest. ([02fe442](https://github.com/beemojs/dev/commit/02fe442))
+- **[typescript]** Update to v4.3 latest. ([a0d4960](https://github.com/beemojs/dev/commit/a0d4960))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 # 1.0.0 - 2021-06-25
 
 #### 🎉 Release

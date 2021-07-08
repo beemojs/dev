@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.1 - 2021-07-08
+
+#### 📦 Dependencies
+
+- **[jest]** Update to v27 latest. ([8df59c1](https://github.com/beemojs/dev/commit/8df59c1))
+
+**Note:** Version bump only for package jest-preset-beemo
+
+
+
+
+
 # 1.0.0 - 2021-06-25
 
 #### 🎉 Release
