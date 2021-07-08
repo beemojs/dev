@@ -11,8 +11,8 @@
     "lint": "eslint --cache --fix packages/*/{src,tests}/**/*.ts",
     "test": "jest",
     "type": "tsc --build",
-    "prerelease": "yarn run pack && yarn test",
-    "release": "lerna publish"
+    "prerelease": "node packages/dev/lib/checks/githubToken.js && yarn run pack && yarn test",
+    "release": "lerna version --conventional-commits --changelog-preset conventional-changelog-beemo --create-release github --push && lerna publish from-git"
   },
   "workspaces": [
     "packages/*"
