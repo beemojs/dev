@@ -7,7 +7,6 @@ logs/
 .idea
 .npm
 .vscode
-.yarn
 .yarnclean
 
 # Directories
@@ -27,3 +26,12 @@ node_modules/
 *.min.js
 *.map
 *.tsbuildinfo
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

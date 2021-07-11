@@ -3,7 +3,7 @@ import path from 'path';
 import type eslint from 'eslint';
 import { getRootProjectReferences, ROOT, TSCONFIG_JSON_PATH } from '@beemo/config-constants';
 
-let project: string | string[] = '';
+let project: string[] | string = '';
 
 // Some very large projects will run out of memory when using project references,
 // so we support a custom tsconfig to work around this issue.
