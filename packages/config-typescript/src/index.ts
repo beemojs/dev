@@ -7,6 +7,7 @@ const { decorators, react } = tool.config.settings as BeemoSettings;
 // because of Beemo's array merging strategy. Requires consumers to set.
 
 const config = require('tsconfig-beemo/tsconfig.json') as TypeScriptConfig;
+
 const options = config.compilerOptions!;
 
 // When using project references, we must merge the 2 configs instead of replacing,
