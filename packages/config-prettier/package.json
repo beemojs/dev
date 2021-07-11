@@ -30,8 +30,8 @@
     "npm": ">=6.13.0"
   },
   "peerDependencies": {
-    "@beemo/core": "^2.0.0-rc.2",
-    "@beemo/driver-prettier": "^2.0.0-rc.2",
+    "@beemo/core": "^2.0.0-rc.4",
+    "@beemo/driver-prettier": "^2.0.0-rc.4",
     "prettier": "^2.0.0"
   },
   "dependencies": {
@@ -39,8 +39,8 @@
     "prettier-config-beemo": "^1.0.0"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.0-rc.3",
-    "@beemo/driver-prettier": "^2.0.0-rc.3"
+    "@beemo/core": "^2.0.0-rc.4",
+    "@beemo/driver-prettier": "^2.0.0-rc.4"
   },
   "funding": {
     "type": "ko-fi",

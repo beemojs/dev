@@ -30,16 +30,16 @@
     "npm": ">=6.13.0"
   },
   "peerDependencies": {
-    "@beemo/core": "^2.0.0-rc.2",
-    "@beemo/driver-jest": "^2.0.0-rc.2",
+    "@beemo/core": "^2.0.0-rc.4",
+    "@beemo/driver-jest": "^2.0.0-rc.3",
     "jest": ">=26.0.0"
   },
   "dependencies": {
     "jest-preset-beemo": "^1.0.1"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.0-rc.3",
-    "@beemo/driver-jest": "^2.0.0-rc.2",
+    "@beemo/core": "^2.0.0-rc.4",
+    "@beemo/driver-jest": "^2.0.0-rc.3",
     "jest": "^27.0.6"
   },
   "funding": {
