@@ -1585,6 +1585,7 @@ __metadata:
   peerDependencies:
     "@beemo/core": ^2.0.0-rc.2
     "@beemo/driver-prettier": ^2.0.0-rc.2
+    prettier: ^2.0.0
   languageName: unknown
   linkType: soft
 
@@ -1598,6 +1599,7 @@ __metadata:
   peerDependencies:
     "@beemo/core": ^2.0.0-rc.2
     "@beemo/driver-typescript": ^2.0.0-rc.2
+    typescript: ^4.0.0
   languageName: unknown
   linkType: soft
 

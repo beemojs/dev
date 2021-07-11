@@ -31,7 +31,8 @@
   },
   "peerDependencies": {
     "@beemo/core": "^2.0.0-rc.2",
-    "@beemo/driver-prettier": "^2.0.0-rc.2"
+    "@beemo/driver-prettier": "^2.0.0-rc.2",
+    "prettier": "^2.0.0"
   },
   "dependencies": {
     "@beemo/config-constants": "^1.0.0",
