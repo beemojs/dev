@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.1 - 2021-07-11
+
+#### 📦 Dependencies
+
+- Add missing dev dependency. ([258b947](https://github.com/beemojs/dev/commit/258b947))
+- **[beemo]** Update to latest RC. ([c396b0d](https://github.com/beemojs/dev/commit/c396b0d))
+
+#### 🛠 Internals
+
+- Migrate to Yarn 2. (#4) ([654c4db](https://github.com/beemojs/dev/commit/654c4db)), closes [#4](https://github.com/beemojs/dev/issues/4)
+
+**Note:** Version bump only for package @beemo/config-prettier
+
+
+
+
+
 # 1.0.0 - 2021-06-25
 
 #### 🎉 Release

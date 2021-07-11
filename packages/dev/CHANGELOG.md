@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.0 - 2021-07-11
+
+#### 🚀 Updates
+
+- Make core and cli optional peer deps. ([dbcdfac](https://github.com/beemojs/dev/commit/dbcdfac))
+
+#### 📦 Dependencies
+
+- **[beemo]** Update to latest RC. ([c396b0d](https://github.com/beemojs/dev/commit/c396b0d))
+
+#### 🛠 Internals
+
+- Migrate to Yarn 2. (#4) ([654c4db](https://github.com/beemojs/dev/commit/654c4db)), closes [#4](https://github.com/beemojs/dev/issues/4)
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ## 1.1.0 - 2021-07-08
 
 #### 🚀 Updates
