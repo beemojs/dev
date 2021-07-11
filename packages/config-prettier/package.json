@@ -40,7 +40,8 @@
   },
   "devDependencies": {
     "@beemo/core": "^2.0.0-rc.4",
-    "@beemo/driver-prettier": "^2.0.0-rc.4"
+    "@beemo/driver-prettier": "^2.0.0-rc.4",
+    "prettier": "^2.3.2"
   },
   "funding": {
     "type": "ko-fi",

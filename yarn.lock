@@ -1581,6 +1581,7 @@ __metadata:
     "@beemo/config-constants": ^1.0.0
     "@beemo/core": ^2.0.0-rc.4
     "@beemo/driver-prettier": ^2.0.0-rc.4
+    prettier: ^2.3.2
     prettier-config-beemo: ^1.0.0
   peerDependencies:
     "@beemo/core": ^2.0.0-rc.4
@@ -1596,6 +1597,7 @@ __metadata:
     "@beemo/core": ^2.0.0-rc.4
     "@beemo/driver-typescript": ^2.0.0-rc.4
     tsconfig-beemo: ^1.0.0
+    typescript: ^4.3.5
   peerDependencies:
     "@beemo/core": ^2.0.0-rc.4
     "@beemo/driver-typescript": ^2.0.0-rc.4
