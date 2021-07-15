@@ -13,7 +13,7 @@
     "type": "tsc --build",
     "prerelease": "node packages/dev/lib/checks/githubToken.js && yarn run pack && yarn test",
     "release": "yarn prerelease && lerna version --conventional-commits --changelog-preset conventional-changelog-beemo --create-release github --push && lerna publish from-git",
-    "version": "git add yarn.lock"
+    "version": "yarn install && git add yarn.lock"
   },
   "workspaces": [
     "packages/*"
