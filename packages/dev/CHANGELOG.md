@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.2.1 - 2021-07-15
+
+#### 🐞 Fixes
+
+- Add missing script name. ([58a8196](https://github.com/beemojs/dev/commit/58a8196))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ## 1.2.0 - 2021-07-11
 
 #### 🚀 Updates
