@@ -1302,7 +1302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.14.4, @babel/preset-env@npm:^7.14.7":
+"@babel/preset-env@npm:^7.14.7":
   version: 7.14.7
   resolution: "@babel/preset-env@npm:7.14.7"
   dependencies:
@@ -1413,7 +1413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.13.13, @babel/preset-react@npm:^7.14.5":
+"@babel/preset-react@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/preset-react@npm:7.14.5"
   dependencies:
@@ -1429,7 +1429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.13.0, @babel/preset-typescript@npm:^7.14.5":
+"@babel/preset-typescript@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/preset-typescript@npm:7.14.5"
   dependencies:
@@ -2957,36 +2957,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor-model@npm:7.13.3":
-  version: 7.13.3
-  resolution: "@microsoft/api-extractor-model@npm:7.13.3"
+"@microsoft/api-extractor-model@npm:7.13.4":
+  version: 7.13.4
+  resolution: "@microsoft/api-extractor-model@npm:7.13.4"
   dependencies:
     "@microsoft/tsdoc": 0.13.2
     "@microsoft/tsdoc-config": ~0.15.2
-    "@rushstack/node-core-library": 3.39.0
-  checksum: c11cec9be6e54daaa855b5f430f9039e9d0f1ef59cefeecb609fbad3471f5b3589cdbea5e0197c4d771bf80efffb3bc1fa21e327f2aa295ff0c226271e441bc7
+    "@rushstack/node-core-library": 3.39.1
+  checksum: 7bfdf6e4a3c5849aa53ac8ed10373f9650d7581b99e3230ea2d3c7b92900ce564f5e1b65d38b42e4bf69308a6463a0328c50ae50cb63d7382fa7238dd7d50a55
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor@npm:^7.16.1":
-  version: 7.16.1
-  resolution: "@microsoft/api-extractor@npm:7.16.1"
+"@microsoft/api-extractor@npm:^7.18.1":
+  version: 7.18.4
+  resolution: "@microsoft/api-extractor@npm:7.18.4"
   dependencies:
-    "@microsoft/api-extractor-model": 7.13.3
+    "@microsoft/api-extractor-model": 7.13.4
     "@microsoft/tsdoc": 0.13.2
     "@microsoft/tsdoc-config": ~0.15.2
-    "@rushstack/node-core-library": 3.39.0
-    "@rushstack/rig-package": 0.2.12
-    "@rushstack/ts-command-line": 4.7.10
+    "@rushstack/node-core-library": 3.39.1
+    "@rushstack/rig-package": 0.2.13
+    "@rushstack/ts-command-line": 4.8.1
     colors: ~1.2.1
     lodash: ~4.17.15
     resolve: ~1.17.0
     semver: ~7.3.0
     source-map: ~0.6.1
-    typescript: ~4.3.2
+    typescript: ~4.3.5
   bin:
     api-extractor: bin/api-extractor
-  checksum: e6f81854ecc16c9f5e0e73c4621aa7ea8335e01ea94710a55c74696a8e04edfe6ea710a03a19464462aa51312bb3ffd31fd3c2e6d3a2780a5df7b90d9b9af195
+  checksum: c4b3189ad3c7456f2063af9083b2139da04cb287b11eb8e1c050be3effe12a986e78c539c3e219fc7022de9401b1de0ab9ee1766c33da3e7f47d1ec05e6ba2ca
   languageName: node
   linkType: hard
 
@@ -3357,9 +3357,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/node-core-library@npm:3.39.0":
-  version: 3.39.0
-  resolution: "@rushstack/node-core-library@npm:3.39.0"
+"@rushstack/node-core-library@npm:3.39.1":
+  version: 3.39.1
+  resolution: "@rushstack/node-core-library@npm:3.39.1"
   dependencies:
     "@types/node": 10.17.13
     colors: ~1.2.1
@@ -3370,29 +3370,29 @@ __metadata:
     semver: ~7.3.0
     timsort: ~0.3.0
     z-schema: ~3.18.3
-  checksum: c9765094bee7174836aeee89f697c5a7909368da105c313530adb36c57a980d3e63f136797dbd8d98d16b5de2a742b7024f7f41f07ed77d430ceefdcd13b82d6
+  checksum: afbd70b9ad0cdad7e4beb3fa28e321359afa0c1d9faceaa86fbaae1a8aa7210fe3052376c7cdbb736194ee8213358b2043dd99a80fa07b3853f8a34f19bed6ad
   languageName: node
   linkType: hard
 
-"@rushstack/rig-package@npm:0.2.12":
-  version: 0.2.12
-  resolution: "@rushstack/rig-package@npm:0.2.12"
+"@rushstack/rig-package@npm:0.2.13":
+  version: 0.2.13
+  resolution: "@rushstack/rig-package@npm:0.2.13"
   dependencies:
     resolve: ~1.17.0
     strip-json-comments: ~3.1.1
-  checksum: 29375efc039a3e9446c78c345566c0f67896f753ac66e21c4cfdab87d438b93c26e261f77b872eb6f8a0feac47f7a023d86db94ce14ccad3e14916d62cf9481b
+  checksum: cd11096747cd70181abb3cdaa4ec7b4236d6c7ac2d5abd1ee462c3fcb5c87693fcc348f1f5a0036bde24c68af34165d24389e61e30c8dbadb4876e0b92de374f
   languageName: node
   linkType: hard
 
-"@rushstack/ts-command-line@npm:4.7.10":
-  version: 4.7.10
-  resolution: "@rushstack/ts-command-line@npm:4.7.10"
+"@rushstack/ts-command-line@npm:4.8.1":
+  version: 4.8.1
+  resolution: "@rushstack/ts-command-line@npm:4.8.1"
   dependencies:
     "@types/argparse": 1.0.38
     argparse: ~1.0.9
     colors: ~1.2.1
     string-argv: ~0.3.1
-  checksum: 40d37428ffbe9c55e5feac47049374cc51a191b9a98aba82ffa89aace7bbfedcc555fe1f2c5573d7718809c2d885af4fa13321e2cbd33037b9fe24fb05347475
+  checksum: 4ecbdbe9848a2a56a2cbade5dad14a835993c78e2c273b1711248d4f81544dabf19eef1860c7a69d638bd516981b40843dc7a66c4a919da16caf4445d3d38adc
   languageName: node
   linkType: hard
 
@@ -4455,7 +4455,7 @@ __metadata:
     jest: ^27.0.6
     jest-circus: ^27.0.6
     lerna: ^4.0.0
-    packemon: ^1.0.0
+    packemon: ^1.1.1
     prettier: ^2.3.2
     typescript: ^4.3.5
   languageName: unknown
@@ -6458,7 +6458,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.4, fast-glob@npm:^3.2.5, fast-glob@npm:^3.2.7":
+"fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.4, fast-glob@npm:^3.2.7":
   version: 3.2.7
   resolution: "fast-glob@npm:3.2.7"
   dependencies:
@@ -6530,10 +6530,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"filesize@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "filesize@npm:6.3.0"
-  checksum: 6bd6b30fbece9e3e04eca3e8f2656f336e86b16b598af69d9e0b38039b11bfa3955ee101f17bedaed01a65118710bb78b40f3df4518055d1f37b355500cc68ee
+"filesize@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "filesize@npm:7.0.0"
+  checksum: ada28792beca6fee3c26708e7e1bad9fa3b8553a0001de39278ba78d55e8ce963db2d3413a1d83efcf07ba446664b2865d8b4d4715eeb004b28d0dec8375cfb8
   languageName: node
   linkType: hard
 
@@ -10274,24 +10274,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"packemon@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "packemon@npm:1.0.0"
+"packemon@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "packemon@npm:1.1.1"
   dependencies:
     "@babel/core": ^7.14.3
     "@babel/plugin-proposal-decorators": ^7.14.2
     "@babel/plugin-transform-runtime": ^7.14.5
-    "@babel/preset-env": ^7.14.4
+    "@babel/preset-env": ^7.14.7
     "@babel/preset-flow": ^7.14.5
-    "@babel/preset-react": ^7.13.13
-    "@babel/preset-typescript": ^7.13.0
+    "@babel/preset-react": ^7.14.5
+    "@babel/preset-typescript": ^7.14.5
     "@boost/cli": ^2.10.4
     "@boost/common": ^2.7.2
     "@boost/debug": ^2.2.5
     "@boost/event": ^2.3.2
     "@boost/pipeline": ^2.2.5
     "@boost/terminal": ^2.2.1
-    "@microsoft/api-extractor": ^7.16.1
+    "@microsoft/api-extractor": ^7.18.1
     "@rollup/plugin-babel": ^5.3.0
     "@rollup/plugin-commonjs": ^19.0.0
     "@rollup/plugin-json": ^4.1.0
@@ -10299,8 +10299,8 @@ __metadata:
     babel-plugin-transform-async-to-promises: ^0.8.15
     builtin-modules: ^3.2.0
     execa: ^5.1.1
-    fast-glob: ^3.2.5
-    filesize: ^6.3.0
+    fast-glob: ^3.2.7
+    filesize: ^7.0.0
     fs-extra: ^10.0.0
     ink: ^3.0.8
     ink-progress-bar: ^3.0.0
@@ -10309,15 +10309,15 @@ __metadata:
     npm-packlist: ^2.2.2
     react: ^16.14.0
     rimraf: ^3.0.2
-    rollup: ^2.51.2
+    rollup: ^2.53.1
     rollup-plugin-node-externals: ^2.2.0
     rollup-plugin-polyfill-node: ^0.6.2
-    rollup-plugin-visualizer: ^5.5.0
+    rollup-plugin-visualizer: ^5.5.2
     semver: ^7.3.5
     spdx-license-list: ^6.4.0
   bin:
     packemon: lib/bin.js
-  checksum: ee6907322ebd166f62c4932d81a662d59c1f47583130835748f6b89f6fd0525f486a75902e9b674f1b908c97837ff5b590c6150a006c33eddac93b0ef025cf7d
+  checksum: f1ad3e9a90a1903b4334ee3ee49897ffff46500335cb3dc6a3b859eb90629ba456e287dc338ff254bff1a381b403a84f679fb7e190114ca08c5d9b99fc533759
   languageName: node
   linkType: hard
 
@@ -11488,9 +11488,9 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"rollup-plugin-visualizer@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "rollup-plugin-visualizer@npm:5.5.0"
+"rollup-plugin-visualizer@npm:^5.5.2":
+  version: 5.5.2
+  resolution: "rollup-plugin-visualizer@npm:5.5.2"
   dependencies:
     nanoid: ^3.1.22
     open: ^7.4.2
@@ -11500,13 +11500,13 @@ resolve@~1.19.0:
     rollup: ^2.0.0
   bin:
     rollup-plugin-visualizer: dist/bin/cli.js
-  checksum: a7572e8baf54e957fd86baf646971b893dd2e0907772bdb5d30fa69aab436efb2d7e825beca25be088a599e35cb5d5d4149eb46f98ea9d48924dd7285a00b078
+  checksum: ff3db8ff13fc863655c3c17eeccf093a03ee8511e356bf589963695b9568585f3c2f67066238e64b2eff225cb8536f0079799b4863b5161a64a8547d7b1344c1
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.51.2":
-  version: 2.52.2
-  resolution: "rollup@npm:2.52.2"
+"rollup@npm:^2.53.1":
+  version: 2.53.2
+  resolution: "rollup@npm:2.53.2"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -11514,7 +11514,7 @@ resolve@~1.19.0:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: b08f33d8e8813d99a223658d951395be939d187afbc7af079afb3e695d47dd7664514a8379380953903683fe59a0133ee2c595e5ed680947e40c110c0641a6f3
+  checksum: 41d32b1d44066f3e8eeb5239013397e3df74dbb37489aaa77f8357059b5998cb4af0108fb72b048d265ae5d88de933b0732007c07e5d5687f5ee3ae44fab9eee
   languageName: node
   linkType: hard
 
@@ -12761,7 +12761,7 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"typescript@^4.3.5, typescript@~4.3.2":
+"typescript@^4.3.5, typescript@~4.3.5":
   version: 4.3.5
   resolution: "typescript@npm:4.3.5"
   bin:
@@ -12771,7 +12771,7 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.3.5#builtin<compat/typescript>, typescript@patch:typescript@~4.3.2#builtin<compat/typescript>":
+"typescript@patch:typescript@^4.3.5#builtin<compat/typescript>, typescript@patch:typescript@~4.3.5#builtin<compat/typescript>":
   version: 4.3.5
   resolution: "typescript@patch:typescript@npm%3A4.3.5#builtin<compat/typescript>::version=4.3.5&hash=ddfc1b"
   bin:
