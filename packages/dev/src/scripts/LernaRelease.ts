@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-import { Arguments, ParserOptions, Script, ScriptContext } from '@beemo/core';
+import { Arguments, ParserOptions, Path, Script, ScriptContext } from '@beemo/core';
 
 export interface LernaReleaseOptions {
 	changelogPreset?: string;
@@ -11,6 +11,8 @@ export interface LernaReleaseOptions {
 
 class LernaRelease extends Script<LernaReleaseOptions> {
 	override readonly name = 'beemo-script-lerna-release';
+
+	npmClient: string = 'npx';
 
 	override parse(): ParserOptions<LernaReleaseOptions> {
 		return {
@@ -38,9 +40,13 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 	}
 
 	async execute(context: ScriptContext, args: Arguments<LernaReleaseOptions>) {
+		if (Path.resolve('yarn.lock', context.cwd).exists()) {
+			this.npmClient = 'yarn';
+		}
+
 		const preid = args.options.prerelease ? args.options.preid : undefined;
 
-		await this.checkForGitHubToken();
+		this.checkForGitHubToken();
 
 		await this.versionPackages(
 			args.options.changelogPreset ?? 'beemo',
@@ -52,9 +58,9 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 	}
 
 	// Required to create GitHub releases
-	async checkForGitHubToken() {
+	checkForGitHubToken() {
 		// Use require instead of import so that we can include TypeScript files
-		await require('../checks/githubToken');
+		require('../checks/githubToken');
 	}
 
 	// https://github.com/lerna/lerna/tree/master/commands/version#readme
@@ -64,7 +70,9 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 			: `conventional-changelog-${preset}`;
 
 		const args = [
+			'lerna',
 			'version',
+			'--yes',
 			// Only run on master
 			'--allow-branch',
 			'master',
@@ -75,7 +83,7 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 			'--push',
 			// Alter commit message to skip CI
 			'--message',
-			'Release [ci skip]',
+			'"Release [ci skip]"',
 			// Use conventional commits
 			'--conventional-commits',
 			'--changelog-preset',
@@ -88,7 +96,7 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 			args.push('--conventional-prerelease', '--preid', preid);
 		}
 
-		const { stdout } = await this.executeCommand('lerna', args, {
+		const { stdout } = await this.executeCommand(this.npmClient, args, {
 			extendEnv: true,
 			preferLocal: true,
 		});
@@ -98,13 +106,13 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 
 	// https://github.com/lerna/lerna/tree/master/commands/publish#readme
 	async publishPackages(preid?: string) {
-		const args = ['publish', 'from-git'];
+		const args = ['lerna', 'publish', 'from-git', '--yes'];
 
 		if (preid) {
 			args.push('--dist-tag', 'next', '--preid', preid);
 		}
 
-		const { stdout } = await this.executeCommand('lerna', args, {
+		const { stdout } = await this.executeCommand(this.npmClient, args, {
 			extendEnv: true,
 			preferLocal: true,
 		});
