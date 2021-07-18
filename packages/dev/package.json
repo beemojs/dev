@@ -39,8 +39,8 @@
     "npm": ">=6.13.0"
   },
   "optionalPeerDependencies": {
-    "@beemo/cli": "^2.0.0-rc.4",
-    "@beemo/core": "^2.0.0-rc.4"
+    "@beemo/cli": "^2.0.0",
+    "@beemo/core": "^2.0.0"
   },
   "dependencies": {
     "@babel/cli": "^7.14.5",
