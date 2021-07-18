@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.1 - 2021-07-18
+
+#### 🐞 Fixes
+
+- Disable compat plugin within node code. ([ebce711](https://github.com/beemojs/dev/commit/ebce711))
+
+**Note:** Version bump only for package @beemo/config-constants
+
+
+
+
+
 # 1.0.0 - 2021-06-25
 
 #### 🎉 Release

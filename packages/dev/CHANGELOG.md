@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.0 - 2021-07-18
+
+#### 🚀 Updates
+
+- Add script for releasing packages through Lerna. (#5) ([eb4a2b5](https://github.com/beemojs/dev/commit/eb4a2b5)), closes [#5](https://github.com/beemojs/dev/issues/5)
+
+#### 🐞 Fixes
+
+- Use `peerDependenciesMeta` instead of `optionalPeerDependencies`. ([5c7fa4a](https://github.com/beemojs/dev/commit/5c7fa4a))
+- Use require instead of import for script. ([c2f4fd6](https://github.com/beemojs/dev/commit/c2f4fd6))
+
+#### 📦 Dependencies
+
+- **[beemo]** Bump peer dependencies to v2. ([31dbc21](https://github.com/beemojs/dev/commit/31dbc21))
+- **[beemo]** Update to v2. ([016e988](https://github.com/beemojs/dev/commit/016e988))
+- **[eslint]** Update to v7.31. ([2d2780f](https://github.com/beemojs/dev/commit/2d2780f))
+
+#### 🛠 Internals
+
+- Run full check for release. ([23cd4bc](https://github.com/beemojs/dev/commit/23cd4bc))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ### 1.2.1 - 2021-07-15
 
 #### 🐞 Fixes

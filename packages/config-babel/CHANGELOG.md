@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.2 - 2021-07-18
+
+#### 📦 Dependencies
+
+- **[beemo]** Bump peer dependencies to v2. ([31dbc21](https://github.com/beemojs/dev/commit/31dbc21))
+- **[beemo]** Update to v2. ([016e988](https://github.com/beemojs/dev/commit/016e988))
+
+**Note:** Version bump only for package @beemo/config-babel
+
+
+
+
+
 ### 1.0.1 - 2021-07-11
 
 #### 📦 Dependencies

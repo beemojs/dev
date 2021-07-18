@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.3 - 2021-07-18
+
+#### 🐞 Fixes
+
+- Disable compat plugin within node code. ([ebce711](https://github.com/beemojs/dev/commit/ebce711))
+
+#### 📦 Dependencies
+
+- **[beemo]** Bump peer dependencies to v2. ([31dbc21](https://github.com/beemojs/dev/commit/31dbc21))
+- **[beemo]** Update to v2. ([016e988](https://github.com/beemojs/dev/commit/016e988))
+- **[eslint]** Update to v7.31. ([2d2780f](https://github.com/beemojs/dev/commit/2d2780f))
+
+**Note:** Version bump only for package @beemo/config-eslint
+
+
+
+
+
 ### 1.0.2 - 2021-07-11
 
 #### 📦 Dependencies
