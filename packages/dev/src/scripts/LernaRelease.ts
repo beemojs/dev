@@ -48,6 +48,10 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 
 		this.checkForGitHubToken();
 
+		if (process.env.CI) {
+			await this.setGitEnvVars();
+		}
+
 		await this.versionPackages(
 			args.options.changelogPreset ?? 'beemo',
 			args.options.graduate,
@@ -61,6 +65,38 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 	checkForGitHubToken() {
 		// Use require instead of import so that we can include TypeScript files
 		require('../checks/githubToken');
+	}
+
+	// https://git-scm.com/book/en/v2/Git-Internals-Environment-Variables
+	async setGitEnvVars() {
+		let name = '';
+		let email = '';
+
+		try {
+			const gitName = await this.executeCommand('git', ['config', '--get', 'user.name']);
+
+			if (gitName.stdout) {
+				name = gitName.stdout;
+			}
+
+			const gitEmail = await this.executeCommand('git', ['config', '--get', 'user.email']);
+
+			if (gitEmail.stdout) {
+				email = gitEmail.stdout;
+			}
+		} catch {
+			name = process.env.GITHUB_USER ?? 'gh-actions';
+			email = process.env.GITHUB_EMAIL ?? 'actions@github.com';
+		}
+
+		Object.assign(process.env, {
+			GIT_ASKPASS: 'echo',
+			GIT_AUTHOR_EMAIL: email,
+			GIT_AUTHOR_NAME: name,
+			GIT_COMMITTER_EMAIL: email,
+			GIT_COMMITTER_NAME: name,
+			GIT_TERMINAL_PROMPT: '0',
+		});
 	}
 
 	// https://github.com/lerna/lerna/tree/master/commands/version#readme
