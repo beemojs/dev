@@ -1506,19 +1506,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/cli@npm:^2.0.0-rc.4":
-  version: 2.0.0-rc.4
-  resolution: "@beemo/cli@npm:2.0.0-rc.4"
+"@beemo/cli@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@beemo/cli@npm:2.0.0"
   dependencies:
-    "@boost/cli": ^2.10.4
+    "@boost/cli": ^2.11.1
+    "@boost/common": ^2.8.1
+    "@boost/pipeline": ^2.2.7
     debug: ^4.3.2
     ink: ^3.0.8
     react: ^16.14.0
   peerDependencies:
-    "@beemo/core": ^2.0.0-alpha.0
+    "@beemo/core": ^2.0.0
   bin:
     beemo: lib/bin.js
-  checksum: c50f2ed50b24e6166ec5961bf21d4e53ccae17f52fb0e1601a66884e53324ddfdbbe8c73904ac76a29b969a02878acbe14afdf7433f69c0dfac21c0b35728697
+  checksum: a84f5f1fea30ce4745fae604b08f0c3c259cdf1239a87eff07e0dd963a63b1a2bd8d3dea21a7fb438da94008577c3f05db9c28055c189c621c511b41151a30b6
   languageName: node
   linkType: hard
 
@@ -1527,8 +1529,8 @@ __metadata:
   resolution: "@beemo/config-babel@workspace:packages/config-babel"
   dependencies:
     "@babel/core": ^7.14.6
-    "@beemo/core": ^2.0.0-rc.4
-    "@beemo/driver-babel": ^2.0.0-rc.4
+    "@beemo/core": ^2.0.0
+    "@beemo/driver-babel": ^2.0.0
     babel-preset-beemo: ^1.0.0
   peerDependencies:
     "@babel/core": ">=7.0.0"
@@ -1548,8 +1550,8 @@ __metadata:
   resolution: "@beemo/config-eslint@workspace:packages/config-eslint"
   dependencies:
     "@beemo/config-constants": ^1.0.0
-    "@beemo/core": ^2.0.0-rc.4
-    "@beemo/driver-eslint": ^2.0.0-rc.4
+    "@beemo/core": ^2.0.0
+    "@beemo/driver-eslint": ^2.0.0
     eslint: ^7.30.0
     eslint-config-beemo: ^1.0.2
   peerDependencies:
@@ -1563,8 +1565,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@beemo/config-jest@workspace:packages/config-jest"
   dependencies:
-    "@beemo/core": ^2.0.0-rc.4
-    "@beemo/driver-jest": ^2.0.0-rc.3
+    "@beemo/core": ^2.0.0
+    "@beemo/driver-jest": ^2.0.0
     jest: ^27.0.6
     jest-preset-beemo: ^1.0.1
   peerDependencies:
@@ -1579,8 +1581,8 @@ __metadata:
   resolution: "@beemo/config-prettier@workspace:packages/config-prettier"
   dependencies:
     "@beemo/config-constants": ^1.0.0
-    "@beemo/core": ^2.0.0-rc.4
-    "@beemo/driver-prettier": ^2.0.0-rc.4
+    "@beemo/core": ^2.0.0
+    "@beemo/driver-prettier": ^2.0.0
     prettier: ^2.3.2
     prettier-config-beemo: ^1.0.0
   peerDependencies:
@@ -1594,8 +1596,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@beemo/config-typescript@workspace:packages/config-typescript"
   dependencies:
-    "@beemo/core": ^2.0.0-rc.4
-    "@beemo/driver-typescript": ^2.0.0-rc.4
+    "@beemo/core": ^2.0.0
+    "@beemo/driver-typescript": ^2.0.0
     tsconfig-beemo: ^1.0.0
     typescript: ^4.3.5
   peerDependencies:
@@ -1605,21 +1607,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/core@npm:^2.0.0-rc.4":
-  version: 2.0.0-rc.4
-  resolution: "@beemo/core@npm:2.0.0-rc.4"
+"@beemo/core@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@beemo/core@npm:2.0.0"
   dependencies:
-    "@boost/args": ^2.3.2
-    "@boost/common": ^2.7.2
-    "@boost/config": ^2.4.2
-    "@boost/debug": ^2.2.5
-    "@boost/event": ^2.3.2
-    "@boost/internal": ^2.2.2
-    "@boost/log": ^2.2.5
-    "@boost/pipeline": ^2.2.5
-    "@boost/plugin": ^2.3.3
-    "@boost/terminal": ^2.2.1
-    "@boost/translate": ^2.2.5
+    "@boost/args": ^2.3.3
+    "@boost/common": ^2.8.1
+    "@boost/config": ^2.5.1
+    "@boost/debug": ^2.2.7
+    "@boost/event": ^2.3.3
+    "@boost/internal": ^2.2.3
+    "@boost/log": ^2.2.7
+    "@boost/pipeline": ^2.2.7
+    "@boost/plugin": ^2.4.1
+    "@boost/terminal": ^2.2.2
+    "@boost/translate": ^2.2.7
     execa: ^5.1.1
     fast-glob: ^3.2.7
     fs-extra: ^10.0.0
@@ -1627,7 +1629,7 @@ __metadata:
     is-glob: ^4.0.1
     lodash: ^4.17.21
     micromatch: ^4.0.4
-  checksum: ee6b35bbda4138c595ace296e9195d819fea3a5ba298ae5e62abbee81c2fba9c574778aa83b00d62b150eaae6ac037878fc1767b50eb9d92526fdce283456f31
+  checksum: b719d9c6242d95885b80db7790a86486ec7f536354e4ffe3bfb95bcbc0903fdcebe14eb156768f7d963c7f39fae8cb1c03fb06266a07d038052b3cf1b2f37001
   languageName: node
   linkType: hard
 
@@ -1637,18 +1639,18 @@ __metadata:
   dependencies:
     "@babel/cli": ^7.14.5
     "@babel/core": ^7.14.6
-    "@beemo/cli": ^2.0.0-rc.4
+    "@beemo/cli": ^2.0.0
     "@beemo/config-babel": ^1.0.1
     "@beemo/config-eslint": ^1.0.2
     "@beemo/config-jest": ^1.0.2
     "@beemo/config-prettier": ^1.0.1
     "@beemo/config-typescript": ^1.0.1
-    "@beemo/core": ^2.0.0-rc.4
-    "@beemo/driver-babel": ^2.0.0-rc.4
-    "@beemo/driver-eslint": ^2.0.0-rc.4
-    "@beemo/driver-jest": ^2.0.0-rc.3
-    "@beemo/driver-prettier": ^2.0.0-rc.4
-    "@beemo/driver-typescript": ^2.0.0-rc.4
+    "@beemo/core": ^2.0.0
+    "@beemo/driver-babel": ^2.0.0
+    "@beemo/driver-eslint": ^2.0.0
+    "@beemo/driver-jest": ^2.0.0
+    "@beemo/driver-prettier": ^2.0.0
+    "@beemo/driver-typescript": ^2.0.0
     eslint: ^7.30.0
     jest: ^27.0.6
     prettier: ^2.3.2
@@ -1656,237 +1658,242 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/driver-babel@npm:^2.0.0-rc.4":
-  version: 2.0.0-rc.4
-  resolution: "@beemo/driver-babel@npm:2.0.0-rc.4"
+"@beemo/driver-babel@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@beemo/driver-babel@npm:2.0.0"
   dependencies:
     rimraf: ^3.0.2
   peerDependencies:
     "@babel/core": ^7.0.0
-    "@beemo/core": ^2.0.0-alpha.0
-  checksum: 15e638da2d7cadec958f51594423e67e68b687f85da05f0f41103943a5bb39e2669ad947663c800d356f4f2bccf3d4d4b114e55760cadc10505476cf54b918b1
+    "@beemo/core": ^2.0.0
+  checksum: 6f09e791b207e3f8aa4f0b8bbcd1a3fe3a51d288b1d31b4fdfd5b1c89dd9d9fa5ca41d8057261be1572d5e080ed8f79fdbca535ee32a5caf813f53d510e982d5
   languageName: node
   linkType: hard
 
-"@beemo/driver-eslint@npm:^2.0.0-rc.4":
-  version: 2.0.0-rc.4
-  resolution: "@beemo/driver-eslint@npm:2.0.0-rc.4"
+"@beemo/driver-eslint@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@beemo/driver-eslint@npm:2.0.0"
   dependencies:
-    "@boost/event": ^2.3.2
+    "@boost/event": ^2.3.3
     "@types/eslint": "*"
   peerDependencies:
-    "@beemo/core": ^2.0.0-alpha.0
+    "@beemo/core": ^2.0.0
     eslint: ^7.0.0
-  checksum: 416ee7548a9e66b402410e24384697499fa9d59b85eb815900aac4c5956c43e49d03d0e72847df087bda9d132ec5685d30f02c921341d28e36f4d9501905cda1
+  checksum: 845c581666d0012d83d63dc6403ac1df9d86d8b2ac4c01ad97efce84b46b36ab839d46be2cafbc44c8c3b51da02c83772db94dda5aaf566f79633bbdad9a1f76
   languageName: node
   linkType: hard
 
-"@beemo/driver-jest@npm:^2.0.0-rc.3":
-  version: 2.0.0-rc.3
-  resolution: "@beemo/driver-jest@npm:2.0.0-rc.3"
+"@beemo/driver-jest@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@beemo/driver-jest@npm:2.0.0"
   dependencies:
     "@jest/types": ^27.0.6
   peerDependencies:
-    "@beemo/core": ^2.0.0-alpha.0
+    "@beemo/core": ^2.0.0
     jest: ^26.0.0 || ^27.0.0
-  checksum: 283eb5c402d79097baa6e215721189964cd00456c1142a2a4181935d85a3761352c26793218518a46588b15ebb28f71a40d8b9de3e316466cf1874b592ab72c7
+  checksum: d3e22f0973306af8629cc7bef1658b6b139b623d1b72fc67f376520dbe3238242d29f8b37f3a0856ffc2ae206f185b3df64725f46a67ff26f6e902c9ae739134
   languageName: node
   linkType: hard
 
-"@beemo/driver-prettier@npm:^2.0.0-rc.4":
-  version: 2.0.0-rc.4
-  resolution: "@beemo/driver-prettier@npm:2.0.0-rc.4"
+"@beemo/driver-prettier@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@beemo/driver-prettier@npm:2.0.0"
   dependencies:
-    "@boost/event": ^2.3.2
+    "@boost/event": ^2.3.3
     "@types/prettier": "*"
   peerDependencies:
-    "@beemo/core": ^2.0.0-alpha.0
+    "@beemo/core": ^2.0.0
     prettier: ^2.0.0
-  checksum: 08747b55b22002f6eb99b0339aa0bf6421ad3cdcd62dad89bebf7df0bfc09e5572000eee2dc4bcde856518244802c6e8317c6d87c23569be1020659d61673295
+  checksum: 71552b940eff23356abce112e303496df55c7e2dd40dddb630433e5b82fcd4228b65a75ee3dfcf20074eecc47daf23329fa0deb765c927367fbfab43a9e07424
   languageName: node
   linkType: hard
 
-"@beemo/driver-typescript@npm:^2.0.0-rc.4":
-  version: 2.0.0-rc.4
-  resolution: "@beemo/driver-typescript@npm:2.0.0-rc.4"
+"@beemo/driver-typescript@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@beemo/driver-typescript@npm:2.0.0"
   dependencies:
-    "@boost/event": ^2.3.2
+    "@boost/event": ^2.3.3
     rimraf: ^3.0.2
   peerDependencies:
-    "@beemo/core": ^2.0.0-alpha.0
+    "@beemo/core": ^2.0.0
     typescript: ^4.0.0
-  checksum: ec39afce7d1fddd5a5fd37082a7e6bf5336536198282111a1422cdb6b45c51f8af5fe3cb3bd6f0e50467495ec518310b1be37bc1b2c58f4893a067372670de61
+  checksum: bafb508a63a369d4c233e8890c290f8b46ec19101e28731fbfe39ed66b474be59f086cc222e6134f1ac3a03088e9c301f3e91bd8737c383396d01737b8feac80
   languageName: node
   linkType: hard
 
-"@boost/args@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "@boost/args@npm:2.3.2"
+"@boost/args@npm:^2.3.3":
+  version: 2.3.3
+  resolution: "@boost/args@npm:2.3.3"
   dependencies:
-    "@boost/internal": ^2.2.2
+    "@boost/internal": ^2.2.3
     levenary: ^1.1.1
-  checksum: 838e5d5d76909da312c8be3c9fb1713a281ac910e6cd336033aea45692c07bd001d669076ea34eb48d5a88321aeb3ef625e4be9b5a6f5a3299f3bad3b7f1e1a8
+  checksum: 1894d6af357b58caf9e773553ffb307574a5412d41d32b4db673be63e4a9e1f801165edfdfcbf1d82866e4b7e6e64fe2d3a04a621d00d8fa753c09b21b9ff612
   languageName: node
   linkType: hard
 
-"@boost/cli@npm:^2.10.4":
-  version: 2.10.4
-  resolution: "@boost/cli@npm:2.10.4"
+"@boost/cli@npm:^2.10.4, @boost/cli@npm:^2.11.1":
+  version: 2.11.1
+  resolution: "@boost/cli@npm:2.11.1"
   dependencies:
-    "@boost/args": ^2.3.2
-    "@boost/common": ^2.7.2
-    "@boost/event": ^2.3.2
-    "@boost/internal": ^2.2.2
-    "@boost/log": ^2.2.5
-    "@boost/terminal": ^2.2.1
-    "@boost/translate": ^2.2.5
-    execa: ^5.0.0
+    "@boost/args": ^2.3.3
+    "@boost/common": ^2.8.1
+    "@boost/event": ^2.3.3
+    "@boost/internal": ^2.2.3
+    "@boost/log": ^2.2.7
+    "@boost/terminal": ^2.2.2
+    "@boost/translate": ^2.2.7
+    execa: ^5.1.1
     levenary: ^1.1.1
-    semver: ^7.3.4
+    semver: ^7.3.5
   peerDependencies:
     ink: ^3.0.0
     react: ^16.8.0
-  checksum: 1027c7244ab2b5fcb910a9f983802f15792b7ddabe2d23e8c972fe9cd8f1bb17e6f2d78fbba4a05b9bf79cdacfa76be65c8c68e2d09bd643ff90a226136ddd3b
+  checksum: f55936cfd93c891b783e44a5adea3aa5b40152fa140cfce8b5ad291ae2c7fc9ba85b9c97b36033be0614c824422e2bb3bb3a8fb47c649a1e980ef17102ea203f
   languageName: node
   linkType: hard
 
-"@boost/common@npm:^2.7.2":
-  version: 2.7.2
-  resolution: "@boost/common@npm:2.7.2"
+"@boost/common@npm:^2.7.2, @boost/common@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "@boost/common@npm:2.8.1"
   dependencies:
-    "@boost/decorators": ^2.1.2
-    "@boost/internal": ^2.2.2
-    fast-glob: ^3.2.4
+    "@boost/decorators": ^2.1.3
+    "@boost/internal": ^2.2.3
+    fast-glob: ^3.2.7
     json5: ^2.2.0
     optimal: ^4.3.0
     pretty-ms: ^7.0.1
     yaml: ^1.10.2
-  checksum: 80b0df859089acd5520c88640a151ca311c68eac90ce0368b6fc7954e45f724847c69b75b6b6abb3a8074c8920b564acdf84cf1f9b05508bd126dbc7498838d8
+  peerDependencies:
+    typescript: ^4.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: d82fcce53f06c428d889c1fe0f9cead12c698864977908b30f618ff33608e1354f1be4067bbca0b6010b1dcc06d880ea93f5a66534018b4cf17cc78a3ed803ca
   languageName: node
   linkType: hard
 
-"@boost/config@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "@boost/config@npm:2.4.2"
+"@boost/config@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "@boost/config@npm:2.5.1"
   dependencies:
-    "@boost/common": ^2.7.2
-    "@boost/debug": ^2.2.5
-    "@boost/event": ^2.3.2
-    "@boost/internal": ^2.2.2
+    "@boost/common": ^2.8.1
+    "@boost/debug": ^2.2.7
+    "@boost/event": ^2.3.3
+    "@boost/internal": ^2.2.3
     minimatch: ^3.0.4
-  checksum: 2c0d4030ddad43b0fb0cb849bfad1cab4233881b436a5684ec59c507a6a189fe1d98589fda0a80a2dbf714290726425a786fb994d697f3bf02b3caff576970ec
+  checksum: 2f24a926e5ac72237ade65a0800b425a2b86186d624a83ef2ebca5344858fbd3f88c92605684c8a554274fe194eedc654905f0c76a60726480bef36cfc736f2b
   languageName: node
   linkType: hard
 
-"@boost/debug@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "@boost/debug@npm:2.2.5"
+"@boost/debug@npm:^2.2.5, @boost/debug@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "@boost/debug@npm:2.2.7"
   dependencies:
-    "@boost/common": ^2.7.2
-    "@boost/internal": ^2.2.2
-    "@types/debug": ^4.1.5
-    debug: ^4.3.1
-    execa: ^5.0.0
-    fast-glob: ^3.2.4
-  checksum: bcc2f7751f55d034a109a7495a1b7dcf100627edc5998e834ecf5ac328a9a9c04254637db7f93b05972cba76dda9f5f3a649cdc3ff315d669f1d6e6646e8be64
+    "@boost/common": ^2.8.1
+    "@boost/internal": ^2.2.3
+    "@types/debug": ^4.1.6
+    debug: ^4.3.2
+    execa: ^5.1.1
+    fast-glob: ^3.2.7
+  checksum: f5680f70d49361569cc77dce8bbfcea80c115e6a3a957564f4dbe45dc2f1d879440f92581c242be52a3c56d613aeec8918e0c4169dc440d76fa16696faf54ea8
   languageName: node
   linkType: hard
 
-"@boost/decorators@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "@boost/decorators@npm:2.1.2"
-  checksum: c7542587d6a24549e709d1277a85d7217253daea23d45d3a970bbaefc8a02d7f1a71f6534280eb2154ee833a8d5d26fa3140beffc995e9c621a3c01ddaae9e03
+"@boost/decorators@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "@boost/decorators@npm:2.1.3"
+  checksum: 348465acb3663dfc0f8012d7c882c197545b9273c6be736a7eb648c9d918bf298059bcd121c557efddbc4a55ed35bd75d199325b74b413596242e9d6ad45026c
   languageName: node
   linkType: hard
 
-"@boost/event@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "@boost/event@npm:2.3.2"
-  dependencies:
-    "@boost/internal": ^2.2.2
-  checksum: ff1c8baad08ca3f235e1002911a5fec406fa5df183dbbb98101e215c0047be1a65b7a43b4dbbdafd4308d34e92a2dd002e34035ab89990d62409ae3ef9b3ae02
-  languageName: node
-  linkType: hard
-
-"@boost/internal@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "@boost/internal@npm:2.2.2"
-  dependencies:
-    debug: ^4.3.1
-  checksum: e9fb7ee63f74c1be189bcdad401fb0c1224eec1b8e1e4f09cc41cb6f9e81709fd77a2db798c5254de539384c8a8dd40927d1af48cb1bf679959a228cb5e467b8
-  languageName: node
-  linkType: hard
-
-"@boost/log@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "@boost/log@npm:2.2.5"
-  dependencies:
-    "@boost/common": ^2.7.2
-    "@boost/internal": ^2.2.2
-    "@boost/translate": ^2.2.5
-    chalk: ^4.1.0
-  checksum: 85b48cb40178126a3125520c175df4abeb4d4ba9d4acf7c4d9c2405f77e491396bfe8107f53d8846e7d89b1e353da20236c973d98cb1462d9bd675e561492fc9
-  languageName: node
-  linkType: hard
-
-"@boost/pipeline@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "@boost/pipeline@npm:2.2.5"
-  dependencies:
-    "@boost/common": ^2.7.2
-    "@boost/debug": ^2.2.5
-    "@boost/event": ^2.3.2
-    "@boost/internal": ^2.2.2
-    "@boost/translate": ^2.2.5
-    execa: ^5.0.0
-    lodash: ^4.17.20
-    split: ^1.0.1
-  checksum: b94935d7590791278bce4708f2800a6f70aaadee9f12693cb937a725b556224fde9034beb9fca9f2fae6faed6d25a8dd6b359d914ccff5f171093b12ef4edac9
-  languageName: node
-  linkType: hard
-
-"@boost/plugin@npm:^2.3.3":
+"@boost/event@npm:^2.3.2, @boost/event@npm:^2.3.3":
   version: 2.3.3
-  resolution: "@boost/plugin@npm:2.3.3"
+  resolution: "@boost/event@npm:2.3.3"
   dependencies:
-    "@boost/common": ^2.7.2
-    "@boost/debug": ^2.2.5
-    "@boost/event": ^2.3.2
-    "@boost/internal": ^2.2.2
-    lodash: ^4.17.20
-    pluralize: ^8.0.0
-  checksum: 859e404b3f62e01e1fb547a5848b051affa6fbb6ea794d404280ea0043e3fd8ef13f021d43d1142bb997d4c3f30c60c252c2e1e6d382a746a62443e6555552f8
+    "@boost/internal": ^2.2.3
+  checksum: dbb0b00eb4b65829af455951e12e55f9ffafb947d2788496d38f9370e149103e0e3fe33d05dbc079de46ffe7604d8935a6abba6686ad82472bc73c7980092ee1
   languageName: node
   linkType: hard
 
-"@boost/terminal@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "@boost/terminal@npm:2.2.1"
+"@boost/internal@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@boost/internal@npm:2.2.3"
+  dependencies:
+    debug: ^4.3.2
+  checksum: 12be2fd044f198a4223c3048da53a70d3f01d6f6df83c19b0be8689e8e0c92cfb67d604dd9ed650811b3b320ed983bc408f16666fb8f1543203686086f6f7bd8
+  languageName: node
+  linkType: hard
+
+"@boost/log@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "@boost/log@npm:2.2.7"
+  dependencies:
+    "@boost/common": ^2.8.1
+    "@boost/internal": ^2.2.3
+    "@boost/translate": ^2.2.7
+    chalk: ^4.1.1
+  checksum: 7b9c46e8a8724be2f4f0a628406521669e810391e42fc4959344dd259a8fe7d7716b1b810d0808c1b1a8f68cf1e03ab9cd778ace4d98227200b17a63b61e5cbd
+  languageName: node
+  linkType: hard
+
+"@boost/pipeline@npm:^2.2.5, @boost/pipeline@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "@boost/pipeline@npm:2.2.7"
+  dependencies:
+    "@boost/common": ^2.8.1
+    "@boost/debug": ^2.2.7
+    "@boost/event": ^2.3.3
+    "@boost/internal": ^2.2.3
+    "@boost/translate": ^2.2.7
+    execa: ^5.1.1
+    lodash: ^4.17.21
+    split: ^1.0.1
+  checksum: bef84034ae83e6debc17ad931a1c6118e191fa12607ff8fcf3b83685f03726c69c6e6be9f98eda9bd3ff9312ae84913b59f18e25a3129a098dc8e83beb54b532
+  languageName: node
+  linkType: hard
+
+"@boost/plugin@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@boost/plugin@npm:2.4.1"
+  dependencies:
+    "@boost/common": ^2.8.1
+    "@boost/debug": ^2.2.7
+    "@boost/event": ^2.3.3
+    "@boost/internal": ^2.2.3
+    lodash: ^4.17.21
+    pluralize: ^8.0.0
+  checksum: 357df048571263e160ce66f6643f5b5138b84a4fbf736c7a54ab43f5c517d81d79d0caf1c36b7b570ce5b4c97048d6d58a607cff8cbfa322732fa8a243b08288
+  languageName: node
+  linkType: hard
+
+"@boost/terminal@npm:^2.2.1, @boost/terminal@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@boost/terminal@npm:2.2.2"
   dependencies:
     ansi-escapes: ^4.3.2
     ansi-regex: ^5.0.0
-    chalk: ^4.1.0
+    chalk: ^4.1.1
     cli-truncate: ^2.1.0
     figures: ^3.2.0
     slice-ansi: ^4.0.0
     string-width: ^4.2.2
     strip-ansi: ^6.0.0
-    supports-hyperlinks: ^2.1.0
+    supports-hyperlinks: ^2.2.0
     term-size: ^2.2.1
     wrap-ansi: ^7.0.0
-  checksum: aaa0b5d7b271f22ca9fe6b2beddee4a28c5a60e2d230e73905524ef22aa7cc8a3f97a0007cf56c8064ba089d32975f20f9c96d72af1bcf61506a6e4a74f57408
+  checksum: 1f099e5d864b5e5f97734b18bb9e67757edfc98ee73ab63ba20f01fce0a16db820ad8d523a06f4c79264187762de31b54f9d47ecea75a8ce81176c89ca3b1209
   languageName: node
   linkType: hard
 
-"@boost/translate@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "@boost/translate@npm:2.2.5"
+"@boost/translate@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "@boost/translate@npm:2.2.7"
   dependencies:
-    "@boost/common": ^2.7.2
-    "@boost/internal": ^2.2.2
-    i18next: ^20.1.0
+    "@boost/common": ^2.8.1
+    "@boost/internal": ^2.2.3
+    i18next: ^20.3.2
     os-locale: ^5.0.0
-  checksum: eb5aca0e61c42e7eeeb4e8f861d056df71de09fe1a3d068601b38bf44d188769b73e42209ae18760de3f5c5ab9164c53da74a0669bb2a712c0e08326781c1691
+  checksum: 252c5c8b4468d7bd33fbf5a84cb6bc9f303cd27df9021f0a7cf9d570fc90d13825859d431bffbe85bceebdb91dde4623a91a8fca0533f137e9ea8d2cd7dec2d2
   languageName: node
   linkType: hard
 
@@ -3469,10 +3476,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/debug@npm:^4.1.5":
-  version: 4.1.5
-  resolution: "@types/debug@npm:4.1.5"
-  checksum: 416ad24bc589be0fb8c78bea972aa7d4ffdf6b136239701b1792674463b2dbf8c6707f6055ec484f79ec1f2b528ffef90c87e55df7e4a0f458184cad5bf0cfc8
+"@types/debug@npm:^4.1.6":
+  version: 4.1.6
+  resolution: "@types/debug@npm:4.1.6"
+  checksum: f2816703a81f2cecb9fe575ed73f69378f190f92e49aab01b5b1832166cd89b19d4e85999c955f8993d3dba36e78ffd1ac5f697449eff13a6a13de309dc6e0f5
   languageName: node
   linkType: hard
 
@@ -4444,12 +4451,12 @@ __metadata:
   resolution: "beemo-dev@workspace:."
   dependencies:
     "@babel/core": ^7.14.6
-    "@beemo/core": ^2.0.0-rc.4
-    "@beemo/driver-babel": ^2.0.0-rc.4
-    "@beemo/driver-eslint": ^2.0.0-rc.4
-    "@beemo/driver-jest": ^2.0.0-rc.3
-    "@beemo/driver-prettier": ^2.0.0-rc.4
-    "@beemo/driver-typescript": ^2.0.0-rc.4
+    "@beemo/core": ^2.0.0
+    "@beemo/driver-babel": ^2.0.0
+    "@beemo/driver-eslint": ^2.0.0
+    "@beemo/driver-jest": ^2.0.0
+    "@beemo/driver-prettier": ^2.0.0
+    "@beemo/driver-typescript": ^2.0.0
     conventional-changelog-beemo: ^2.1.0
     eslint: ^7.30.0
     jest: ^27.0.6
@@ -6458,7 +6465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.4, fast-glob@npm:^3.2.7":
+"fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.7":
   version: 3.2.7
   resolution: "fast-glob@npm:3.2.7"
   dependencies:
@@ -7247,12 +7254,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^20.1.0":
-  version: 20.2.1
-  resolution: "i18next@npm:20.2.1"
+"i18next@npm:^20.3.2":
+  version: 20.3.3
+  resolution: "i18next@npm:20.3.3"
   dependencies:
     "@babel/runtime": ^7.12.0
-  checksum: b73d828f43a8df4edfcc85f23721c1f2bc797367ac9864e75f6312a5f7e9a3729917f4ea0e6149eb78f87b3acdf9dfee72b37c2b2f00e5f5ed31ccb1de75c33c
+  checksum: 801c25c0719be27948bfe000ddf3bd70629c51663ed9ebba666891b4407a71bb538d1f132ad5674e9b6fd351dd4c5adab1cba7e4182a21823d8d72ee2f118485
   languageName: node
   linkType: hard
 
@@ -12323,7 +12330,7 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"supports-hyperlinks@npm:^2.0.0, supports-hyperlinks@npm:^2.1.0":
+"supports-hyperlinks@npm:^2.0.0, supports-hyperlinks@npm:^2.2.0":
   version: 2.2.0
   resolution: "supports-hyperlinks@npm:2.2.0"
   dependencies:

@@ -38,8 +38,8 @@
     "eslint-config-beemo": "^1.0.2"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.0-rc.4",
-    "@beemo/driver-eslint": "^2.0.0-rc.4",
+    "@beemo/core": "^2.0.0",
+    "@beemo/driver-eslint": "^2.0.0",
     "eslint": "^7.30.0"
   },
   "funding": {

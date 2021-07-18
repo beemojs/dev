@@ -39,8 +39,8 @@
     "prettier-config-beemo": "^1.0.0"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.0-rc.4",
-    "@beemo/driver-prettier": "^2.0.0-rc.4",
+    "@beemo/core": "^2.0.0",
+    "@beemo/driver-prettier": "^2.0.0",
     "prettier": "^2.3.2"
   },
   "funding": {
