@@ -11,7 +11,7 @@
     "lint": "eslint --cache --fix packages/*/{src,tests}/**/*.ts",
     "test": "jest",
     "type": "tsc --build",
-    "prerelease": "node packages/dev/lib/checks/githubToken.js && yarn run pack && yarn test",
+    "prerelease": "node packages/dev/lib/checks/githubToken.js && yarn run pack && yarn run check",
     "release": "yarn prerelease && lerna version --conventional-commits --changelog-preset conventional-changelog-beemo --create-release github --push && lerna publish from-git",
     "version": "yarn install && git add yarn.lock"
   },
