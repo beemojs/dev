@@ -38,9 +38,17 @@
     "node": ">=12.17.0",
     "npm": ">=6.13.0"
   },
-  "optionalPeerDependencies": {
+  "peerDependencies": {
     "@beemo/cli": "^2.0.0",
     "@beemo/core": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@beemo/cli": {
+      "optional": true
+    },
+    "@beemo/core": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@babel/cli": "^7.14.5",
