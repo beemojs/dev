@@ -31,7 +31,7 @@ export const TEST_FILES_GLOB = '**/{tests,__tests__}/**/*.test.{ts,tsx}';
 export const TEST_UTILS_GLOB = '**/{tests,__tests__}/**/*.{ts,tsx}';
 
 // List of globs to find all test related files
-export const TESTS_LIST = [TEST_UTILS_GLOB, 'test.{ts,tsx}'];
+export const TESTS_LIST = [TEST_FILES_GLOB, TEST_UTILS_GLOB, 'test.{ts,tsx}'];
 
 // Pattern of non-JS/TS file extensions
 export const NON_TS_REGEX = '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$';

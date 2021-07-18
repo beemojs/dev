@@ -10,14 +10,14 @@ const config = {
 	ignore: [...IGNORE_LIST, '*.min.js', '*.map', '*.snap'],
 };
 
+if (react) {
+	config.extends.push('beemo/react');
+}
+
 if (node) {
 	config.extends.push('beemo/node');
 } else {
 	config.extends.push('beemo/browser');
-}
-
-if (react) {
-	config.extends.push('beemo/react');
 }
 
 export default config as ESLintConfig;
