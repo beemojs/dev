@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import { Arguments, ParserOptions, Path, Script, ScriptContext } from '@beemo/core';
 
 export interface LernaReleaseOptions {
@@ -108,7 +106,6 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 		const args = [
 			'lerna',
 			'version',
-			'--yes',
 			// Only run on master
 			'--allow-branch',
 			'master',
@@ -132,28 +129,18 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 			args.push('--conventional-prerelease', '--preid', preid);
 		}
 
-		const { stdout } = await this.executeCommand(this.npmClient, args, {
-			extendEnv: true,
-			preferLocal: true,
-		});
-
-		console.log(stdout);
+		await this.executeCommand(this.npmClient, args);
 	}
 
 	// https://github.com/lerna/lerna/tree/master/commands/publish#readme
 	async publishPackages(preid?: string) {
-		const args = ['lerna', 'publish', 'from-git', '--yes'];
+		const args = ['lerna', 'publish', 'from-git'];
 
 		if (preid) {
 			args.push('--dist-tag', 'next', '--preid', preid);
 		}
 
-		const { stdout } = await this.executeCommand(this.npmClient, args, {
-			extendEnv: true,
-			preferLocal: true,
-		});
-
-		console.log(stdout);
+		await this.executeCommand(this.npmClient, args);
 	}
 }
 
