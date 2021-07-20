@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-babel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "release": "1624590167003",
   "description": "Babel config for Beemo projects.",
   "keywords": [
