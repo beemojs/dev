@@ -61,8 +61,13 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 
 	// Required to create GitHub releases
 	checkForGitHubToken() {
-		// Use require instead of import so that we can include TypeScript files
-		require('../checks/githubToken');
+		if (process.env.GITHUB_TOKEN) {
+			process.env.GH_TOKEN = process.env.GITHUB_TOKEN;
+		}
+
+		if (!process.env.GH_TOKEN) {
+			throw new Error('Release requires a GH_TOKEN environment variable.');
+		}
 	}
 
 	// https://git-scm.com/book/en/v2/Git-Internals-Environment-Variables
