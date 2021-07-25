@@ -1,5 +1,5 @@
 ---
-to: "<%= workspaces ? 'lerna.json' : null %>"
+to: "<%= typeof workspaces !== 'undefined' ? 'lerna.json' : null %>"
 ---
 {
   "version": "independent",
