@@ -8,7 +8,9 @@ to: "<%= typeof workspaces !== 'undefined' ? 'lerna.json' : null %>"
   "command": {
     "publish": {
       "ignoreChanges": [
-        "*.md"
+        "*.md",
+        "*.test.ts",
+        "*.test.tsx"
       ]
     }
   }

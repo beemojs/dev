@@ -12,9 +12,8 @@ after: scripts
     "format": "beemo prettier",
     "lint": "beemo eslint",
     "type": "beemo typescript <%= typeof workspaces !== 'undefined' ? '--build' : '' %>",
-    "prerelease": "yarn run pack && yarn run check",
     <% if (typeof workspaces !== 'undefined') { %>
-    "release": "lerna version --conventional-commits --changelog-preset conventional-changelog-beemo --create-release github --push && lerna publish from-git",
+    "release": "yarn run pack && yarn run check && beemo run-script lerna-release",
     <% } else { %>
-    "release": "npx np --yolo",
+    "release": "yarn run pack && yarn run check && npx np --yolo",
     <% } %>
