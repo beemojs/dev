@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.4.0 - 2021-08-01
+
+#### 🚀 Updates
+
+- Add Yarn 2 config file to dotfiles scaffold. ([3461d38](https://github.com/beemojs/dev/commit/3461d38))
+- Add Yarn 2 ignores to scaffold. ([9c1c178](https://github.com/beemojs/dev/commit/9c1c178))
+- Update package scaffold to use new release script. ([780a1be](https://github.com/beemojs/dev/commit/780a1be))
+
+#### 🐞 Fixes
+
+- Fix workspaces scaffold failing syntax. ([b2a19bd](https://github.com/beemojs/dev/commit/b2a19bd))
+- Inline token checks. ([dde65db](https://github.com/beemojs/dev/commit/dde65db))
+
+#### 📦 Dependencies
+
+- **[eslint]** Update to v7.32. ([64ecf59](https://github.com/beemojs/dev/commit/64ecf59))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ### 1.3.1 - 2021-07-20
 
 #### 🐞 Fixes
