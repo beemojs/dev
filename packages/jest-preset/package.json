@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@beemo/config-constants": "^1.0.1",
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^27.0.1",
     "jest-circus": "^27.0.6"
   },
   "devDependencies": {
