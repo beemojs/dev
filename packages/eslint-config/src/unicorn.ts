@@ -42,6 +42,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/no-new-array': 'error',
 		'unicorn/no-new-buffer': 'error',
 		'unicorn/no-this-assignment': 'error',
+		'unicorn/no-useless-spread': 'error',
 		'unicorn/numeric-separators-style': 'error',
 		'unicorn/throw-new-error': 'error',
 
@@ -53,6 +54,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/import-style': 'off',
 		'unicorn/no-abusive-eslint-disable': 'error',
 		'unicorn/no-array-method-this-argument': 'error',
+		'unicorn/no-useless-length-check': 'error',
 		'unicorn/no-useless-undefined': 'off',
 		'unicorn/prefer-negative-index': 'error',
 		'unicorn/prefer-prototype-methods': 'error',
@@ -112,6 +114,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/prefer-module': nodeVersion >= 14 ? 'error' : 'off',
 		'unicorn/prefer-node-protocol': nodeVersion >= 16 ? 'error' : 'off',
 		'unicorn/prefer-number-properties': 'error',
+		'unicorn/prefer-object-from-entries': 'error',
 		'unicorn/prefer-query-selector': 'error',
 		'unicorn/prefer-reflect-apply': 'error',
 		'unicorn/prefer-spread': 'error',
