@@ -26,6 +26,8 @@ const config: eslint.Linter.Config = {
 		'import/no-cycle': 'off',
 
 		// Too controversial / abrasive
+		'import/max-dependencies': 'off',
+		'import/no-namespace': 'off',
 		'import/no-relative-parent-imports': 'off',
 
 		// Ensure import paths are succinct as possible
@@ -72,7 +74,7 @@ const config: eslint.Linter.Config = {
 		],
 		'import/no-import-module-exports': 'error',
 
-		// Prefer named exports (over default) as they are a better developer experience
+		// Prefer named exports (over default) as they provide a better package setup
 		'import/no-anonymous-default-export': 'off',
 		'import/no-default-export': 'warn',
 		'import/no-named-export': 'off',
