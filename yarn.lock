@@ -5,9 +5,9 @@ __metadata:
   version: 4
   cacheKey: 8
 
-"@babel/cli@npm:^7.14.5":
-  version: 7.14.5
-  resolution: "@babel/cli@npm:7.14.5"
+"@babel/cli@npm:^7.14.8":
+  version: 7.14.8
+  resolution: "@babel/cli@npm:7.14.8"
   dependencies:
     "@nicolo-ribaudo/chokidar-2": 2.1.8-no-fsevents.2
     chokidar: ^3.4.0
@@ -28,7 +28,7 @@ __metadata:
   bin:
     babel: ./bin/babel.js
     babel-external-helpers: ./bin/babel-external-helpers.js
-  checksum: 348d20170ec0d27041133964bd36c2bc64486c315f32a40bf27543ed73939be7648b1d6830c5576ceef9c5ce7bd130332653a7847bb665f2b037c55ad0e54fda
+  checksum: eb608f6ac587c9dc6d14a497a049fd87e7823ac7e9bae49c6780d947ef5ab5f22dd435208185e53a5ad943a1aa47cfd60d9910ead656225b5720da55c561167b
   languageName: node
   linkType: hard
 
@@ -57,7 +57,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.15.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.16, @babel/core@npm:^7.14.6, @babel/core@npm:^7.14.8, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
+"@babel/core@npm:7.15.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.16, @babel/core@npm:^7.14.8, @babel/core@npm:^7.15.0, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
   version: 7.15.0
   resolution: "@babel/core@npm:7.15.0"
   dependencies:
@@ -138,19 +138,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-create-class-features-plugin@npm:^7.14.5, @babel/helper-create-class-features-plugin@npm:^7.14.6":
-  version: 7.14.6
-  resolution: "@babel/helper-create-class-features-plugin@npm:7.14.6"
+"@babel/helper-create-class-features-plugin@npm:^7.14.5, @babel/helper-create-class-features-plugin@npm:^7.15.0":
+  version: 7.15.0
+  resolution: "@babel/helper-create-class-features-plugin@npm:7.15.0"
   dependencies:
     "@babel/helper-annotate-as-pure": ^7.14.5
     "@babel/helper-function-name": ^7.14.5
-    "@babel/helper-member-expression-to-functions": ^7.14.5
+    "@babel/helper-member-expression-to-functions": ^7.15.0
     "@babel/helper-optimise-call-expression": ^7.14.5
-    "@babel/helper-replace-supers": ^7.14.5
+    "@babel/helper-replace-supers": ^7.15.0
     "@babel/helper-split-export-declaration": ^7.14.5
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: 9d9c3c6f469bc5da4e5819979d0f70bf8a824967661743800741b5560cfa3cf811d52ab14dc00dd6e839814f8db39cf3118c08d550c487680969c40c9ccf2e2a
+  checksum: d09136e31fce0c172a36a09532003423b6c263fe1fc51bc3b740fcea5134abed71faab0131b4264890c5cc5ebacbe200c9ba7904bd21a74070adfe46001dd178
   languageName: node
   linkType: hard
 
@@ -222,7 +222,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-member-expression-to-functions@npm:^7.14.5, @babel/helper-member-expression-to-functions@npm:^7.15.0":
+"@babel/helper-member-expression-to-functions@npm:^7.15.0":
   version: 7.15.0
   resolution: "@babel/helper-member-expression-to-functions@npm:7.15.0"
   dependencies:
@@ -1266,16 +1266,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-typescript@npm:^7.14.5":
-  version: 7.14.6
-  resolution: "@babel/plugin-transform-typescript@npm:7.14.6"
+"@babel/plugin-transform-typescript@npm:^7.15.0":
+  version: 7.15.0
+  resolution: "@babel/plugin-transform-typescript@npm:7.15.0"
   dependencies:
-    "@babel/helper-create-class-features-plugin": ^7.14.6
+    "@babel/helper-create-class-features-plugin": ^7.15.0
     "@babel/helper-plugin-utils": ^7.14.5
     "@babel/plugin-syntax-typescript": ^7.14.5
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: cb3117cfc9c8ebf9612b137eb660448e79a876a189fcad6b79641faa7200073bbfd08bf0e63c7ddb3a35b3d31457d6e90cf63565e64446a73866290dc97353fa
+  checksum: ec94df8917879c3ef908a20cf9e73ab3379074f7a972a615a8248af29d35d0a145b32feb70e610ac59548947996b6ec3135f4663ed26c7396013424a171e4635
   languageName: node
   linkType: hard
 
@@ -1302,7 +1302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.14.7, @babel/preset-env@npm:^7.14.9":
+"@babel/preset-env@npm:^7.14.9, @babel/preset-env@npm:^7.15.0":
   version: 7.15.0
   resolution: "@babel/preset-env@npm:7.15.0"
   dependencies:
@@ -1429,16 +1429,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.14.5":
-  version: 7.14.5
-  resolution: "@babel/preset-typescript@npm:7.14.5"
+"@babel/preset-typescript@npm:^7.14.5, @babel/preset-typescript@npm:^7.15.0":
+  version: 7.15.0
+  resolution: "@babel/preset-typescript@npm:7.15.0"
   dependencies:
     "@babel/helper-plugin-utils": ^7.14.5
     "@babel/helper-validator-option": ^7.14.5
-    "@babel/plugin-transform-typescript": ^7.14.5
+    "@babel/plugin-transform-typescript": ^7.15.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: c4f60abfa96c380e16f38b9206a1009a5cbc01866da83ca731fa360c0bf7dca11ca930179bba476ab77e270e2567f28439244d4f495dce9d39647a7273c04949
+  checksum: 2c480bb0ef76418357d92ccfae67df544a069ca8f59785e8bd0d1d3111bfc671f9f04672583506f1ee62afc3872bf21ed85d6d0c97ba1bc09a6efd1f7c20a10f
   languageName: node
   linkType: hard
 
@@ -1528,7 +1528,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@beemo/config-babel@workspace:packages/config-babel"
   dependencies:
-    "@babel/core": ^7.14.6
+    "@babel/core": ^7.15.0
     "@beemo/core": ^2.0.1
     "@beemo/driver-babel": ^2.0.0
     babel-preset-beemo: ^1.0.0
@@ -1637,8 +1637,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@beemo/dev@workspace:packages/dev"
   dependencies:
-    "@babel/cli": ^7.14.5
-    "@babel/core": ^7.14.6
+    "@babel/cli": ^7.14.8
+    "@babel/core": ^7.15.0
     "@beemo/cli": ^2.0.1
     "@beemo/config-babel": ^1.0.3
     "@beemo/config-eslint": ^1.0.5
@@ -4376,15 +4376,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "babel-preset-beemo@workspace:packages/babel-preset"
   dependencies:
-    "@babel/core": ^7.14.6
+    "@babel/core": ^7.15.0
     "@babel/plugin-proposal-class-properties": ^7.14.5
     "@babel/plugin-proposal-decorators": ^7.14.5
     "@babel/plugin-proposal-export-default-from": ^7.14.5
     "@babel/plugin-proposal-export-namespace-from": ^7.14.5
     "@babel/plugin-proposal-private-methods": ^7.14.5
-    "@babel/preset-env": ^7.14.7
+    "@babel/preset-env": ^7.15.0
     "@babel/preset-react": ^7.14.5
-    "@babel/preset-typescript": ^7.14.5
+    "@babel/preset-typescript": ^7.15.0
     babel-plugin-transform-dev: ^2.0.1
   peerDependencies:
     "@babel/core": ">=7.0.0"
@@ -4460,7 +4460,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "beemo-dev@workspace:."
   dependencies:
-    "@babel/core": ^7.14.6
+    "@babel/core": ^7.15.0
     "@beemo/core": ^2.0.1
     "@beemo/driver-babel": ^2.0.0
     "@beemo/driver-eslint": ^2.0.0
