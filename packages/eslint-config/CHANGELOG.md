@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.5 - 2021-08-18
+
+#### 📦 Dependencies
+
+- **[eslint-plugin-import]** Update to v2.24. ([9ce4fc2](https://github.com/beemojs/dev/commit/9ce4fc2))
+- **[eslint-plugin-unicorn]** Update to v35. ([c938c03](https://github.com/beemojs/dev/commit/c938c03))
+- **[typescript-eslint]** Update to latest. ([4c4d43d](https://github.com/beemojs/dev/commit/4c4d43d))
+
+**Note:** Version bump only for package eslint-config-beemo
+
+
+
+
+
 ### 1.0.4 - 2021-08-01
 
 #### 📦 Dependencies

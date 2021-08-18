@@ -1524,14 +1524,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/config-babel@^1.0.3, @beemo/config-babel@workspace:packages/config-babel":
+"@beemo/config-babel@^1.0.4, @beemo/config-babel@workspace:packages/config-babel":
   version: 0.0.0-use.local
   resolution: "@beemo/config-babel@workspace:packages/config-babel"
   dependencies:
     "@babel/core": ^7.15.0
     "@beemo/core": ^2.0.1
     "@beemo/driver-babel": ^2.0.0
-    babel-preset-beemo: ^1.0.0
+    babel-preset-beemo: ^1.0.1
   peerDependencies:
     "@babel/core": ">=7.0.0"
     "@beemo/core": ^2.0.0
@@ -1545,7 +1545,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-eslint@^1.0.5, @beemo/config-eslint@workspace:packages/config-eslint":
+"@beemo/config-eslint@^1.0.6, @beemo/config-eslint@workspace:packages/config-eslint":
   version: 0.0.0-use.local
   resolution: "@beemo/config-eslint@workspace:packages/config-eslint"
   dependencies:
@@ -1553,7 +1553,7 @@ __metadata:
     "@beemo/core": ^2.0.1
     "@beemo/driver-eslint": ^2.0.0
     eslint: ^7.32.0
-    eslint-config-beemo: ^1.0.4
+    eslint-config-beemo: ^1.0.5
   peerDependencies:
     "@beemo/core": ^2.0.0
     "@beemo/driver-eslint": ^2.0.0
@@ -1561,14 +1561,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-jest@^1.0.4, @beemo/config-jest@workspace:packages/config-jest":
+"@beemo/config-jest@^1.0.5, @beemo/config-jest@workspace:packages/config-jest":
   version: 0.0.0-use.local
   resolution: "@beemo/config-jest@workspace:packages/config-jest"
   dependencies:
     "@beemo/core": ^2.0.1
     "@beemo/driver-jest": ^2.0.0
     jest: ^27.0.6
-    jest-preset-beemo: ^1.0.2
+    jest-preset-beemo: ^1.0.3
   peerDependencies:
     "@beemo/core": ^2.0.0
     "@beemo/driver-jest": ^2.0.0
@@ -1640,9 +1640,9 @@ __metadata:
     "@babel/cli": ^7.14.8
     "@babel/core": ^7.15.0
     "@beemo/cli": ^2.0.1
-    "@beemo/config-babel": ^1.0.3
-    "@beemo/config-eslint": ^1.0.5
-    "@beemo/config-jest": ^1.0.4
+    "@beemo/config-babel": ^1.0.4
+    "@beemo/config-eslint": ^1.0.6
+    "@beemo/config-jest": ^1.0.5
     "@beemo/config-prettier": ^1.0.3
     "@beemo/config-typescript": ^1.0.3
     "@beemo/core": ^2.0.1
@@ -4350,7 +4350,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-beemo@^1.0.0, babel-preset-beemo@workspace:packages/babel-preset":
+"babel-preset-beemo@^1.0.1, babel-preset-beemo@workspace:packages/babel-preset":
   version: 0.0.0-use.local
   resolution: "babel-preset-beemo@workspace:packages/babel-preset"
   dependencies:
@@ -5867,7 +5867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-beemo@^1.0.4, eslint-config-beemo@workspace:packages/eslint-config":
+"eslint-config-beemo@^1.0.5, eslint-config-beemo@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "eslint-config-beemo@workspace:packages/eslint-config"
   dependencies:
@@ -8329,7 +8329,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-preset-beemo@^1.0.2, jest-preset-beemo@workspace:packages/jest-preset":
+"jest-preset-beemo@^1.0.3, jest-preset-beemo@workspace:packages/jest-preset":
   version: 0.0.0-use.local
   resolution: "jest-preset-beemo@workspace:packages/jest-preset"
   dependencies:
