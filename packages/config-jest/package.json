@@ -38,7 +38,7 @@
     "jest-preset-beemo": "^1.0.3"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.1",
+    "@beemo/core": "^2.0.2",
     "@beemo/driver-jest": "^2.0.0",
     "jest": "^27.0.6"
   },

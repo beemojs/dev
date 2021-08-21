@@ -1529,8 +1529,8 @@ __metadata:
   resolution: "@beemo/config-babel@workspace:packages/config-babel"
   dependencies:
     "@babel/core": ^7.15.0
-    "@beemo/core": ^2.0.1
-    "@beemo/driver-babel": ^2.0.0
+    "@beemo/core": ^2.0.2
+    "@beemo/driver-babel": ^2.0.1
     babel-preset-beemo: ^1.0.1
   peerDependencies:
     "@babel/core": ">=7.0.0"
@@ -1550,8 +1550,8 @@ __metadata:
   resolution: "@beemo/config-eslint@workspace:packages/config-eslint"
   dependencies:
     "@beemo/config-constants": ^1.0.1
-    "@beemo/core": ^2.0.1
-    "@beemo/driver-eslint": ^2.0.0
+    "@beemo/core": ^2.0.2
+    "@beemo/driver-eslint": ^2.0.1
     eslint: ^7.32.0
     eslint-config-beemo: ^1.0.5
   peerDependencies:
@@ -1565,7 +1565,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@beemo/config-jest@workspace:packages/config-jest"
   dependencies:
-    "@beemo/core": ^2.0.1
+    "@beemo/core": ^2.0.2
     "@beemo/driver-jest": ^2.0.0
     jest: ^27.0.6
     jest-preset-beemo: ^1.0.3
@@ -1581,8 +1581,8 @@ __metadata:
   resolution: "@beemo/config-prettier@workspace:packages/config-prettier"
   dependencies:
     "@beemo/config-constants": ^1.0.1
-    "@beemo/core": ^2.0.1
-    "@beemo/driver-prettier": ^2.0.0
+    "@beemo/core": ^2.0.2
+    "@beemo/driver-prettier": ^2.0.1
     prettier: ^2.3.2
     prettier-config-beemo: ^1.0.0
   peerDependencies:
@@ -1596,7 +1596,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@beemo/config-typescript@workspace:packages/config-typescript"
   dependencies:
-    "@beemo/core": ^2.0.1
+    "@beemo/core": ^2.0.2
     "@beemo/driver-typescript": ^2.0.0
     tsconfig-beemo: ^1.0.0
     typescript: ^4.3.5
@@ -1607,9 +1607,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/core@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@beemo/core@npm:2.0.1"
+"@beemo/core@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@beemo/core@npm:2.0.2"
   dependencies:
     "@boost/args": ^2.3.3
     "@boost/common": ^2.8.1
@@ -1629,7 +1629,7 @@ __metadata:
     is-glob: ^4.0.1
     lodash: ^4.17.21
     micromatch: ^4.0.4
-  checksum: c5805d7cad2e08cb36a3d1f90c6dd7167a65644ab9919065f1eed958fff0234ab066aa3b7dd29137f06e5b68b082d277e2f8f2d1fba3aefef41ee592efcc2c1a
+  checksum: 32b963046933b8c3102587357d0bc87c2dd9a6d36a20bd68e71737e5ffb5a162579f45780ec7ab447471b19b10e245c95f9040782420514d12362e9993c9cd0c
   languageName: node
   linkType: hard
 
@@ -1645,11 +1645,11 @@ __metadata:
     "@beemo/config-jest": ^1.0.5
     "@beemo/config-prettier": ^1.0.3
     "@beemo/config-typescript": ^1.0.3
-    "@beemo/core": ^2.0.1
-    "@beemo/driver-babel": ^2.0.0
-    "@beemo/driver-eslint": ^2.0.0
+    "@beemo/core": ^2.0.2
+    "@beemo/driver-babel": ^2.0.1
+    "@beemo/driver-eslint": ^2.0.1
     "@beemo/driver-jest": ^2.0.0
-    "@beemo/driver-prettier": ^2.0.0
+    "@beemo/driver-prettier": ^2.0.1
     "@beemo/driver-typescript": ^2.0.0
     conventional-changelog-beemo: ^2.1.0
     eslint: ^7.32.0
@@ -1664,28 +1664,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/driver-babel@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@beemo/driver-babel@npm:2.0.0"
+"@beemo/driver-babel@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@beemo/driver-babel@npm:2.0.1"
   dependencies:
     rimraf: ^3.0.2
   peerDependencies:
     "@babel/core": ^7.0.0
     "@beemo/core": ^2.0.0
-  checksum: 5a9770253fbf6382d1cc79b59ccaed562699c366599a4c1e8d78a9755659900d897e433dd9e7d9b03fc3f22a92436425bb948955c0b21efb1797467755fd9174
+  checksum: dd37600afc3c9a9e8f679ccb3f270fa1f111bddb4c4e86486d5c84eba24627d2238c1be22b997dee3188af2ce592c0227534179dfdcadcc3a8fb1f4d0d121415
   languageName: node
   linkType: hard
 
-"@beemo/driver-eslint@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@beemo/driver-eslint@npm:2.0.0"
+"@beemo/driver-eslint@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@beemo/driver-eslint@npm:2.0.1"
   dependencies:
     "@boost/event": ^2.3.3
-    "@types/eslint": "*"
+    "@types/eslint": ^7.28.0
   peerDependencies:
     "@beemo/core": ^2.0.0
     eslint: ^7.0.0
-  checksum: f6b0c3c11e55875696e4ec567faeb9a257a8210a08d113d50c90cb153048a82e32b1bbe26835d464aca6a338557fbdae6a16c6e586b0b0605d7095069f913494
+  checksum: d6babf6a026755f38bf1913649d61b176ef56223547f3aefda1393be29e2047fe6f32ee608d388e13975c13a73b3033de0aa4bb33980b31735b1b2858a6f1aeb
   languageName: node
   linkType: hard
 
@@ -1701,16 +1701,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-prettier@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@beemo/driver-prettier@npm:2.0.0"
+"@beemo/driver-prettier@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@beemo/driver-prettier@npm:2.0.1"
   dependencies:
     "@boost/event": ^2.3.3
-    "@types/prettier": "*"
+    "@types/prettier": ^2.3.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     prettier: ^2.0.0
-  checksum: e747de47d8ed9768ec8862756b2adb3ebe3800c2748f4e0cc8104cb55cd323a9869da64ca84c1f18902cd554523824ab2fddde680d8d1b8b7f49b9cc6b353aa3
+  checksum: 72cedeea8f57135f122d4d4d5a25a972900cf91b0d78e34a9a4417cf16bb94f9836f6348add225901cea33c96f0260d7afbf411bce9631aaaa0841a3c94bc80e
   languageName: node
   linkType: hard
 
@@ -3474,7 +3474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^7.28.0":
+"@types/eslint@npm:^7.28.0":
   version: 7.28.0
   resolution: "@types/eslint@npm:7.28.0"
   dependencies:
@@ -3598,10 +3598,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:*, @types/prettier@npm:^2.1.5":
-  version: 2.2.3
-  resolution: "@types/prettier@npm:2.2.3"
-  checksum: 78f1d731f9db92467596d3e2116efc402343a72ee69fa6444368317a2caf7d21ffe7d748637656ebef97ab65087867375089e743f0b9a378557cf979e5a9ac29
+"@types/prettier@npm:^2.1.5, @types/prettier@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "@types/prettier@npm:2.3.2"
+  checksum: c4313e16650811f47b07a0fa7ac0742e966f61283a7292eb667fd4626d760bf3b7d896be3eaabb3354ad45fdbe3a340299b018dd3bcce1ff753d030a8cd2479c
   languageName: node
   linkType: hard
 
@@ -4439,11 +4439,11 @@ __metadata:
   resolution: "beemo-dev@workspace:."
   dependencies:
     "@babel/core": ^7.15.0
-    "@beemo/core": ^2.0.1
-    "@beemo/driver-babel": ^2.0.0
-    "@beemo/driver-eslint": ^2.0.0
+    "@beemo/core": ^2.0.2
+    "@beemo/driver-babel": ^2.0.1
+    "@beemo/driver-eslint": ^2.0.1
     "@beemo/driver-jest": ^2.0.0
-    "@beemo/driver-prettier": ^2.0.0
+    "@beemo/driver-prettier": ^2.0.1
     "@beemo/driver-typescript": ^2.0.0
     conventional-changelog-beemo: ^2.1.0
     eslint: ^7.32.0
