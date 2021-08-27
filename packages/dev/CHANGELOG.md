@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.5.0 - 2021-08-27
+
+#### 🚀 Updates
+
+- Upgrade to TypeScript v4.4. ([5d53fa3](https://github.com/beemojs/dev/commit/5d53fa3))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ### 1.4.2 - 2021-08-21
 
 #### 📦 Dependencies

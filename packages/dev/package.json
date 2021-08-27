@@ -1,6 +1,6 @@
 {
   "name": "@beemo/dev",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "release": "1624590167003",
   "description": "Official Beemo configuration module for modern local development.",
   "keywords": [
@@ -51,10 +51,10 @@
     "@babel/core": "^7.15.0",
     "@beemo/cli": "^2.0.1",
     "@beemo/config-babel": "^1.0.5",
-    "@beemo/config-eslint": "^1.0.7",
+    "@beemo/config-eslint": "^1.0.8",
     "@beemo/config-jest": "^1.0.6",
     "@beemo/config-prettier": "^1.0.4",
-    "@beemo/config-typescript": "^1.0.4",
+    "@beemo/config-typescript": "^1.1.0",
     "@beemo/core": "^2.0.2",
     "@beemo/driver-babel": "^2.0.1",
     "@beemo/driver-eslint": "^2.0.1",
