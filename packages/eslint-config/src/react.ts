@@ -104,6 +104,7 @@ const reactConfig: eslint.Linter.ConfigOverride = {
 		'react/forbid-foreign-prop-types': 'off',
 		'react/forbid-prop-types': 'off',
 		'react/no-unused-prop-types': 'off',
+		'react/prefer-exact-props': 'off',
 		'react/prefer-read-only-props': 'off',
 		'react/prop-types': 'off',
 		'react/require-default-props': 'off',
