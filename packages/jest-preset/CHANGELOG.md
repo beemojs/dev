@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 - 2021-09-02
+
+#### 🚀 Updates
+
+- Add an esm setting to toggle modules. ([86ec9ae](https://github.com/beemojs/dev/commit/86ec9ae))
+- Treat TypeScript files as ESM. ([1f5ddc9](https://github.com/beemojs/dev/commit/1f5ddc9))
+
+#### 📦 Dependencies
+
+- **[jest]** Update types to v27.1. ([8b85f5c](https://github.com/beemojs/dev/commit/8b85f5c))
+
+**Note:** Version bump only for package jest-preset-beemo
+
+
+
+
+
 ### 1.0.3 - 2021-08-18
 
 #### 📦 Dependencies
