@@ -19,6 +19,7 @@ const config = {
 			statements: 90,
 		},
 	},
+	extensionsToTreatAsEsm: ['.ts', '.tsx'],
 	globals: {
 		[`__DEV__`]: true,
 		[`__PROD__`]: true,
