@@ -1,7 +1,7 @@
 import type { BabelConfig } from '@beemo/driver-babel';
 
-const { context, tool } = process.beemo;
-const { decorators, react } = tool.config.settings as BeemoSettings;
+const { tool } = process.beemo;
+const { decorators, esm, react } = tool.config.settings as BeemoSettings;
 
 const config: BabelConfig = {
 	babelrc: true,
@@ -12,7 +12,7 @@ const config: BabelConfig = {
 			'beemo',
 			{
 				decorators,
-				modules: !!context.getRiskyOption('esm'),
+				modules: esm,
 				react,
 			},
 		],

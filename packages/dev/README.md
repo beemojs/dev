@@ -41,6 +41,7 @@ The following Beemo `settings` can be defined and will be passed to applicable d
 
 - `decorators` (`boolean`) - Enable decorators for Babel and TypeScript drivers. Defaults to
   `false`.
+- `esm` (`boolean`) - Enable ECMAScript module "mode" for tools that support it (Babel, Jest, etc).
 - `node` (`boolean`) - Current project will target Node.js instead of the browser. Defaults to
   `false`.
 - `projects` (`boolean | string[]`) - Enable Jest projects. If `true` is passed, will be resolved

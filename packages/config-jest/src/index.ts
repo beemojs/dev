@@ -1,10 +1,11 @@
 import type { JestConfig } from '@beemo/driver-jest';
 
 const { tool } = process.beemo;
-const { projects, react } = tool.config.settings as BeemoSettings;
+const { esm, projects, react } = tool.config.settings as BeemoSettings;
 
 const config: JestConfig = {
 	preset: 'jest-preset-beemo',
+	extensionsToTreatAsEsm: esm ? ['.ts', '.tsx'] : [],
 	testEnvironment: react ? 'jsdom' : 'node',
 };
 

@@ -60,11 +60,18 @@ export default function dev(tool: Tool) {
 	tool.onRunDriver.listen((context, driver) => {
 		context.addOptions(['--colors', '--logHeapUsage']);
 
+		const env: Record<string, string> = {
+			NODE_ENV: 'test',
+			TZ: 'UTC',
+		};
+
+		// https://jestjs.io/docs/ecmascript-modules
+		if (tool.config.settings.esm) {
+			env.NODE_OPTIONS = `--experimental-vm-modules ${process.env.NODE_OPTIONS ?? ''}`.trim();
+		}
+
 		driver.configure({
-			env: {
-				NODE_ENV: 'test',
-				TZ: 'UTC',
-			},
+			env,
 		});
 
 		// Generate babel config to transform files
