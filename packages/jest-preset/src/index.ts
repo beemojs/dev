@@ -1,9 +1,20 @@
+import fs from 'fs';
+import path from 'path';
 import {
 	ALL_FILES_GLOB,
 	IGNORE_LIST,
 	NON_TS_REGEX,
+	ROOT,
 	TEST_FILES_GLOB,
 } from '@beemo/config-constants';
+
+const setupFilesAfterEnv: string[] = [];
+const setupFilePath = path.join(ROOT, 'tests/setup.ts');
+
+// Only include the file if it exists, otherwise Jest throws an error
+if (fs.existsSync(setupFilePath)) {
+	setupFilesAfterEnv.push(setupFilePath);
+}
 
 const config = {
 	collectCoverage: false, // Enabled by consumers
@@ -26,7 +37,7 @@ const config = {
 	moduleNameMapper: {
 		[NON_TS_REGEX]: require.resolve('./fileMock.js'),
 	},
-	setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
+	setupFilesAfterEnv,
 	testEnvironment: 'node',
 	testMatch: [TEST_FILES_GLOB],
 	testRunner: 'jest-circus/runner',

@@ -32,5 +32,5 @@ module.exports = {
 
 - Source files must be located in a `src` folder.
 - Tests files must end in `*.test.{ts,tsx}` and be located within a `tests` or `__tests__` folder.
-- Requires a setup file at `<rootDir>/tests/setup.ts`.
+- Includes a setup file at `<rootDir>/tests/setup.ts` (if exists).
 - Relies on Babel, the TypeScript plugin, and the default `babel-jest` package.
