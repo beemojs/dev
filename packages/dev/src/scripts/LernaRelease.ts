@@ -121,7 +121,7 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 			'--push',
 			// Alter commit message to skip CI
 			'--message',
-			'"Release [ci skip]"',
+			'"Release"',
 			// Use conventional commits
 			'--conventional-commits',
 			'--changelog-preset',
