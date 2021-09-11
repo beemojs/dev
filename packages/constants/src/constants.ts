@@ -19,9 +19,11 @@ export const IGNORE_LIST = [
 	'cjs/',
 	'coverage/',
 	'dist/',
+	'dts/',
 	'esm/',
 	'lib/',
 	'mjs/',
+	'umd/',
 ];
 
 // Globs for finding source files, test files, and test utility files
