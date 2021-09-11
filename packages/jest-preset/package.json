@@ -1,6 +1,6 @@
 {
   "name": "jest-preset-beemo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "release": "1624590167003",
   "description": "Jest preset for Beemo configured projects.",
   "keywords": [
@@ -33,7 +33,7 @@
     "jest": ">=26.0.0"
   },
   "dependencies": {
-    "@beemo/config-constants": "^1.0.1",
+    "@beemo/config-constants": "^1.0.2",
     "@types/jest": "^27.0.1",
     "jest-circus": "^27.1.1"
   },

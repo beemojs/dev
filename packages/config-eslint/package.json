@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-eslint",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "release": "1624590167003",
   "description": "ESLint config for Beemo projects.",
   "keywords": [
@@ -34,8 +34,8 @@
     "eslint": ">=7.0.0"
   },
   "dependencies": {
-    "@beemo/config-constants": "^1.0.1",
-    "eslint-config-beemo": "^1.0.8"
+    "@beemo/config-constants": "^1.0.2",
+    "eslint-config-beemo": "^1.0.9"
   },
   "devDependencies": {
     "@beemo/core": "^2.0.2",

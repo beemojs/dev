@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-beemo",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "release": "1624590167003",
   "description": "Reusable ESLint config for Beemo configured projects.",
   "keywords": [
@@ -38,7 +38,7 @@
     "eslint": ">=7.0.0"
   },
   "dependencies": {
-    "@beemo/config-constants": "^1.0.1",
+    "@beemo/config-constants": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "eslint-config-airbnb-base": "^14.2.1",

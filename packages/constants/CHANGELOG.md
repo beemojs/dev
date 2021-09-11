@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.2 - 2021-09-11
+
+#### 🐞 Fixes
+
+- Add more folders to ignore. ([bb8d059](https://github.com/beemojs/dev/commit/bb8d059))
+- Support parsing JSON files with comments. ([5ae2c1d](https://github.com/beemojs/dev/commit/5ae2c1d))
+
+**Note:** Version bump only for package @beemo/config-constants
+
+
+
+
+
 ### 1.0.1 - 2021-07-18
 
 #### 🐞 Fixes

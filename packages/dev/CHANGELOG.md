@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.6.1 - 2021-09-11
+
+#### 🐞 Fixes
+
+- Remove no-ci comment from releases. ([7cc7273](https://github.com/beemojs/dev/commit/7cc7273))
+
+#### 📦 Dependencies
+
+- **[babel]** Update to v7.15 latest. ([74539c3](https://github.com/beemojs/dev/commit/74539c3))
+- **[jest]** Update types to v27.1 latest. ([5b0dd94](https://github.com/beemojs/dev/commit/5b0dd94))
+- **[prettier]** Update to v2.4. ([954478e](https://github.com/beemojs/dev/commit/954478e))
+- **[typescript]** Update to v4.4 latest. ([931b7b1](https://github.com/beemojs/dev/commit/931b7b1))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ## 1.6.0 - 2021-09-02
 
 #### 🚀 Updates
