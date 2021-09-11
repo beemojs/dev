@@ -1,5 +1,17 @@
+import fs from 'fs';
 import type { ProjectReference } from 'typescript';
 import { PACKAGE_JSON_PATH, TSCONFIG_JSON_PATH } from './constants';
+
+export function parseJSON<T>(filePath: string): T {
+	const content = fs
+		.readFileSync(filePath, 'utf8')
+		.split('\n')
+		// Remove comments from JSON files
+		.filter((line) => !/^\s*(#|\/)/.test(line))
+		.join('\n');
+
+	return JSON.parse(content) as T;
+}
 
 // PACKAGE.JSON
 
@@ -16,14 +28,13 @@ let packageJson: PackageJSON;
 
 export function getRootPackageJSON(): PackageJSON {
 	if (packageJson === undefined) {
-		// eslint-disable-next-line import/no-dynamic-require
-		packageJson = require(PACKAGE_JSON_PATH) as PackageJSON;
+		packageJson = parseJSON(PACKAGE_JSON_PATH);
 	}
 
 	return packageJson;
 }
 
-// NODEJS
+// NODE.JS
 
 let nodeVersion: number;
 
@@ -56,8 +67,7 @@ export function getTargetReactVersion(): number {
 	}
 
 	try {
-		// eslint-disable-next-line import/no-extraneous-dependencies
-		const pkg = require('react/package.json') as { version: string };
+		const pkg = parseJSON<{ version: string }>(require.resolve('react/package.json'));
 
 		reactVersion = Number.parseFloat(pkg.version);
 
@@ -93,8 +103,7 @@ let tsconfigJson: TSConfigJSON;
 
 export function getRootTSConfig(): TSConfigJSON {
 	if (tsconfigJson === undefined) {
-		// eslint-disable-next-line import/no-dynamic-require
-		tsconfigJson = require(TSCONFIG_JSON_PATH) as TSConfigJSON;
+		tsconfigJson = parseJSON(TSCONFIG_JSON_PATH);
 	}
 
 	return tsconfigJson;
