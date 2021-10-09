@@ -38,8 +38,8 @@
     "jest-preset-beemo": "^1.1.1"
   },
   "devDependencies": {
-    "@beemo/core": "^2.0.2",
-    "@beemo/driver-jest": "^2.0.0",
+    "@beemo/core": "^2.1.0",
+    "@beemo/driver-jest": "^2.0.1",
     "jest": "^27.1.1"
   },
   "funding": {
