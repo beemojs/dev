@@ -39,6 +39,7 @@ const config: eslint.Linter.Config = {
 		// Ensure consistent and correct syntax
 		'unicorn/new-for-builtins': 'error',
 		'unicorn/no-instanceof-array': 'error',
+		'unicorn/no-invalid-remove-event-listener': 'error',
 		'unicorn/no-new-array': 'error',
 		'unicorn/no-new-buffer': 'error',
 		'unicorn/no-this-assignment': 'error',
@@ -54,6 +55,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/import-style': 'off',
 		'unicorn/no-abusive-eslint-disable': 'error',
 		'unicorn/no-array-method-this-argument': 'error',
+		'unicorn/no-useless-fallback-in-spread': 'error',
 		'unicorn/no-useless-length-check': 'error',
 		'unicorn/no-useless-undefined': 'off',
 		'unicorn/prefer-negative-index': 'error',

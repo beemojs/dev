@@ -19,6 +19,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 		'jest/expect-expect': 'error',
 		'jest/no-if': 'error',
 		'jest/no-standalone-expect': 'error',
+		'jest/prefer-expect-resolves': 'error',
 
 		// Ensure our tests are deterministic
 		'jest/no-interpolation-in-snapshots': 'error',
@@ -37,6 +38,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 		'jest/no-restricted-matchers': 'off',
 		'jest/no-test-prefixes': 'error',
 		'jest/prefer-hooks-on-top': 'error',
+		'jest/prefer-to-be': 'error',
 		'jest/prefer-to-be-null': 'error',
 		'jest/prefer-to-be-undefined': 'error',
 		'jest/prefer-to-contain': 'error',
