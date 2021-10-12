@@ -1,16 +1,24 @@
 import fs from 'fs';
 import path from 'path';
 import type eslint from 'eslint';
-import { getRootProjectReferences, ROOT, TSCONFIG_JSON_PATH } from '@beemo/config-constants';
+import {
+	getPackageVersion,
+	getRootProjectReferences,
+	getRootTSConfig,
+	ROOT,
+	TSCONFIG_JSON_PATH,
+} from '@beemo/config-constants';
 
+const tsVersion = getPackageVersion('typescript');
+const tsConfig = getRootTSConfig();
 let project: string[] | string = '';
 
 // Some very large projects will run out of memory when using project references,
 // so we support a custom tsconfig to work around this issue.
-const tsconfigEslintPath = path.join(ROOT, 'tsconfig.eslint.json');
+const tsConfigEslintPath = path.join(ROOT, 'tsconfig.eslint.json');
 
-if (fs.existsSync(tsconfigEslintPath)) {
-	project = tsconfigEslintPath;
+if (fs.existsSync(tsConfigEslintPath)) {
+	project = tsConfigEslintPath;
 }
 
 // Otherwise, if the consumer is using project references, we need to include a path
@@ -20,6 +28,9 @@ if (!project) {
 		getRootProjectReferences()?.map((ref) => path.join(ROOT, ref.path, 'tsconfig.json')) ??
 		TSCONFIG_JSON_PATH;
 }
+
+const isUnknownCatch =
+	tsConfig.compilerOptions?.strict ?? tsConfig.compilerOptions?.useUnknownInCatchVariables;
 
 const config: eslint.Linter.Config = {
 	plugins: ['@typescript-eslint'],
@@ -153,7 +164,7 @@ const config: eslint.Linter.Config = {
 		'@typescript-eslint/consistent-type-imports': 'off',
 		'@typescript-eslint/naming-convention': 'off',
 		'@typescript-eslint/no-dynamic-delete': 'off',
-		'@typescript-eslint/no-implicit-any-catch': 'warn',
+		'@typescript-eslint/no-implicit-any-catch': tsVersion >= 4.4 && isUnknownCatch ? 'off' : 'warn',
 		'@typescript-eslint/no-magic-numbers': 'off',
 		'@typescript-eslint/no-require-imports': 'off',
 		'@typescript-eslint/no-type-alias': 'off',

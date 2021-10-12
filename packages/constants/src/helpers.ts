@@ -1,5 +1,5 @@
 import fs from 'fs';
-import type { ProjectReference } from 'typescript';
+import type { CompilerOptions, ProjectReference } from 'typescript';
 import { PACKAGE_JSON_PATH, TSCONFIG_JSON_PATH } from './constants';
 
 export function parseJSON<T>(filePath: string): T {
@@ -57,45 +57,48 @@ export function getTargetNodeRuntime(): number {
 	return nodeVersion;
 }
 
-// REACT
+// PACKAGES
 
-let reactVersion: number;
+const versionCache: Record<string, number> = {};
 
-export function getTargetReactVersion(): number {
-	if (reactVersion !== undefined) {
-		return reactVersion;
+export function getPackageVersion(pkgName: string): number {
+	if (versionCache[pkgName] !== undefined) {
+		return versionCache[pkgName];
 	}
 
 	try {
-		const pkg = parseJSON<{ version: string }>(require.resolve('react/package.json'));
+		const pkg = parseJSON<{ version: string }>(require.resolve(`${pkgName}/package.json`));
 
-		reactVersion = Number.parseFloat(pkg.version);
+		versionCache[pkgName] = Number.parseFloat(pkg.version);
 
-		return reactVersion;
+		return versionCache[pkgName];
 	} catch {
-		reactVersion = 0;
+		versionCache[pkgName] = 0;
 	}
 
 	try {
 		const pkg = getRootPackageJSON();
 		const version =
-			pkg.dependencies?.react ?? pkg.devDependencies?.react ?? pkg.peerDependencies?.react;
+			pkg.dependencies?.[pkgName] ??
+			pkg.devDependencies?.[pkgName] ??
+			pkg.peerDependencies?.[pkgName];
 
 		if (version) {
-			reactVersion = Number.parseFloat(version.replace(/[^\d.]+/g, ''));
+			versionCache[pkgName] = Number.parseFloat(version.replace(/[^\d.]+/g, ''));
 
-			return reactVersion;
+			return versionCache[pkgName];
 		}
 	} catch {
-		reactVersion = 0;
+		versionCache[pkgName] = 0;
 	}
 
-	return reactVersion;
+	return versionCache[pkgName];
 }
 
 // TSCONFIG.JSON
 
 interface TSConfigJSON {
+	compilerOptions?: CompilerOptions;
 	references?: ProjectReference[];
 }
 

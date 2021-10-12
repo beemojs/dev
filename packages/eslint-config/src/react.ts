@@ -1,7 +1,7 @@
 import type eslint from 'eslint';
-import { CASE_SENSITIVE, getTargetReactVersion } from '@beemo/config-constants';
+import { CASE_SENSITIVE, getPackageVersion } from '@beemo/config-constants';
 
-const reactVersion = getTargetReactVersion();
+const reactVersion = getPackageVersion('react');
 
 const reactConfig: eslint.Linter.ConfigOverride = {
 	files: ['*.tsx'],
