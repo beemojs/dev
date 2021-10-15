@@ -246,10 +246,6 @@ const config: eslint.Linter.Config = {
 		'@typescript-eslint/no-unnecessary-qualifier': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 		'@typescript-eslint/no-unnecessary-type-constraint': 'error',
-		'@typescript-eslint/no-unused-vars-experimental': [
-			'off', // Too restrictive
-			{ ignoreArgsIfArgsAfterAreUsed: true },
-		],
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-literal-enum-member': 'error',
 		'@typescript-eslint/prefer-reduce-type-parameter': 'error',
