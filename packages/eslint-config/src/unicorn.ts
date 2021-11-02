@@ -35,6 +35,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/no-unused-properties': 'off',
 		'unicorn/prefer-set-has': 'off',
 		'unicorn/prevent-abbreviations': 'off',
+		'unicorn/template-indent': 'off',
 
 		// Ensure consistent and correct syntax
 		'unicorn/new-for-builtins': 'error',
