@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-beemo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "release": "1624590167003",
   "description": "Babel preset for Beemo configured projects.",
   "keywords": [

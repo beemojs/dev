@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 - 2021-11-02
+
+#### 🚀 Updates
+
+- Toggle no-implicit-any-catch based on TS options and version. ([4b00c7b](https://github.com/beemojs/dev/commit/4b00c7b))
+
+**Note:** Version bump only for package @beemo/config-constants
+
+
+
+
+
 ### 1.0.2 - 2021-09-11
 
 #### 🐞 Fixes

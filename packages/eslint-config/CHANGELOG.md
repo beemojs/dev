@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 - 2021-11-02
+
+#### 🚀 Updates
+
+- Toggle no-implicit-any-catch based on TS options and version. ([4b00c7b](https://github.com/beemojs/dev/commit/4b00c7b))
+
+#### 🐞 Fixes
+
+- Resolve no-unused-vars issues. ([9160ea2](https://github.com/beemojs/dev/commit/9160ea2))
+
+#### 📦 Dependencies
+
+- **[eslint]** Update minor plugins to latest. ([68e9ae3](https://github.com/beemojs/dev/commit/68e9ae3))
+- **[eslint-plugin-jest]** Update to v25.2. ([5b070ad](https://github.com/beemojs/dev/commit/5b070ad))
+
+**Note:** Version bump only for package eslint-config-beemo
+
+
+
+
+
 ### 1.0.11 - 2021-10-10
 
 #### 🐞 Fixes

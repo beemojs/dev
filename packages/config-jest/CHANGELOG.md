@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.3 - 2021-11-02
+
+#### 📦 Dependencies
+
+- **[beemo]** Update to v2 latest. ([254eebb](https://github.com/beemojs/dev/commit/254eebb))
+- **[jest]** Update types to v27.3. ([7a4f123](https://github.com/beemojs/dev/commit/7a4f123))
+
+**Note:** Version bump only for package @beemo/config-jest
+
+
+
+
+
 ### 1.1.2 - 2021-10-10
 
 #### 📦 Dependencies

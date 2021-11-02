@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.13 - 2021-11-02
+
+#### 📦 Dependencies
+
+- **[beemo]** Update to v2 latest. ([254eebb](https://github.com/beemojs/dev/commit/254eebb))
+
+**Note:** Version bump only for package @beemo/config-eslint
+
+
+
+
+
 ### 1.0.12 - 2021-10-10
 
 **Note:** Version bump only for package @beemo/config-eslint
