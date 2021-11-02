@@ -12,7 +12,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 		// Prefer `it` over `test`
 		'jest/consistent-test-it': 'error',
 		'jest/require-top-level-describe': 'error',
-		'jest/valid-describe': 'error',
+		'jest/valid-describe-callback': 'error',
 		'jest/valid-expect': 'error',
 
 		// Ensure we are expecting/asserting correctly
@@ -26,8 +26,8 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 		'jest/no-large-snapshots': 'off',
 
 		// Encourage readable titles and descriptions
-		'jest/lowercase-name': 'off',
 		'jest/no-identical-title': 'error',
+		'jest/prefer-lowercase-title': 'off',
 		'jest/valid-title': 'error',
 
 		// Prefer explicit APIs for better readability
@@ -39,8 +39,6 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 		'jest/no-test-prefixes': 'error',
 		'jest/prefer-hooks-on-top': 'error',
 		'jest/prefer-to-be': 'error',
-		'jest/prefer-to-be-null': 'error',
-		'jest/prefer-to-be-undefined': 'error',
 		'jest/prefer-to-contain': 'error',
 		'jest/prefer-to-have-length': 'error',
 		'jest/prefer-todo': 'error',
@@ -66,6 +64,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 		// Too abrasive and annoying
 		'jest/prefer-expect-assertions': 'off',
 		'jest/prefer-strict-equal': 'off',
+		'jest/require-hook': 'off',
 		'jest/unbound-method': 'off',
 
 		// Hooks are nice / is shared state an issue? Revisit?
