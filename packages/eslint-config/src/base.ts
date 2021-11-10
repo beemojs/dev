@@ -48,6 +48,7 @@ const config: eslint.Linter.Config = {
 		'no-setter-return': 'error',
 		'no-unreachable-loop': 'error',
 		'no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
+		'no-unused-private-class-members': 'error',
 		'no-useless-call': 'error',
 		'require-atomic-updates': 'error',
 
