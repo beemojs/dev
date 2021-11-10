@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 - 2021-11-10
+
+#### 🚀 Updates
+
+- Support ESLint v8. ([d9a5081](https://github.com/beemojs/dev/commit/d9a5081))
+
+**Note:** Version bump only for package @beemo/config-eslint
+
+
+
+
+
 ### 1.0.13 - 2021-11-02
 
 #### 📦 Dependencies
