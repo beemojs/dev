@@ -1,4 +1,5 @@
-import { DriverContext, Path, Tool } from '@beemo/core';
+import path from 'path';
+import { DriverContext, Tool } from '@beemo/core';
 
 const EXTS = ['.ts', '.tsx'];
 const DIRS = ['src', 'tests'];
@@ -11,7 +12,7 @@ function hasNoParams(context: DriverContext, name: string): boolean {
 
 export default function dev(tool: Tool) {
 	const usingTypeScript = tool.driverRegistry.isRegistered('typescript');
-	const workspacePrefixes = tool.project.getWorkspaceGlobs({ relative: true });
+	const workspaceGlobs = tool.project.getWorkspaceGlobs({ relative: true });
 
 	// Babel
 	tool.onRunDriver.listen((context) => {
@@ -23,7 +24,10 @@ export default function dev(tool: Tool) {
 
 		if (hasNoParams(context, 'babel')) {
 			context.addParam(DIRS[0]);
-			context.addOption('--out-dir', context.getRiskyOption('esm') ? 'esm' : 'lib');
+			context.addOption(
+				'--out-dir',
+				tool.config.settings.esm || context.getRiskyOption('esm') ? 'esm' : 'lib',
+			);
 		}
 	}, 'babel');
 
@@ -36,9 +40,9 @@ export default function dev(tool: Tool) {
 		}
 
 		if (hasNoParams(context, 'eslint')) {
-			if (workspacePrefixes.length > 0) {
-				workspacePrefixes.forEach((wsPrefix) => {
-					context.addParam(new Path(wsPrefix, `{${DIRS.join(',')}}`).path());
+			if (workspaceGlobs.length > 0) {
+				workspaceGlobs.forEach((wsPrefix) => {
+					context.addParam(path.join(wsPrefix, `{${DIRS.join(',')}}`));
 				});
 			} else {
 				context.addParams(DIRS);
