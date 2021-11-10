@@ -48,7 +48,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.1.0, @babel/core@npm:^7.12.16, @babel/core@npm:^7.15.8, @babel/core@npm:^7.16.0, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
+"@babel/core@npm:^7.1.0, @babel/core@npm:^7.12.16, @babel/core@npm:^7.16.0, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
   version: 7.16.0
   resolution: "@babel/core@npm:7.16.0"
   dependencies:
@@ -222,7 +222,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.10.4, @babel/helper-module-imports@npm:^7.12.13, @babel/helper-module-imports@npm:^7.15.4, @babel/helper-module-imports@npm:^7.16.0":
+"@babel/helper-module-imports@npm:^7.10.4, @babel/helper-module-imports@npm:^7.12.13, @babel/helper-module-imports@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/helper-module-imports@npm:7.16.0"
   dependencies:
@@ -432,7 +432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-decorators@npm:^7.15.8, @babel/plugin-proposal-decorators@npm:^7.16.0":
+"@babel/plugin-proposal-decorators@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/plugin-proposal-decorators@npm:7.16.0"
   dependencies:
@@ -695,14 +695,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-flow@npm:^7.14.5":
-  version: 7.14.5
-  resolution: "@babel/plugin-syntax-flow@npm:7.14.5"
+"@babel/plugin-syntax-flow@npm:^7.16.0":
+  version: 7.16.0
+  resolution: "@babel/plugin-syntax-flow@npm:7.16.0"
   dependencies:
     "@babel/helper-plugin-utils": ^7.14.5
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: ba6c81325930283bed75c59f92bd7f5873beb006e35fdb092f62498d1f1ecb90f3eaa3d586400ad48dd6d03c63d2bf59a72998e431bab2bd20b3137bd2b10ac0
+  checksum: 21ce1b81581ef3c2a36a8342c9bfea2783115479d6833a25ef82055d6113562ebfef2b8a46dd13d9be94168bdcb0e77a5ca0aad917dab6225bfb6506970e2d81
   languageName: node
   linkType: hard
 
@@ -958,15 +958,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-flow-strip-types@npm:^7.14.5":
-  version: 7.14.5
-  resolution: "@babel/plugin-transform-flow-strip-types@npm:7.14.5"
+"@babel/plugin-transform-flow-strip-types@npm:^7.16.0":
+  version: 7.16.0
+  resolution: "@babel/plugin-transform-flow-strip-types@npm:7.16.0"
   dependencies:
     "@babel/helper-plugin-utils": ^7.14.5
-    "@babel/plugin-syntax-flow": ^7.14.5
+    "@babel/plugin-syntax-flow": ^7.16.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: c1d6d0612e9c55301d7ed9477cae1a2c6b1f7958b943c0289466ea7a4d2d53f93cf22fa4ab55756ed207b0672c042bbbd67fe38c89d48787345423e111850f96
+  checksum: 589f65e8da13c710ee37ba01b6cfbeaa8ea2ee4bc150a1c3739403b78deeff43da766152014e74dda5c04ab14e3ad354c52dbb008f999bc3449a09e44032d216
   languageName: node
   linkType: hard
 
@@ -1196,7 +1196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-runtime@npm:^7.15.8":
+"@babel/plugin-transform-runtime@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/plugin-transform-runtime@npm:7.16.0"
   dependencies:
@@ -1304,7 +1304,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.15.8, @babel/preset-env@npm:^7.16.0":
+"@babel/preset-env@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/preset-env@npm:7.16.0"
   dependencies:
@@ -1388,16 +1388,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-flow@npm:^7.14.5":
-  version: 7.14.5
-  resolution: "@babel/preset-flow@npm:7.14.5"
+"@babel/preset-flow@npm:^7.16.0":
+  version: 7.16.0
+  resolution: "@babel/preset-flow@npm:7.16.0"
   dependencies:
     "@babel/helper-plugin-utils": ^7.14.5
     "@babel/helper-validator-option": ^7.14.5
-    "@babel/plugin-transform-flow-strip-types": ^7.14.5
+    "@babel/plugin-transform-flow-strip-types": ^7.16.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 439fb55719f62750cb55418c0c57a15f1e59be914981d899f45cc6145defc3457f1bf41d16e4350c7336df6d8f1a16cdde21dbf77554e6be7bd5f0962dd32f33
+  checksum: 4417293f64d171bd4f063b2acdf7e88850ef15e1c72b4730798f7feb813785e1318bad6ae4c6bdb8d78b43a349be3e343e9d7902dc7a5b95a91abd53efe14904
   languageName: node
   linkType: hard
 
@@ -1416,7 +1416,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.14.5, @babel/preset-react@npm:^7.16.0":
+"@babel/preset-react@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/preset-react@npm:7.16.0"
   dependencies:
@@ -1432,7 +1432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.15.0, @babel/preset-typescript@npm:^7.16.0":
+"@babel/preset-typescript@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/preset-typescript@npm:7.16.0"
   dependencies:
@@ -1560,7 +1560,7 @@ __metadata:
   peerDependencies:
     "@beemo/core": ^2.0.0
     "@beemo/driver-eslint": ^2.0.0
-    eslint: ">=7.0.0"
+    eslint: ^7.0.0 || ^8.0.0
   languageName: unknown
   linkType: soft
 
@@ -2971,27 +2971,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor-model@npm:7.13.14":
-  version: 7.13.14
-  resolution: "@microsoft/api-extractor-model@npm:7.13.14"
+"@microsoft/api-extractor-model@npm:7.13.16":
+  version: 7.13.16
+  resolution: "@microsoft/api-extractor-model@npm:7.13.16"
   dependencies:
     "@microsoft/tsdoc": 0.13.2
     "@microsoft/tsdoc-config": ~0.15.2
-    "@rushstack/node-core-library": 3.43.0
-  checksum: 69c448c0fab0317c9f6aaa0ffaa30328a1b661c96f3995126ce8e721fe5dc671c31fb49608064a236d25410cd2dd3d0f8be51863c1e1d4b72c007062cdf85d21
+    "@rushstack/node-core-library": 3.43.2
+  checksum: 7066cecc24c7e66d6018fa23ea109c375e9d0f1f58f8858872ff8fea2d479c6e99f6569fd452718507cf05ee901b2e5370e18b02aee2c525a6efb445269684b7
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor@npm:^7.18.15":
-  version: 7.18.17
-  resolution: "@microsoft/api-extractor@npm:7.18.17"
+"@microsoft/api-extractor@npm:^7.18.17":
+  version: 7.18.19
+  resolution: "@microsoft/api-extractor@npm:7.18.19"
   dependencies:
-    "@microsoft/api-extractor-model": 7.13.14
+    "@microsoft/api-extractor-model": 7.13.16
     "@microsoft/tsdoc": 0.13.2
     "@microsoft/tsdoc-config": ~0.15.2
-    "@rushstack/node-core-library": 3.43.0
-    "@rushstack/rig-package": 0.3.4
-    "@rushstack/ts-command-line": 4.10.3
+    "@rushstack/node-core-library": 3.43.2
+    "@rushstack/rig-package": 0.3.5
+    "@rushstack/ts-command-line": 4.10.4
     colors: ~1.2.1
     lodash: ~4.17.15
     resolve: ~1.17.0
@@ -3000,7 +3000,7 @@ __metadata:
     typescript: ~4.4.2
   bin:
     api-extractor: bin/api-extractor
-  checksum: 858e92143ba934b3646de1157e322d11563ba11b8b1cae062679849cfc7e6c9a103002ede0a92dc558f2009a8ca5f625c3792f0632e9f10d64523d4462d9b1d0
+  checksum: ef5d181f33483e53b94177e41f3f325cc0b2f6f445a9f697a49f28640717024fb8ee0bb600604ab157cf50aa7fbb04520b302207a084bdd19996314d28eb509f
   languageName: node
   linkType: hard
 
@@ -3289,7 +3289,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-commonjs@npm:^21.0.0":
+"@rollup/plugin-commonjs@npm:^21.0.1":
   version: 21.0.1
   resolution: "@rollup/plugin-commonjs@npm:21.0.1"
   dependencies:
@@ -3330,7 +3330,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-node-resolve@npm:^13.0.5":
+"@rollup/plugin-node-resolve@npm:^13.0.6":
   version: 13.0.6
   resolution: "@rollup/plugin-node-resolve@npm:13.0.6"
   dependencies:
@@ -3359,9 +3359,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/node-core-library@npm:3.43.0":
-  version: 3.43.0
-  resolution: "@rushstack/node-core-library@npm:3.43.0"
+"@rushstack/node-core-library@npm:3.43.2":
+  version: 3.43.2
+  resolution: "@rushstack/node-core-library@npm:3.43.2"
   dependencies:
     "@types/node": 12.20.24
     colors: ~1.2.1
@@ -3372,29 +3372,29 @@ __metadata:
     semver: ~7.3.0
     timsort: ~0.3.0
     z-schema: ~3.18.3
-  checksum: 9be10a5d6d145aa6927c8f6dae2dff8091be3b8635c20ac1b9cb67ab32dd22f4acddd37edc074a99f68432b501c4de71bc769c3c9d4cf9add0631550634754b5
+  checksum: a3aa5bf7ce07a547469827c14cf53057dcb6bdff47461a991a4e52076d1f36287814a46045cae1597bbc878061ac6d2e5097157c4d281fcbc5a8a769481511b6
   languageName: node
   linkType: hard
 
-"@rushstack/rig-package@npm:0.3.4":
-  version: 0.3.4
-  resolution: "@rushstack/rig-package@npm:0.3.4"
+"@rushstack/rig-package@npm:0.3.5":
+  version: 0.3.5
+  resolution: "@rushstack/rig-package@npm:0.3.5"
   dependencies:
     resolve: ~1.17.0
     strip-json-comments: ~3.1.1
-  checksum: 19e7f9d3b3aec2745cb18bd66e7c109784c57b5ede5f70122a53e9a6cb41d906c7da6f6c55b3f78f3f80d2b13853cc8ddd7c6a615478dda2cddd83a151a416d5
+  checksum: ee102a249eaa24ba00cad93e138b91832fc5d418cd08e39aa4f3305a52024a930433c476285c2e4a1daa861bb179c9abc4d374d494c77cc7a560e70d2c2ed00f
   languageName: node
   linkType: hard
 
-"@rushstack/ts-command-line@npm:4.10.3":
-  version: 4.10.3
-  resolution: "@rushstack/ts-command-line@npm:4.10.3"
+"@rushstack/ts-command-line@npm:4.10.4":
+  version: 4.10.4
+  resolution: "@rushstack/ts-command-line@npm:4.10.4"
   dependencies:
     "@types/argparse": 1.0.38
     argparse: ~1.0.9
     colors: ~1.2.1
     string-argv: ~0.3.1
-  checksum: 7a3eae247b2aaebbebb38677cdca6b3fa8401b6e13d0bf58ecebdd7a08c2f2c66b85f11c66ce0c14b43d7378df7650ca1ec1a2972eb02e155f21b0c8c125f23c
+  checksum: 8f5f086b946ce7f67621cc6f03c6e4f51c1834522cf4b3b070671d785782681ec8c7f68a04c7d345f298780da6586ea0a38b550256e426f10d735618c9942505
   languageName: node
   linkType: hard
 
@@ -4195,23 +4195,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-cjs-esm-interop@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "babel-plugin-cjs-esm-interop@npm:1.1.2"
+"babel-plugin-cjs-esm-interop@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "babel-plugin-cjs-esm-interop@npm:1.1.3"
   dependencies:
-    "@babel/helper-module-imports": ^7.15.4
+    "@babel/helper-module-imports": ^7.16.0
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: 754ac5b1f84a140eba1476cc45f3dbc54bf47cfc036c95bdca9c00393aac85d995596086846c2dd14c2b7007d742ee8c46764d88237690e7e7cad79bb246ca50
+  checksum: 2ea8ea4f562b41da57329ce63e32285baf17d6a590615961f73ee3802b144941ac16ce4f02b5f181733a5dd4e27455fdd688577fb7d3e3086320ec2a711e39bd
   languageName: node
   linkType: hard
 
-"babel-plugin-conditional-invariant@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "babel-plugin-conditional-invariant@npm:1.0.5"
+"babel-plugin-conditional-invariant@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "babel-plugin-conditional-invariant@npm:1.0.6"
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: 05f711771ff3f4f0c2427ce35ec3729964aa6542604533db809215a46fc5bd027ba3e498320635c07517766aabf84ca4a9e72e6e6c4be362c27f4c9b8525dabd
+  checksum: 677c7d689bfc6a82714a2be9e7eb75069f26324dc06bac1c86cea812b3ed12c4c147ce3fafc5fbd094b2871fd17ebfe91ae5cdfcf710a07efdadce7db83d8872
   languageName: node
   linkType: hard
 
@@ -4224,12 +4224,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-env-constants@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "babel-plugin-env-constants@npm:1.0.5"
+"babel-plugin-env-constants@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "babel-plugin-env-constants@npm:1.0.6"
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: d85cdc2d2d0d7a603de713acdee502d357bcb5af893eb21f6c2bc5013ec17ddd089d8437fc814c47f8714d10fdc1f3b0edf67b62f1b2e80b61cae6f9654ba451
+  checksum: c45f2045e375dafaef3799a01f8a6102b634db25a1309e33723c3d21ab28aa400187c5e5778eedb5b16cd4653585e203e88a1022194fb0f8d482cf08d8e05878
   languageName: node
   linkType: hard
 
@@ -4393,7 +4393,7 @@ __metadata:
     jest: ^27.3.1
     jest-circus: ^27.3.1
     lerna: ^4.0.0
-    packemon: ^1.6.0
+    packemon: ^1.7.0
     prettier: ^2.4.1
     typescript: ^4.4.4
   languageName: unknown
@@ -5725,7 +5725,7 @@ __metadata:
     eslint-plugin-simple-import-sort: ^7.0.0
     eslint-plugin-unicorn: ^38.0.1
   peerDependencies:
-    eslint: ">=7.0.0"
+    eslint: ^7.0.0 || ^8.0.0
   languageName: unknown
   linkType: soft
 
@@ -6325,7 +6325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"filesize@npm:^8.0.3":
+"filesize@npm:^8.0.6":
   version: 8.0.6
   resolution: "filesize@npm:8.0.6"
   checksum: a16d7bd88c943ff55185559eabd4e9779d531b281a39a4a884659fd6f58bd29c20337ad7d58dc5492477df484bb9579a7ca6ad77e57a25908a51f8224790aaa3
@@ -9821,36 +9821,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"packemon@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "packemon@npm:1.6.0"
+"packemon@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "packemon@npm:1.7.0"
   dependencies:
-    "@babel/core": ^7.15.8
-    "@babel/plugin-proposal-decorators": ^7.15.8
-    "@babel/plugin-transform-runtime": ^7.15.8
-    "@babel/preset-env": ^7.15.8
-    "@babel/preset-flow": ^7.14.5
-    "@babel/preset-react": ^7.14.5
-    "@babel/preset-typescript": ^7.15.0
+    "@babel/core": ^7.16.0
+    "@babel/plugin-proposal-decorators": ^7.16.0
+    "@babel/plugin-transform-runtime": ^7.16.0
+    "@babel/preset-env": ^7.16.0
+    "@babel/preset-flow": ^7.16.0
+    "@babel/preset-react": ^7.16.0
+    "@babel/preset-typescript": ^7.16.0
     "@boost/cli": ^2.11.2
     "@boost/common": ^2.8.2
     "@boost/debug": ^2.2.8
     "@boost/event": ^2.3.3
     "@boost/pipeline": ^2.2.8
     "@boost/terminal": ^2.2.3
-    "@microsoft/api-extractor": ^7.18.15
+    "@microsoft/api-extractor": ^7.18.17
     "@rollup/plugin-babel": ^5.3.0
-    "@rollup/plugin-commonjs": ^21.0.0
+    "@rollup/plugin-commonjs": ^21.0.1
     "@rollup/plugin-json": ^4.1.0
-    "@rollup/plugin-node-resolve": ^13.0.5
-    babel-plugin-cjs-esm-interop: ^1.1.2
-    babel-plugin-conditional-invariant: ^1.0.5
-    babel-plugin-env-constants: ^1.0.5
+    "@rollup/plugin-node-resolve": ^13.0.6
+    babel-plugin-cjs-esm-interop: ^1.1.3
+    babel-plugin-conditional-invariant: ^1.0.6
+    babel-plugin-env-constants: ^1.0.6
     babel-plugin-transform-async-to-promises: ^0.8.15
     builtin-modules: ^3.2.0
     execa: ^5.1.1
     fast-glob: ^3.2.7
-    filesize: ^8.0.3
+    filesize: ^8.0.6
     fs-extra: ^10.0.0
     ink: ^3.2.0
     ink-progress-bar: ^3.0.0
@@ -9860,7 +9860,7 @@ __metadata:
     react: ^16.14.0
     resolve: ^1.20.0
     rimraf: ^3.0.2
-    rollup: ^2.58.0
+    rollup: ^2.59.0
     rollup-plugin-node-externals: ^2.2.0
     rollup-plugin-polyfill-node: ^0.7.0
     rollup-plugin-visualizer: ^5.5.2
@@ -9876,7 +9876,7 @@ __metadata:
       optional: true
   bin:
     packemon: lib/bin.js
-  checksum: 25ba97e1c58cf146ed8faa6e762ad9ce1d729b77cefa3559c43c9a582eb17ecf499fe5eef6fffb5ae3c034b10171514b0ad3288994b4c591e64a0a7631857f42
+  checksum: d555c4a6aec55332911e718a7fb416fd63ccaa3b037681b48417e78bdea84a079ce69f4aec08c6e598cee71a4eca5473c4185adfe67428d307c0d26d561482c6
   languageName: node
   linkType: hard
 
@@ -10981,7 +10981,7 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.58.0":
+"rollup@npm:^2.59.0":
   version: 2.59.0
   resolution: "rollup@npm:2.59.0"
   dependencies:
