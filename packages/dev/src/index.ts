@@ -1,4 +1,3 @@
-import path from 'path';
 import { DriverContext, Tool } from '@beemo/core';
 
 const EXTS = ['.ts', '.tsx'];
@@ -42,7 +41,7 @@ export default function dev(tool: Tool) {
 		if (hasNoParams(context, 'eslint')) {
 			if (workspaceGlobs.length > 0) {
 				workspaceGlobs.forEach((wsPrefix) => {
-					context.addParam(path.join(wsPrefix, `{${DIRS.join(',')}}`));
+					context.addParam(`${wsPrefix}/{${DIRS.join(',')}}`);
 				});
 			} else {
 				context.addParams(DIRS);
