@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.7.2 - 2021-11-11
+
+#### 🐞 Fixes
+
+- Another attempt to fix glob issues on windows. ([450a8b8](https://github.com/beemojs/dev/commit/450a8b8))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ### 1.7.1 - 2021-11-10
 
 #### 🐞 Fixes
