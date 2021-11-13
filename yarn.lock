@@ -1527,7 +1527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/config-babel@^1.1.3, @beemo/config-babel@workspace:packages/config-babel":
+"@beemo/config-babel@^1.1.4, @beemo/config-babel@workspace:packages/config-babel":
   version: 0.0.0-use.local
   resolution: "@beemo/config-babel@workspace:packages/config-babel"
   dependencies:
@@ -1548,7 +1548,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-eslint@^1.1.0, @beemo/config-eslint@workspace:packages/config-eslint":
+"@beemo/config-eslint@^1.1.1, @beemo/config-eslint@workspace:packages/config-eslint":
   version: 0.0.0-use.local
   resolution: "@beemo/config-eslint@workspace:packages/config-eslint"
   dependencies:
@@ -1564,7 +1564,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-jest@^1.1.3, @beemo/config-jest@workspace:packages/config-jest":
+"@beemo/config-jest@^1.1.4, @beemo/config-jest@workspace:packages/config-jest":
   version: 0.0.0-use.local
   resolution: "@beemo/config-jest@workspace:packages/config-jest"
   dependencies:
@@ -1579,7 +1579,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-prettier@^1.0.7, @beemo/config-prettier@workspace:packages/config-prettier":
+"@beemo/config-prettier@^1.0.8, @beemo/config-prettier@workspace:packages/config-prettier":
   version: 0.0.0-use.local
   resolution: "@beemo/config-prettier@workspace:packages/config-prettier"
   dependencies:
@@ -1595,7 +1595,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-typescript@^1.1.3, @beemo/config-typescript@workspace:packages/config-typescript":
+"@beemo/config-typescript@^1.1.4, @beemo/config-typescript@workspace:packages/config-typescript":
   version: 0.0.0-use.local
   resolution: "@beemo/config-typescript@workspace:packages/config-typescript"
   dependencies:
@@ -1644,11 +1644,11 @@ __metadata:
     "@babel/cli": ^7.16.0
     "@babel/core": ^7.16.0
     "@beemo/cli": ^2.0.4
-    "@beemo/config-babel": ^1.1.3
-    "@beemo/config-eslint": ^1.1.0
-    "@beemo/config-jest": ^1.1.3
-    "@beemo/config-prettier": ^1.0.7
-    "@beemo/config-typescript": ^1.1.3
+    "@beemo/config-babel": ^1.1.4
+    "@beemo/config-eslint": ^1.1.1
+    "@beemo/config-jest": ^1.1.4
+    "@beemo/config-prettier": ^1.0.8
+    "@beemo/config-typescript": ^1.1.4
     "@beemo/core": ^2.1.2
     "@beemo/driver-babel": ^2.0.4
     "@beemo/driver-eslint": ^2.0.3

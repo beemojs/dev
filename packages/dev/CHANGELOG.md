@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.7.3 - 2021-11-13
+
+#### 📦 Dependencies
+
+- **[beemo]** Update to v2 latest. ([b63cc15](https://github.com/beemojs/dev/commit/b63cc15))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ### 1.7.2 - 2021-11-11
 
 #### 🐞 Fixes
