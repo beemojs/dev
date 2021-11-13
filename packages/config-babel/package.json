@@ -38,8 +38,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@beemo/core": "^2.1.1",
-    "@beemo/driver-babel": "^2.0.3"
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-babel": "^2.0.4"
   },
   "funding": {
     "type": "ko-fi",

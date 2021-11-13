@@ -38,8 +38,8 @@
     "tsconfig-beemo": "^1.0.1"
   },
   "devDependencies": {
-    "@beemo/core": "^2.1.1",
-    "@beemo/driver-typescript": "^2.0.1",
+    "@beemo/core": "^2.1.2",
+    "@beemo/driver-typescript": "^2.1.0",
     "typescript": "^4.4.4"
   },
   "funding": {
