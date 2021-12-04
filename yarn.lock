@@ -1586,7 +1586,7 @@ __metadata:
     "@beemo/config-constants": ^1.1.0
     "@beemo/core": ^2.1.2
     "@beemo/driver-prettier": ^2.0.4
-    prettier: ^2.4.1
+    prettier: ^2.5.0
     prettier-config-beemo: ^1.0.1
   peerDependencies:
     "@beemo/core": ^2.0.0
@@ -1658,7 +1658,7 @@ __metadata:
     conventional-changelog-beemo: ^2.1.0
     eslint: ^8.2.0
     jest: ^27.4.3
-    prettier: ^2.4.1
+    prettier: ^2.5.0
     typescript: ^4.4.4
   peerDependenciesMeta:
     "@beemo/cli":
@@ -4397,7 +4397,7 @@ __metadata:
     jest-circus: ^27.4.2
     lerna: ^4.0.0
     packemon: ^1.8.0
-    prettier: ^2.4.1
+    prettier: ^2.5.0
     typescript: ^4.4.4
   languageName: unknown
   linkType: soft
@@ -10223,12 +10223,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"prettier@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "prettier@npm:2.4.1"
+"prettier@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "prettier@npm:2.5.0"
   bin:
     prettier: bin-prettier.js
-  checksum: cc6830588b401b0d742862fe9c46bc9118204fb307c3abe0e49e95b35ed23629573807ffdf9cdd65289c252a0bb51fc0171437f6626ee36378dea80f0ee80b91
+  checksum: aad1b35b73e7c14596d389d90977a83dad0db689ba5802a0ef319c357b7867f55b885db197972aa6a56c30f53088c9f8e0d7f7930ae074c275a4e9cbe091d21d
   languageName: node
   linkType: hard
 
