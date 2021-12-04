@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.5 - 2021-12-04
+
+#### 📦 Dependencies
+
+- **[typescript]** Update to v4.5. ([8a4d64a](https://github.com/beemojs/dev/commit/8a4d64a))
+
+**Note:** Version bump only for package @beemo/config-typescript
+
+
+
+
+
 ### 1.1.4 - 2021-11-13
 
 #### 📦 Dependencies
