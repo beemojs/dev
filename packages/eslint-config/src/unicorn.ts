@@ -106,12 +106,12 @@ const config: eslint.Linter.Config = {
 		'unicorn/prefer-array-flat-map': 'error',
 		'unicorn/prefer-array-index-of': 'error',
 		'unicorn/prefer-array-some': 'error',
+		'unicorn/prefer-code-point': 'error',
 		'unicorn/prefer-date-now': 'error',
 		'unicorn/prefer-dom-node-append': 'error',
 		'unicorn/prefer-dom-node-dataset': 'error',
 		'unicorn/prefer-dom-node-remove': 'error',
 		'unicorn/prefer-dom-node-text-content': 'error',
-		'unicorn/prefer-export-from': 'error',
 		'unicorn/prefer-includes': 'error',
 		'unicorn/prefer-keyboard-event-key': 'error',
 		'unicorn/prefer-math-trunc': 'error',
@@ -135,6 +135,9 @@ const config: eslint.Linter.Config = {
 
 		// Is caught/handled by TypeScript instead
 		'unicorn/no-array-callback-reference': 'off',
+
+		// Autofixing is abrasive
+		'unicorn/prefer-export-from': 'off',
 	},
 };
 

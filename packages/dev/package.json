@@ -62,7 +62,7 @@
     "@beemo/driver-prettier": "^2.0.4",
     "@beemo/driver-typescript": "^2.1.0",
     "conventional-changelog-beemo": "^2.1.0",
-    "eslint": "^8.2.0",
+    "eslint": "^8.4.0",
     "jest": "^27.4.3",
     "prettier": "^2.5.0",
     "typescript": "^4.5.2"

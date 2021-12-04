@@ -39,25 +39,25 @@
   },
   "dependencies": {
     "@beemo/config-constants": "^1.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.3.1",
-    "@typescript-eslint/parser": "^5.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-compat": "^3.13.0",
+    "eslint-plugin-compat": "^4.0.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1",
-    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react-perf": "^3.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^38.0.1"
+    "eslint-plugin-unicorn": "^39.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "^7.28.2",
-    "eslint": "^8.2.0"
+    "@types/eslint": "^8.2.1",
+    "eslint": "^8.4.0"
   },
   "funding": {
     "type": "ko-fi",
