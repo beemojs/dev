@@ -31,8 +31,8 @@
     "jest": "^27.4.7",
     "jest-circus": "^27.4.6",
     "lerna": "^4.0.0",
-    "packemon": "^1.8.0",
-    "prettier": "^2.5.0",
+    "packemon": "^1.10.0",
+    "prettier": "^2.5.1",
     "typescript": "^4.5.2"
   },
   "engines": {
