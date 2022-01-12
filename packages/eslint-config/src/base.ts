@@ -77,6 +77,10 @@ const config: eslint.Linter.Config = {
 
 		// Allow modern APIs
 		'no-restricted-syntax': 'off',
+
+		// Not available on enough platforms yet
+		// TODO: Enable in the future!
+		'prefer-object-has-own': 'off',
 	},
 };
 

@@ -22,11 +22,14 @@ const config: eslint.Linter.Config = {
 		'unicorn/no-zero-fractions': 'error',
 		'unicorn/prefer-switch': 'error',
 		'unicorn/string-content': 'error',
+		'unicorn/relative-url-style': ['error', 'always'],
 
 		// Better error handling and implementation
 		'unicorn/catch-error-name': 'error',
 		'unicorn/custom-error-definition': 'error',
 		'unicorn/error-message': 'error',
+		'unicorn/no-thenable': 'error',
+		'unicorn/no-useless-promise-resolve-reject': 'error',
 		'unicorn/prefer-type-error': 'error',
 
 		// Too abrasive / too many false positives
@@ -128,16 +131,17 @@ const config: eslint.Linter.Config = {
 		'unicorn/prefer-string-trim-start-end': 'error',
 		'unicorn/prefer-top-level-await': nodeVersion >= 14.8 ? 'error' : 'off',
 
-		// Not available on enough platforms yet
-		'unicorn/prefer-at': 'off',
-		'unicorn/prefer-object-has-own': 'off',
-		'unicorn/prefer-string-replace-all': 'off',
-
-		// Is caught/handled by TypeScript instead
-		'unicorn/no-array-callback-reference': 'off',
-
 		// Autofixing is abrasive
 		'unicorn/prefer-export-from': 'off',
+
+		// Is caught/handled/conflicts by TypeScript instead
+		'unicorn/no-array-callback-reference': 'off',
+		'unicorn/prefer-json-parse-buffer': 'off',
+
+		// Not available on enough platforms yet
+		// TODO: Enable in the future!
+		'unicorn/prefer-at': 'off',
+		'unicorn/prefer-string-replace-all': 'off',
 	},
 };
 
