@@ -17,7 +17,8 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 
 		// Ensure we are expecting/asserting correctly
 		'jest/expect-expect': 'error',
-		'jest/no-if': 'error',
+		'jest/no-conditional-in-test': 'error',
+		'jest/no-if': 'off', // deprecated
 		'jest/no-standalone-expect': 'error',
 		'jest/prefer-expect-resolves': 'error',
 
@@ -63,6 +64,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 
 		// Too abrasive and annoying
 		'jest/prefer-expect-assertions': 'off',
+		'jest/prefer-snapshot-hint': 'off',
 		'jest/prefer-strict-equal': 'off',
 		'jest/require-hook': 'off',
 		'jest/unbound-method': 'off',
