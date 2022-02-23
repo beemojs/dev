@@ -23,6 +23,7 @@ const config: eslint.Linter.Config = {
 		'unicorn/prefer-switch': 'error',
 		'unicorn/string-content': 'error',
 		'unicorn/relative-url-style': ['error', 'always'],
+		'unicorn/text-encoding-identifier-case': 'error',
 
 		// Better error handling and implementation
 		'unicorn/catch-error-name': 'error',
