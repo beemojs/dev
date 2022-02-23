@@ -47,7 +47,7 @@
     "babel-plugin-transform-dev": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.2"
+    "@babel/core": "^7.17.5"
   },
   "funding": {
     "type": "ko-fi",
