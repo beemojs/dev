@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.8 - 2022-02-23
+
+#### 📦 Dependencies
+
+- **[packemon]** Update to v1.13. ([de67446](https://github.com/beemojs/dev/commit/de67446))
+
+**Note:** Version bump only for package @beemo/config-babel
+
+
+
+
+
 ### 1.1.7 - 2022-02-09
 
 #### 📦 Dependencies
