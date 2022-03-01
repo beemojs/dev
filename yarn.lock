@@ -58,7 +58,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.1.0, @babel/core@npm:^7.12.3, @babel/core@npm:^7.17.2, @babel/core@npm:^7.17.5, @babel/core@npm:^7.7.2, @babel/core@npm:^7.8.0":
+"@babel/core@npm:^7.1.0, @babel/core@npm:^7.12.3, @babel/core@npm:^7.17.5, @babel/core@npm:^7.7.2, @babel/core@npm:^7.8.0":
   version: 7.17.5
   resolution: "@babel/core@npm:7.17.5"
   dependencies:
@@ -3318,9 +3318,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-babel@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "@rollup/plugin-babel@npm:5.3.0"
+"@rollup/plugin-babel@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "@rollup/plugin-babel@npm:5.3.1"
   dependencies:
     "@babel/helper-module-imports": ^7.10.4
     "@rollup/pluginutils": ^3.1.0
@@ -3331,7 +3331,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/babel__core":
       optional: true
-  checksum: 6cfd741790f125968cbd0fc91b6f54e235033e31853a12190f725ccf95a6eb2f1387b6368be80dedfa94536d2e84739e7af45c8b2fe7a450e91c2aeb6170867d
+  checksum: 220d71e4647330f252ef33d5f29700aef2e8284a0b61acfcceb47617a7f96208aa1ed16eae75619424bf08811ede5241e271a6d031f07026dee6b3a2bdcdc638
   languageName: node
   linkType: hard
 
@@ -4456,7 +4456,7 @@ __metadata:
     jest: ^27.5.1
     jest-circus: ^27.5.1
     lerna: ^4.0.0
-    packemon: ^1.13.0
+    packemon: ^1.14.0
     prettier: ^2.5.1
     typescript: ^4.6.2
   languageName: unknown
@@ -6497,14 +6497,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "fs-extra@npm:10.0.0"
+"fs-extra@npm:^10.0.0, fs-extra@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "fs-extra@npm:10.0.1"
   dependencies:
     graceful-fs: ^4.2.0
     jsonfile: ^6.0.1
     universalify: ^2.0.0
-  checksum: 5285a3d8f34b917cf2b66af8c231a40c1623626e9d701a20051d3337be16c6d7cac94441c8b3732d47a92a2a027886ca93c69b6a4ae6aee3c89650d2a8880c0a
+  checksum: c1faaa5eb9e1c5c7c7ff09f966e93922ecb068ae1b04801cfc983ef05fcc1f66bfbb8d8d0b745c910014c7a2e7317fb6cf3bfe7390450c1157e3cc1a218f221d
   languageName: node
   linkType: hard
 
@@ -9859,11 +9859,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"packemon@npm:^1.13.0":
-  version: 1.13.0
-  resolution: "packemon@npm:1.13.0"
+"packemon@npm:^1.14.0":
+  version: 1.14.0
+  resolution: "packemon@npm:1.14.0"
   dependencies:
-    "@babel/core": ^7.17.2
+    "@babel/core": ^7.17.5
     "@babel/plugin-proposal-decorators": ^7.17.2
     "@babel/plugin-transform-runtime": ^7.17.0
     "@babel/preset-env": ^7.16.11
@@ -9878,7 +9878,7 @@ __metadata:
     "@boost/pipeline": ^3.2.2
     "@boost/terminal": ^3.0.0
     "@microsoft/api-extractor": ^7.19.4
-    "@rollup/plugin-babel": ^5.3.0
+    "@rollup/plugin-babel": ^5.3.1
     "@rollup/plugin-commonjs": ^21.0.1
     "@rollup/plugin-json": ^4.1.0
     "@rollup/plugin-node-resolve": ^13.1.3
@@ -9890,7 +9890,7 @@ __metadata:
     execa: ^5.1.1
     fast-glob: ^3.2.11
     filesize: ^8.0.7
-    fs-extra: ^10.0.0
+    fs-extra: ^10.0.1
     ink: ^3.2.0
     ink-progress-bar: ^3.0.0
     ink-spinner: ^4.0.3
@@ -9900,7 +9900,7 @@ __metadata:
     react: ^17.0.2
     resolve: ^1.22.0
     rimraf: ^3.0.2
-    rollup: ^2.67.2
+    rollup: ^2.68.0
     rollup-plugin-node-externals: ^2.2.0
     rollup-plugin-polyfill-node: ^0.8.0
     rollup-plugin-visualizer: ^5.5.4
@@ -9916,7 +9916,7 @@ __metadata:
       optional: true
   bin:
     packemon: lib/bin.js
-  checksum: b1228a3cc9a4efeb1cf9c607225fd3446133f7034fefbddb6ae9670c93f0ff009356faa47a9ef6b087922ba8150ab7b92751d285d0ddd10cb13b9fd1264091eb
+  checksum: 604847b1632c3ee2af33be573d4546e4567fc13c94cb3eee615a54734f94aa391de2aeeaa1d105a175ca85e1d0a4daa0f4edc34de78558369730afd3892f490e
   languageName: node
   linkType: hard
 
@@ -10999,7 +10999,7 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.67.2":
+"rollup@npm:^2.68.0":
   version: 2.68.0
   resolution: "rollup@npm:2.68.0"
   dependencies:
