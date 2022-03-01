@@ -119,6 +119,7 @@ const config: eslint.Linter.Config = {
 
 		// Prefer compact and readable code
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
+		'@typescript-eslint/no-redundant-type-constituents': 'error',
 		'@typescript-eslint/sort-type-union-intersection-members': 'error',
 		'@typescript-eslint/strict-boolean-expressions': 'off',
 
@@ -258,6 +259,9 @@ const config: eslint.Linter.Config = {
 		// Sometimes we define empty functions in base/abstract classes
 		'no-empty-function': 'off',
 		'@typescript-eslint/no-empty-function': 'off',
+
+		// Sometimes necessary because of isolated modules
+		'@typescript-eslint/no-useless-empty-export': 'off',
 
 		// Prefer modern syntax
 		'@typescript-eslint/prefer-includes': 'error',
