@@ -1,6 +1,7 @@
 import { Arguments, ParserOptions, Path, Script, ScriptContext } from '@beemo/core';
 
 export interface LernaReleaseOptions {
+	conventional?: boolean;
 	changelogPreset?: string;
 	graduate?: boolean;
 	preid?: string;
@@ -15,6 +16,11 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 	override parse(): ParserOptions<LernaReleaseOptions> {
 		return {
 			options: {
+				conventional: {
+					default: true,
+					description: 'Use conventional commits for determining version bumps',
+					type: 'boolean',
+				},
 				changelogPreset: {
 					default: 'beemo',
 					description: 'Conventional changelog preset to use for release generation',
@@ -42,21 +48,25 @@ class LernaRelease extends Script<LernaReleaseOptions> {
 			this.npmClient = 'yarn';
 		}
 
-		const preid = args.options.prerelease ? args.options.preid : undefined;
-
 		this.checkForGitHubToken();
 
 		if (process.env.CI) {
 			await this.setGitEnvVars();
 		}
 
-		await this.versionPackages(
-			args.options.changelogPreset ?? 'beemo',
-			args.options.graduate,
-			preid,
-		);
+		if (args.options.conventional) {
+			const preid = args.options.prerelease ? args.options.preid : undefined;
 
-		await this.publishPackages(preid);
+			await this.versionPackages(
+				args.options.changelogPreset ?? 'beemo',
+				args.options.graduate,
+				preid,
+			);
+
+			await this.publishPackages(preid);
+		} else {
+			await this.executeCommand(this.npmClient, ['lerna', 'publish']);
+		}
 	}
 
 	// Required to create GitHub releases
