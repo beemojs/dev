@@ -1667,7 +1667,7 @@ __metadata:
     "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.6
     "@beemo/driver-typescript": ^2.1.2
-    conventional-changelog-beemo: ^2.1.0
+    conventional-changelog-beemo: ^3.0.0
     eslint: ^8.11.0
     jest: ^27.5.1
     prettier: ^2.5.1
@@ -4451,7 +4451,7 @@ __metadata:
     "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.6
     "@beemo/driver-typescript": ^2.1.2
-    conventional-changelog-beemo: ^2.1.0
+    conventional-changelog-beemo: ^3.0.0
     eslint: ^8.11.0
     jest: ^27.5.1
     jest-circus: ^27.5.1
@@ -5074,10 +5074,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-beemo@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "conventional-changelog-beemo@npm:2.1.0"
-  checksum: 76df24df558c41b71eaa539237bf12fa0341693949714d8d859b556184c7d3b872d924176769c7584e205ebc115b2ec9d738b4601fe436d1856b8569281c252f
+"conventional-changelog-beemo@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "conventional-changelog-beemo@npm:3.0.0"
+  checksum: 9050bf171488f1c31fbad354baabe01e33cc98050ce5fa116c45980dbc7b9341b14e64fe3680dff24ab5067142d538c46aec7f47703ae195add68f9a92c2819c
   languageName: node
   linkType: hard
 

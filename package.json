@@ -26,7 +26,7 @@
     "@beemo/driver-jest": "^2.0.5",
     "@beemo/driver-prettier": "^2.0.6",
     "@beemo/driver-typescript": "^2.1.2",
-    "conventional-changelog-beemo": "^2.1.0",
+    "conventional-changelog-beemo": "^3.0.0",
     "eslint": "^8.11.0",
     "jest": "^27.5.1",
     "jest-circus": "^27.5.1",
