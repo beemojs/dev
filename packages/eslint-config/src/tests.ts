@@ -108,6 +108,10 @@ const testsConfig: eslint.Linter.ConfigOverride = {
 		'@typescript-eslint/no-unsafe-call': 'off',
 		'@typescript-eslint/no-unsafe-member-access': 'off',
 		'@typescript-eslint/no-unsafe-return': 'off',
+
+		// Allow relative import paths
+		'import/no-relative-packages': 'off',
+		'node/no-unpublished-import': 'off',
 	},
 };
 
