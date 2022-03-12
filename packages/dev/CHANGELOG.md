@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>1.7.9 (2022-03-12)</small>
+
+* deps(beemo): Update to v2 latest. ([6c9a7b3](https://github.com/beemojs/dev/commit/6c9a7b3))
+* deps(conventional-changelog-beemo): Update to v3. ([6d5f271](https://github.com/beemojs/dev/commit/6d5f271))
+* deps(eslint): Update to v8.11 and plugins to latest. ([f9b7872](https://github.com/beemojs/dev/commit/f9b7872))
+* new: Support non-conventional lerna releases. ([3169454](https://github.com/beemojs/dev/commit/3169454))
+
+
+
+
+
 ### 1.7.8 - 2022-03-01
 
 #### 📦 Dependencies

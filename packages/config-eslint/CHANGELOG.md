@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>1.1.7 (2022-03-12)</small>
+
+* deps(beemo): Update to v2 latest. ([6c9a7b3](https://github.com/beemojs/dev/commit/6c9a7b3))
+* deps(eslint): Update to v8.11 and plugins to latest. ([f9b7872](https://github.com/beemojs/dev/commit/f9b7872))
+
+
+
+
+
 ### 1.1.6 - 2022-03-01
 
 #### 📦 Dependencies

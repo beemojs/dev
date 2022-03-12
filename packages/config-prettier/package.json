@@ -1,6 +1,6 @@
 {
   "name": "@beemo/config-prettier",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "release": "1624590167003",
   "description": "Prettier config for Beemo projects.",
   "keywords": [
