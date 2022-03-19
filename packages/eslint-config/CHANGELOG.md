@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>1.2.7 (2022-03-19)</small>
+
+* deps(typescript-eslint): Update to latest. ([597de49](https://github.com/beemojs/dev/commit/597de49))
+
+
+
+
+
 ## <small>1.2.6 (2022-03-12)</small>
 
 * deps(eslint): Update to v8.11 and plugins to latest. ([f9b7872](https://github.com/beemojs/dev/commit/f9b7872))

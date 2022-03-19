@@ -1560,7 +1560,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-eslint@^1.1.7, @beemo/config-eslint@workspace:packages/config-eslint":
+"@beemo/config-eslint@^1.1.8, @beemo/config-eslint@workspace:packages/config-eslint":
   version: 0.0.0-use.local
   resolution: "@beemo/config-eslint@workspace:packages/config-eslint"
   dependencies:
@@ -1568,7 +1568,7 @@ __metadata:
     "@beemo/core": ^2.1.4
     "@beemo/driver-eslint": ^2.0.5
     eslint: ^8.11.0
-    eslint-config-beemo: ^1.2.6
+    eslint-config-beemo: ^1.2.7
   peerDependencies:
     "@beemo/core": ^2.0.0
     "@beemo/driver-eslint": ^2.0.0
@@ -1591,7 +1591,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@beemo/config-prettier@^1.0.11, @beemo/config-prettier@workspace:packages/config-prettier":
+"@beemo/config-prettier@^1.0.12, @beemo/config-prettier@workspace:packages/config-prettier":
   version: 0.0.0-use.local
   resolution: "@beemo/config-prettier@workspace:packages/config-prettier"
   dependencies:
@@ -1657,9 +1657,9 @@ __metadata:
     "@babel/core": ^7.17.5
     "@beemo/cli": ^2.0.6
     "@beemo/config-babel": ^1.1.9
-    "@beemo/config-eslint": ^1.1.7
+    "@beemo/config-eslint": ^1.1.8
     "@beemo/config-jest": ^1.1.8
-    "@beemo/config-prettier": ^1.0.11
+    "@beemo/config-prettier": ^1.0.12
     "@beemo/config-typescript": ^1.1.9
     "@beemo/core": ^2.1.4
     "@beemo/driver-babel": ^2.0.6
@@ -5788,7 +5788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-beemo@^1.2.6, eslint-config-beemo@workspace:packages/eslint-config":
+"eslint-config-beemo@^1.2.7, eslint-config-beemo@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "eslint-config-beemo@workspace:packages/eslint-config"
   dependencies:

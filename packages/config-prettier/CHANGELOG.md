@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>1.0.12 (2022-03-19)</small>
+
+* deps(prettier): Update to v2.6. ([4840e5d](https://github.com/beemojs/dev/commit/4840e5d))
+
+
+
+
+
 ## <small>1.0.11 (2022-03-12)</small>
 
 * deps(beemo): Update to v2 latest. ([6c9a7b3](https://github.com/beemojs/dev/commit/6c9a7b3))

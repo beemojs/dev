@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-beemo",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "release": "1624590167003",
   "description": "Reusable ESLint config for Beemo configured projects.",
   "keywords": [
