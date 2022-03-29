@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.9 - 2022-03-29
+
+#### 📦 Dependencies
+
+- **[eslint]** Update to v8.12 and plugins to latest. ([fd4e44f](https://github.com/beemojs/dev/commit/fd4e44f))
+
+**Note:** Version bump only for package babel-preset-beemo
+
+
+
+
+
 ### 1.0.8 - 2022-02-23
 
 #### 📦 Dependencies
