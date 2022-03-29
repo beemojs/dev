@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/plugin-proposal-decorators": "^7.17.2",
+    "@babel/plugin-proposal-decorators": "^7.17.8",
     "@babel/plugin-proposal-export-default-from": "^7.16.7",
     "@babel/plugin-proposal-export-namespace-from": "^7.16.7",
     "@babel/plugin-proposal-private-methods": "^7.16.11",
@@ -47,7 +47,7 @@
     "babel-plugin-transform-dev": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5"
+    "@babel/core": "^7.17.8"
   },
   "funding": {
     "type": "ko-fi",

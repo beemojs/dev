@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.8",
     "@beemo/cli": "^2.0.6",
     "@beemo/config-babel": "^1.1.9",
     "@beemo/config-eslint": "^1.1.8",
@@ -62,7 +62,7 @@
     "@beemo/driver-prettier": "^2.0.6",
     "@beemo/driver-typescript": "^2.1.2",
     "conventional-changelog-beemo": "^3.0.1",
-    "eslint": "^8.11.0",
+    "eslint": "^8.12.0",
     "jest": "^27.5.1",
     "prettier": "^2.6.0",
     "typescript": "^4.6.2"
