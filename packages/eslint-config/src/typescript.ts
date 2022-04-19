@@ -88,7 +88,10 @@ const config: eslint.Linter.Config = {
 		'@typescript-eslint/no-loop-func': 'error',
 		'@typescript-eslint/no-loss-of-precision': 'error',
 		'@typescript-eslint/no-redeclare': ['error', { ignoreDeclarationMerge: true }],
-		'@typescript-eslint/no-shadow': ['error', { ignoreTypeValueShadow: true }],
+		'@typescript-eslint/no-shadow': [
+			'error',
+			{ ignoreOnInitialization: true, ignoreTypeValueShadow: true },
+		],
 		'@typescript-eslint/no-throw-literal': 'error',
 		'@typescript-eslint/no-unused-expressions': 'error',
 		'@typescript-eslint/no-unused-vars': [
@@ -251,7 +254,7 @@ const config: eslint.Linter.Config = {
 		'@typescript-eslint/prefer-literal-enum-member': 'error',
 		'@typescript-eslint/prefer-reduce-type-parameter': 'error',
 		'@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
-		'@typescript-eslint/unified-signatures': 'error',
+		'@typescript-eslint/unified-signatures': ['error', { ignoreDifferentlyNamedParameters: true }],
 
 		// Sometimes we need to be explicit because the inference is wrong
 		'@typescript-eslint/no-unnecessary-type-arguments': 'off',
