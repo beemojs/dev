@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.1.11 - 2022-04-19
+
+#### 📦 Dependencies
+
+- **[babel]** Update to v7.17 latest. ([dc88d78](https://github.com/beemojs/dev/commit/dc88d78))
+
+**Note:** Version bump only for package @beemo/config-babel
+
+
+
+
+
 ### 1.1.10 - 2022-03-29
 
 #### 📦 Dependencies

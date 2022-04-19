@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.7.12 - 2022-04-19
+
+#### 📦 Dependencies
+
+- **[babel]** Update to v7.17 latest. ([dc88d78](https://github.com/beemojs/dev/commit/dc88d78))
+- **[eslint]** Update to v8.13 and plugins to latest. ([5c3f890](https://github.com/beemojs/dev/commit/5c3f890))
+- **[prettier]** Update to v2.6.2. ([89b382c](https://github.com/beemojs/dev/commit/89b382c))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ### 1.7.11 - 2022-03-29
 
 #### 📦 Dependencies

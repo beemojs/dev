@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 1.0.14 - 2022-04-19
+
+#### 📦 Dependencies
+
+- **[prettier]** Update to v2.6.2. ([89b382c](https://github.com/beemojs/dev/commit/89b382c))
+
+**Note:** Version bump only for package @beemo/config-prettier
+
+
+
+
+
 ### 1.0.13 - 2022-03-29
 
 #### 📦 Dependencies
