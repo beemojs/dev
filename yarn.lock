@@ -4447,7 +4447,7 @@ __metadata:
     jest: ^27.5.1
     jest-circus: ^27.5.1
     lerna: ^4.0.0
-    packemon: ^1.14.1
+    packemon: ^1.15.0
     prettier: ^2.6.2
     typescript: ^4.6.3
   languageName: unknown
@@ -4484,7 +4484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"braces@npm:^3.0.1, braces@npm:~3.0.2":
+"braces@npm:^3.0.2, braces@npm:~3.0.2":
   version: 3.0.2
   resolution: "braces@npm:3.0.2"
   dependencies:
@@ -8981,13 +8981,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "micromatch@npm:4.0.4"
+"micromatch@npm:^4.0.4, micromatch@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "micromatch@npm:4.0.5"
   dependencies:
-    braces: ^3.0.1
-    picomatch: ^2.2.3
-  checksum: ef3d1c88e79e0a68b0e94a03137676f3324ac18a908c245a9e5936f838079fcc108ac7170a5fadc265a9c2596963462e402841406bda1a4bb7b68805601d631c
+    braces: ^3.0.2
+    picomatch: ^2.3.1
+  checksum: 02a17b671c06e8fefeeb6ef996119c1e597c942e632a21ef589154f23898c9c6a9858526246abb14f8bca6e77734aa9dcf65476fca47cedfb80d9577d52843fc
   languageName: node
   linkType: hard
 
@@ -9884,9 +9884,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"packemon@npm:^1.14.1":
-  version: 1.14.1
-  resolution: "packemon@npm:1.14.1"
+"packemon@npm:^1.15.0":
+  version: 1.15.0
+  resolution: "packemon@npm:1.15.0"
   dependencies:
     "@babel/core": ^7.17.8
     "@babel/plugin-proposal-decorators": ^7.17.8
@@ -9920,7 +9920,7 @@ __metadata:
     ink-progress-bar: ^3.0.0
     ink-spinner: ^4.0.3
     magic-string: ^0.26.1
-    micromatch: ^4.0.4
+    micromatch: ^4.0.5
     npm-packlist: ^4.0.0
     react: ^17.0.2
     resolve: ^1.22.0
@@ -9941,7 +9941,7 @@ __metadata:
       optional: true
   bin:
     packemon: lib/bin.js
-  checksum: 41a67a69d6f1a91ab7dfd44c227df97dbc38bef587385933d7db9f1c95186fb2ec4ae70f1ad1ef4692a8b1a98f852ab97b8dcf076dc51bac92bab7e553874275
+  checksum: c3b01e147d6a7acbd2e6396f35a4dae282eb28559a7f39450932675327989560e98fafaf390634f990e8e1898114f716c92241f6dcf37c3ae0115799ab78679b
   languageName: node
   linkType: hard
 
@@ -10179,10 +10179,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2, picomatch@npm:^2.2.3":
-  version: 2.2.3
-  resolution: "picomatch@npm:2.2.3"
-  checksum: 45e2b882b5265d3a322c6b7b854c1fdc33d5083011b9730296e9ad26332824ac356529f1ce1b0c1111f08a84c02e8525ea121d17c4bbe2970ca6665e587921fa
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2, picomatch@npm:^2.2.3, picomatch@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "picomatch@npm:2.3.1"
+  checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
   languageName: node
   linkType: hard
 
