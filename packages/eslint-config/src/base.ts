@@ -38,6 +38,7 @@ const config: eslint.Linter.Config = {
 		],
 
 		// Avoid bad or problematic syntax/patterns
+		'no-constant-binary-expression': 'error',
 		'no-constant-condition': 'error',
 		'no-constructor-return': 'error',
 		'no-div-regex': 'error',
