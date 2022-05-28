@@ -7,10 +7,6 @@ const config: PrettierConfig = {
 		...IGNORE_LIST,
 		// Config files
 		'CHANGELOG.md',
-		'lerna.json',
-		'package.json',
-		'tsconfig.json',
-		'tsconfig.*.json',
 		'*.d.ts',
 		'*.d.cts',
 		'*.d.mts',
