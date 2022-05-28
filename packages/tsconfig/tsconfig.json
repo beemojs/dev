@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Beemo",
-
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
@@ -22,6 +21,6 @@
     "skipLibCheck": true,
     "sourceMap": false,
     "strict": true,
-    "target": "es2020"
+    "target": "es2022"
   }
 }

@@ -20,6 +20,7 @@ const config: eslint.Linter.Config = {
 	},
 	globals: {
 		[`__DEV__`]: 'readonly',
+		[`__TEST__`]: 'readonly',
 		[`__PROD__`]: 'readonly',
 	},
 	parserOptions: {

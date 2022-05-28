@@ -10,7 +10,7 @@ export const TSCONFIG_JSON_PATH = path.join(ROOT, 'tsconfig.json');
 export const CASE_SENSITIVE = false;
 
 // Latest ECMA version and syntax to support
-export const ECMA_VERSION = 2020;
+export const ECMA_VERSION = 2022;
 
 // Files and folders to always ignore
 export const IGNORE_LIST = [
