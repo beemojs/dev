@@ -30,7 +30,7 @@ Extend the config from your root `tsconfig.json`.
   - Supports synthetic default exports.
   - Enables ES interoperability and isolation.
   - Enables the `esnext` lib.
-  - Targets `es2020` (since we only type check).
+  - Targets `es2022` (since we only type check).
 - Supports project references through the `tsconfig.workspaces.json` config.
   - Enables declaration emitting.
 - Supports React through the `tsconfig.react.json` config.

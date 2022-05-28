@@ -32,6 +32,7 @@ const config = {
 	},
 	globals: {
 		[`__DEV__`]: true,
+		[`__TEST__`]: true,
 		[`__PROD__`]: true,
 	},
 	moduleNameMapper: {
