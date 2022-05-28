@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "yarn run build",
     "build": "packemon build --addEngines",
-    "pack": "NODE_ENV=production packemon pack --addEngines --declaration=standard",
+    "pack": "NODE_ENV=production packemon pack --addEngines --declaration",
     "check": "yarn run type && yarn run test && yarn run lint",
     "format": "prettier --write .",
     "lint": "eslint --cache --fix packages/*/{src,tests}/**/*.ts",
@@ -31,7 +31,7 @@
     "jest": "^28.1.0",
     "jest-circus": "^28.1.0",
     "lerna": "^5.0.0",
-    "packemon": "^1.15.0",
+    "packemon": "^2.2.2",
     "prettier": "^2.6.2",
     "typescript": "^4.7.2"
   },
