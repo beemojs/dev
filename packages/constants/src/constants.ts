@@ -27,13 +27,14 @@ export const IGNORE_LIST = [
 ];
 
 // Globs for finding source files, test files, and test utility files
-export const ALL_FILES_GLOB = '**/{src,tests,__tests__}/**/*.{ts,tsx}';
-export const SOURCE_FILES_GLOB = '**/src/**/*.{ts,tsx}';
-export const TEST_FILES_GLOB = '**/{tests,__tests__}/**/*.test.{ts,tsx}';
-export const TEST_UTILS_GLOB = '**/{tests,__tests__}/**/*.{ts,tsx}';
+export const TS_EXT_PATTERN = '{ts,tsx,cts,mts}';
+export const ALL_FILES_GLOB = `**/{src,tests,__tests__}/**/*.${TS_EXT_PATTERN}`;
+export const SOURCE_FILES_GLOB = `**/src/**/*.${TS_EXT_PATTERN}`;
+export const TEST_FILES_GLOB = `**/{tests,__tests__}/**/*.test.${TS_EXT_PATTERN}`;
+export const TEST_UTILS_GLOB = `**/{tests,__tests__}/**/*.${TS_EXT_PATTERN}`;
 
 // List of globs to find all test related files
-export const TESTS_LIST = [TEST_FILES_GLOB, TEST_UTILS_GLOB, 'test.{ts,tsx}'];
+export const TESTS_LIST = [TEST_FILES_GLOB, TEST_UTILS_GLOB, `test.${TS_EXT_PATTERN}`];
 
 // Pattern of non-JS/TS file extensions
 export const NON_TS_REGEX = '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$';

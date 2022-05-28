@@ -1,5 +1,5 @@
 import type eslint from 'eslint';
-import { TESTS_LIST } from '@beemo/config-constants';
+import { TESTS_LIST, TS_EXT_PATTERN } from '@beemo/config-constants';
 
 const jestConfig: eslint.Linter.ConfigOverride = {
 	files: TESTS_LIST,
@@ -118,7 +118,7 @@ const testsConfig: eslint.Linter.ConfigOverride = {
 const miscConfig: eslint.Linter.ConfigOverride = {
 	files: [
 		'**/{__mocks__,__fixtures__}/**/*',
-		'**/{tests,__tests__}/**/{helpers,utils,setup}.{ts,tsx}',
+		`**/{tests,__tests__}/**/{helpers,utils,setup}.${TS_EXT_PATTERN}`,
 	],
 	rules: {
 		'import/no-commonjs': 'off',

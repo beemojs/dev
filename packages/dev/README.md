@@ -14,7 +14,7 @@ yarn install --dev @beemo/dev
 
 ## Requirements
 
-- Files are either `.ts` or `.tsx` (duh).
+- Files are either `.ts`, `.tsx`, `.cts`, or `.mts` (duh).
 - Source files are in a folder called `src`.
 - Tests files are in a folder called `tests` relative to source, or `__tests__` within source.
 - Declaration/types files are in a folder called `types` relative to source.
@@ -71,11 +71,11 @@ common command line options when being ran.
 
 - [Babel](https://www.npmjs.com/package/@beemo/config-babel)
   - Always passes `--copy-files`.
-  - Sets `--extensions` to `.ts,.tsx` if using TypeScript.
+  - Sets `--extensions` to `.ts,.tsx,.cts,.mts` if using TypeScript.
   - If no out provided, defaults to `src/ --out-dir lib/`.
 - [ESLint](https://www.npmjs.com/package/@beemo/config-eslint)
   - Always passes `--cache --color --fix`.
-  - Sets `--extensions` to `.ts,.tsx` if using TypeScript.
+  - Sets `--extensions` to `.ts,.tsx,.cts,.mts` if using TypeScript.
   - If no target provided, defaults to linting `src/ tests/`.
   - If using workspaces, will target the above in each package.
   - Generates Prettier and TypeScript configs when enabled.
