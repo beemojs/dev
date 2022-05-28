@@ -14,7 +14,7 @@
   "useTabs": true,
   "overrides": [
     {
-      "files": ["*.json", "*.yaml"],
+      "files": ["*.json", "*.yml", "*.yaml"],
       "options": {
         "useTabs": false
       }
