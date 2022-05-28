@@ -7,7 +7,7 @@ const { node, react } = tool.config.settings as BeemoSettings;
 const config = {
 	root: true,
 	extends: ['beemo'],
-	ignore: [...IGNORE_LIST, '*.min.js', '*.map', '*.snap'],
+	ignore: [...IGNORE_LIST, '*.d.ts', '*.d.cts', '*.d.mts', '*.min.js', '*.map', '*.snap'],
 };
 
 if (react) {

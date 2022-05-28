@@ -12,6 +12,8 @@ const config: PrettierConfig = {
 		'tsconfig.json',
 		'tsconfig.*.json',
 		'*.d.ts',
+		'*.d.cts',
+		'*.d.mts',
 	],
 };
 

@@ -1,6 +1,6 @@
 import { DriverContext, Tool } from '@beemo/core';
 
-const EXTS = ['.ts', '.tsx'];
+const EXTS = ['.ts', '.tsx', '.cts', '.mts'];
 const DIRS = ['src', 'tests'];
 
 function hasNoParams(context: DriverContext, name: string): boolean {

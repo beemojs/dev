@@ -2,7 +2,7 @@ import { builtinModules } from 'module';
 import type eslint from 'eslint';
 import { IGNORE_LIST, NON_TS_REGEX, TS_PATH_PREFIX_REGEX } from '@beemo/config-constants';
 
-const extensions = ['.ts', '.tsx', '.js', '.mjs'];
+const extensions = ['.ts', '.tsx', '.cts', '.mts', '.js', '.mjs'];
 
 const config: eslint.Linter.Config = {
 	plugins: ['import', 'simple-import-sort'],
@@ -46,9 +46,11 @@ const config: eslint.Linter.Config = {
 			'ignorePackages',
 			{
 				cjs: 'always',
+				cts: 'always',
 				js: 'never',
 				json: 'always',
 				mjs: 'always',
+				mts: 'always',
 				ts: 'never',
 				tsx: 'never',
 			},
@@ -118,7 +120,7 @@ const config: eslint.Linter.Config = {
 	overrides: [
 		// Allow default exports from package indexes
 		{
-			files: ['**/index.ts', '**/index.tsx'],
+			files: ['**/index.ts', '**/index.tsx', '**/index.cts', '**/index.mts'],
 			rules: {
 				'import/no-default-export': 'off',
 			},

@@ -5,7 +5,7 @@ const { esm, projects, react } = tool.config.settings as BeemoSettings;
 
 const config: JestConfig = {
 	preset: 'jest-preset-beemo',
-	extensionsToTreatAsEsm: esm ? ['.ts', '.tsx'] : [],
+	extensionsToTreatAsEsm: esm ? ['.ts', '.tsx', '.mts'] : [],
 	testEnvironment: react ? 'jsdom' : 'node',
 };
 
