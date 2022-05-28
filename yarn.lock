@@ -1616,7 +1616,7 @@ __metadata:
     "@beemo/core": ^2.1.4
     "@beemo/driver-typescript": ^2.1.2
     tsconfig-beemo: ^1.0.1
-    typescript: ^4.6.3
+    typescript: ^4.7.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     "@beemo/driver-typescript": ^2.0.0
@@ -1673,7 +1673,7 @@ __metadata:
     eslint: ^8.14.0
     jest: ^28.1.0
     prettier: ^2.6.2
-    typescript: ^4.6.3
+    typescript: ^4.7.2
   peerDependenciesMeta:
     "@beemo/cli":
       optional: true
@@ -4669,7 +4669,7 @@ __metadata:
     lerna: ^5.0.0
     packemon: ^1.15.0
     prettier: ^2.6.2
-    typescript: ^4.6.3
+    typescript: ^4.7.2
   languageName: unknown
   linkType: soft
 
@@ -12095,13 +12095,13 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.3":
-  version: 4.6.3
-  resolution: "typescript@npm:4.6.3"
+"typescript@npm:^4.7.2":
+  version: 4.7.2
+  resolution: "typescript@npm:4.7.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 255bb26c8cb846ca689dd1c3a56587af4f69055907aa2c154796ea28ee0dea871535b1c78f85a6212c77f2657843a269c3a742d09d81495b97b914bf7920415b
+  checksum: 5163585e6b56410f77d5483b698d9489bbee8902c99029eb70cf6d21525a186530ce19a00951af84eefd4a131cc51d0959f5118e25e70ab61f45ac4057dbd1ef
   languageName: node
   linkType: hard
 
@@ -12115,13 +12115,13 @@ resolve@~1.19.0:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>":
-  version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"
+"typescript@patch:typescript@^4.7.2#~builtin<compat/typescript>":
+  version: 4.7.2
+  resolution: "typescript@patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 6bf45caf847062420592e711bc9c28bf5f9a9a7fa8245343b81493e4ededae33f1774009d1234d911422d1646a2c839f44e1a23ecb111b40a60ac2ea4c1482a8
+  checksum: 09d93fc0983d38eadd9b0427f790b49b4437f45002a87d447be3fbe53120880e87a91dd03e1d900498f99205d6e0b7c9784fe41fca11d56f4bbce371f74bb160
   languageName: node
   linkType: hard
 
