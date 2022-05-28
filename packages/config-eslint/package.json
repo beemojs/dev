@@ -40,7 +40,7 @@
   "devDependencies": {
     "@beemo/core": "^2.1.4",
     "@beemo/driver-eslint": "^2.0.5",
-    "eslint": "^8.14.0"
+    "eslint": "^8.16.0"
   },
   "funding": {
     "type": "ko-fi",

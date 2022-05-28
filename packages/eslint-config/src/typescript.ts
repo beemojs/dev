@@ -82,7 +82,7 @@ const config: eslint.Linter.Config = {
 		'@typescript-eslint/lines-between-class-members': ['error', { exceptAfterOverload: true }],
 		'@typescript-eslint/no-array-constructor': 'error',
 		'@typescript-eslint/no-dupe-class-members': 'error',
-		'@typescript-eslint/no-duplicate-imports': 'error',
+		'@typescript-eslint/no-duplicate-imports': 'off', // Prefer import plugin
 		'@typescript-eslint/no-implied-eval': 'error',
 		'@typescript-eslint/no-invalid-this': 'error',
 		'@typescript-eslint/no-loop-func': 'error',
@@ -244,6 +244,7 @@ const config: eslint.Linter.Config = {
 		],
 
 		// Avoid problematic or unnecessary patterns
+		'@typescript-eslint/no-duplicate-enum-values': 'error',
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-misused-new': 'error',
 		'@typescript-eslint/no-this-alias': ['error', { allowDestructuring: true }],
