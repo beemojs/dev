@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.0.0 - 2022-05-28
+
+#### 💥 Breaking
+
+- Drop Node.js v12 support. ([bc4d46b](https://github.com/beemojs/dev/commit/bc4d46b))
+
+#### 📦 Dependencies
+
+- **[babel]** Update to v7.18 latest. ([5edc8ae](https://github.com/beemojs/dev/commit/5edc8ae))
+
+**Note:** Version bump only for package babel-preset-beemo
+
+
+
+
+
 ### 1.0.10 - 2022-04-19
 
 #### 📦 Dependencies

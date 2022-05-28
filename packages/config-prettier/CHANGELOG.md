@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.0.0 - 2022-05-28
+
+#### 💥 Breaking
+
+- Drop Node.js v12 support. ([bc4d46b](https://github.com/beemojs/dev/commit/bc4d46b))
+- Format JSON files using JSON.stringify. ([2a2164e](https://github.com/beemojs/dev/commit/2a2164e))
+
+#### 🚀 Updates
+
+- Support .cts and .mts files. ([8521bb1](https://github.com/beemojs/dev/commit/8521bb1))
+
+**Note:** Version bump only for package @beemo/config-prettier
+
+
+
+
+
 ### 1.0.14 - 2022-04-19
 
 #### 📦 Dependencies

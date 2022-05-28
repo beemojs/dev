@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.0.0 - 2022-05-28
+
+#### 💥 Breaking
+
+- Drop Node.js v12 support. ([bc4d46b](https://github.com/beemojs/dev/commit/bc4d46b))
+
+#### 📦 Dependencies
+
+- **[typescript]** Update to v4.7. ([f77912f](https://github.com/beemojs/dev/commit/f77912f))
+
+**Note:** Version bump only for package @beemo/config-typescript
+
+
+
+
+
 ### 1.1.10 - 2022-03-29
 
 #### 📦 Dependencies

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.0.0 - 2022-05-28
+
+#### 💥 Breaking
+
+- Drop Node.js v12 support. ([bc4d46b](https://github.com/beemojs/dev/commit/bc4d46b))
+
+#### 🚀 Updates
+
+- Support .cts and .mts files. ([8521bb1](https://github.com/beemojs/dev/commit/8521bb1))
+- Use ECMA 2022 as the latest target. ([71bda9e](https://github.com/beemojs/dev/commit/71bda9e))
+
+**Note:** Version bump only for package @beemo/config-constants
+
+
+
+
+
 ## 1.1.0 - 2021-11-02
 
 #### 🚀 Updates

@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.0.0 - 2022-05-28
+
+#### 💥 Breaking
+
+- Drop Node.js v12 support. ([bc4d46b](https://github.com/beemojs/dev/commit/bc4d46b))
+
+#### 🚀 Updates
+
+- Support .cts and .mts files. ([8521bb1](https://github.com/beemojs/dev/commit/8521bb1))
+
+#### 📦 Dependencies
+
+- **[babel]** Update to v7.18 latest. ([5edc8ae](https://github.com/beemojs/dev/commit/5edc8ae))
+- **[eslint]** Update to v8.16 and plugins to latest. ([be35bf6](https://github.com/beemojs/dev/commit/be35bf6))
+- **[jest]** Update types to v28.1. ([a08df82](https://github.com/beemojs/dev/commit/a08df82))
+- **[typescript]** Update to v4.7. ([f77912f](https://github.com/beemojs/dev/commit/f77912f))
+
+**Note:** Version bump only for package @beemo/dev
+
+
+
+
+
 ### 1.7.13 - 2022-04-26
 
 #### 📦 Dependencies
