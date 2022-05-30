@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.2.0 - 2022-05-30
+
+#### 🚀 Updates
+
+- Update babel to traverse upwards and find config. ([d91335b](https://github.com/beemojs/dev/commit/d91335b))
+
+**Note:** Version bump only for package @beemo/config-constants
+
+
+
+
+
 ## 2.1.0 - 2022-05-30
 
 #### 🚀 Updates
