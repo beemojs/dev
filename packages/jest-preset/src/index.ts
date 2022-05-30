@@ -2,8 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import {
 	ALL_FILES_GLOB,
+	ALL_JS_REGEX,
 	IGNORE_LIST,
-	NON_TS_REGEX,
+	NON_JS_REGEX,
 	ROOT,
 	TEST_FILES_GLOB,
 } from '@beemo/config-constants';
@@ -36,12 +37,16 @@ const config = {
 		[`__PROD__`]: true,
 	},
 	moduleNameMapper: {
-		[NON_TS_REGEX]: require.resolve('./fileMock.js'),
+		[NON_JS_REGEX]: require.resolve('./fileMock.js'),
 	},
 	setupFilesAfterEnv,
 	testEnvironment: 'node',
 	testMatch: [TEST_FILES_GLOB],
 	testRunner: 'jest-circus/runner',
+	transform: {
+		// Support all the new file extensions
+		[ALL_JS_REGEX]: 'babel-jest',
+	},
 };
 
 export default config;

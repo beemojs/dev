@@ -1,6 +1,6 @@
+import { EXTENSIONS } from '@beemo/config-constants';
 import { DriverContext, Tool } from '@beemo/core';
 
-const EXTS = ['.ts', '.tsx', '.cts', '.mts'];
 const DIRS = ['src', 'tests'];
 
 function hasNoParams(context: DriverContext, name: string): boolean {
@@ -18,7 +18,7 @@ export default function dev(tool: Tool) {
 		context.addOption('--copy-files');
 
 		if (usingTypeScript && !context.getRiskyOption('extensions')) {
-			context.addOption('--extensions', EXTS.join(','));
+			context.addOption('--extensions', EXTENSIONS.join(','));
 		}
 
 		if (hasNoParams(context, 'babel')) {
@@ -35,7 +35,7 @@ export default function dev(tool: Tool) {
 		context.addOptions(['--cache', '--color', '--fix']);
 
 		if (usingTypeScript && !context.getRiskyOption('ext')) {
-			context.addOption('--ext', EXTS.join(','));
+			context.addOption('--ext', EXTENSIONS.join(','));
 		}
 
 		if (hasNoParams(context, 'eslint')) {

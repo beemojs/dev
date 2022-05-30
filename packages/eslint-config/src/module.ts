@@ -1,21 +1,24 @@
 import { builtinModules } from 'module';
 import type eslint from 'eslint';
-import { IGNORE_LIST, NON_TS_REGEX, TS_PATH_PREFIX_REGEX } from '@beemo/config-constants';
-
-const extensions = ['.ts', '.tsx', '.cts', '.mts', '.js', '.mjs'];
+import {
+	EXTENSIONS,
+	IGNORE_LIST,
+	NON_JS_REGEX,
+	TS_PATH_PREFIX_REGEX,
+} from '@beemo/config-constants';
 
 const config: eslint.Linter.Config = {
 	plugins: ['import', 'simple-import-sort'],
 	settings: {
-		'import/extensions': extensions,
-		'import/ignore': [...IGNORE_LIST, NON_TS_REGEX],
+		'import/extensions': EXTENSIONS,
+		'import/ignore': [...IGNORE_LIST, NON_JS_REGEX],
 		'import/resolver': {
 			node: {
-				extensions: [...extensions, '.cjs', '.json'],
+				extensions: [...EXTENSIONS, '.json'],
 			},
 		},
 		'import/parsers': {
-			'@typescript-eslint/parser': extensions.slice(0, 2),
+			'@typescript-eslint/parser': EXTENSIONS.slice(0, 4),
 		},
 	},
 	// Inherits default import rules from Airbnb config. Will only override differences.
@@ -48,6 +51,7 @@ const config: eslint.Linter.Config = {
 				cjs: 'always',
 				cts: 'always',
 				js: 'never',
+				jsx: 'never',
 				json: 'always',
 				mjs: 'always',
 				mts: 'always',

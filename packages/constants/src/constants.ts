@@ -26,18 +26,22 @@ export const IGNORE_LIST = [
 	'umd/',
 ];
 
+// Supported file extenes
+export const EXTENSIONS = ['.ts', '.tsx', '.cts', '.mts', '.js', '.jsx', '.cjs', '.mjs'];
+export const EXTENSIONS_PATTERN = EXTENSIONS.map((ext) => ext.slice(1)).join(',');
+
 // Globs for finding source files, test files, and test utility files
-export const TS_EXT_PATTERN = '{ts,tsx,cts,mts}';
-export const ALL_FILES_GLOB = `**/{src,tests,__tests__}/**/*.${TS_EXT_PATTERN}`;
-export const SOURCE_FILES_GLOB = `**/src/**/*.${TS_EXT_PATTERN}`;
-export const TEST_FILES_GLOB = `**/{tests,__tests__}/**/*.test.${TS_EXT_PATTERN}`;
-export const TEST_UTILS_GLOB = `**/{tests,__tests__}/**/*.${TS_EXT_PATTERN}`;
+export const ALL_FILES_GLOB = `**/{src,tests,__tests__}/**/*.{${EXTENSIONS_PATTERN}}`;
+export const SOURCE_FILES_GLOB = `**/src/**/*.{${EXTENSIONS_PATTERN}}`;
+export const TEST_FILES_GLOB = `**/{tests,__tests__}/**/*.test.{${EXTENSIONS_PATTERN}}`;
+export const TEST_UTILS_GLOB = `**/{tests,__tests__}/**/*.{${EXTENSIONS_PATTERN}}`;
 
 // List of globs to find all test related files
-export const TESTS_LIST = [TEST_FILES_GLOB, TEST_UTILS_GLOB, `test.${TS_EXT_PATTERN}`];
+export const TESTS_LIST = [TEST_FILES_GLOB, TEST_UTILS_GLOB, `test.{${EXTENSIONS_PATTERN}}`];
 
-// Pattern of non-JS/TS file extensions
-export const NON_TS_REGEX = '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$';
+// Pattern of file extensions
+export const NON_JS_REGEX = '\\.(css|sass|scss|less|gif|png|jpg|jpeg|svg|gql|graphql|yml|yaml)$';
+export const ALL_JS_REGEX = `\\.(${EXTENSIONS_PATTERN.replace(/,/g, '|')})$`;
 
 // Pattern to find all custom TypeScript paths
 export const TS_PATH_PREFIX_REGEX = '^:[a-z]';

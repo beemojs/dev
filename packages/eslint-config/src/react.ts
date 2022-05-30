@@ -164,7 +164,7 @@ const reactConfig: eslint.Linter.ConfigOverride = {
 		'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
 
 		// Allow either extension for JSX code, since some components may return null
-		'react/jsx-filename-extension': ['error', { allow: 'as-needed', extensions: ['.ts', '.tsx'] }],
+		'react/jsx-filename-extension': ['error', { allow: 'as-needed', extensions: ['.tsx'] }],
 
 		// Always use shorthand fragments when applicable
 		'react/jsx-fragments': ['error', 'syntax'],
