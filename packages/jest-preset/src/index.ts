@@ -3,6 +3,7 @@ import path from 'path';
 import {
 	ALL_FILES_GLOB,
 	ALL_JS_REGEX,
+	EXTENSIONS_WITHOUT_DOT,
 	IGNORE_LIST,
 	NON_JS_REGEX,
 	ROOT,
@@ -36,6 +37,7 @@ const config = {
 		[`__TEST__`]: true,
 		[`__PROD__`]: true,
 	},
+	moduleFileExtensions: [...EXTENSIONS_WITHOUT_DOT, 'json', 'node'],
 	moduleNameMapper: {
 		[NON_JS_REGEX]: require.resolve('./fileMock.js'),
 	},
@@ -45,7 +47,7 @@ const config = {
 	testRunner: 'jest-circus/runner',
 	transform: {
 		// Support all the new file extensions
-		[ALL_JS_REGEX]: 'babel-jest',
+		[ALL_JS_REGEX]: ['babel-jest', { rootMode: 'upward' }],
 	},
 };
 
