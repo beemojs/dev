@@ -37,7 +37,7 @@
     "babel-preset-beemo": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.2",
+    "@babel/core": "^7.18.9",
     "@beemo/core": "^2.1.4",
     "@beemo/driver-babel": "^2.0.6"
   },

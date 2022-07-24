@@ -47,8 +47,8 @@
     }
   },
   "dependencies": {
-    "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.2",
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
     "@beemo/cli": "^2.0.6",
     "@beemo/config-babel": "^2.0.0",
     "@beemo/config-constants": "^2.2.0",
