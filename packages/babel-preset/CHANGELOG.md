@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.0.1 - 2022-07-24
+
+#### 📦 Dependencies
+
+- **[babel]** Update to v7.18 latest. ([dc53dfd](https://github.com/beemojs/dev/commit/dc53dfd))
+
+**Note:** Version bump only for package babel-preset-beemo
+
+
+
+
+
 # 2.0.0 - 2022-05-28
 
 #### 💥 Breaking

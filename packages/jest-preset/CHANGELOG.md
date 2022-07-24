@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### 2.2.1 - 2022-07-24
+
+#### 📦 Dependencies
+
+- **[jest]** Update types to v28.1 latest. ([ad8d19f](https://github.com/beemojs/dev/commit/ad8d19f))
+
+**Note:** Version bump only for package jest-preset-beemo
+
+
+
+
+
 ## 2.2.0 - 2022-05-30
 
 #### 🚀 Updates
