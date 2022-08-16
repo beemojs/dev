@@ -4,6 +4,8 @@
 [![npm version](https://badge.fury.io/js/%40beemo%config-babel.svg)](https://www.npmjs.com/package/@beemo/config-babel)
 [![npm deps](https://david-dm.org/beemojs/dev.svg?path=packages/config-babel)](https://www.npmjs.com/package/@beemo/config-babel)
 
+> # These packages have been deprecated and non-beemo configs have been migrated to https://github.com/moonrepo/dev!
+
 This repository is a collection of Beemo owned and maintained configurations and presets for common
 developer tools -- primarily tools used by the Beemo project and its authors.
 
